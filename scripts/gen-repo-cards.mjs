@@ -24,12 +24,16 @@ const MARGIN = 20;
 const HEADER_Y = 60; // first card row starts here
 const CARD_W = 570;
 const CARD_H = 176;
-const GUTTER = 20;
+const GUTTER = 20; // horizontal: 2*570 + 20 = 1160, centred in 1200 -> margin 20
+// Vertical rhythm is derived, not copied from the horizontal gutter: the canvas is
+// 620 tall and 60 + 3*176 + 2*20 + 20 would be 648, which clipped the bottom row.
+const GUTTER_Y = 14;
+const BOTTOM_PAD = 4;
 const COLS = 2;
 const ROWS = 3;
 const MAX_CARDS = COLS * ROWS;
 
-const FULL_HEIGHT = 620;
+const FULL_HEIGHT = HEADER_Y + ROWS * CARD_H + (ROWS - 1) * GUTTER_Y + BOTTOM_PAD; // 620
 
 const FONT = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace";
 const MONO_RATIO = 0.6; // approximate advance width of a mono glyph
@@ -205,7 +209,7 @@ function wrapText(str, width, maxLines) {
   const whole = words.join(' ');
   if (kept.length < whole.length && lines.length) {
     const last = lines[lines.length - 1];
-    lines[lines.length - 1] = truncate(`${last} `, width);
+    lines[lines.length - 1] = truncate(`${last} …`, width);
   }
   return lines;
 }
@@ -406,7 +410,11 @@ function renderCard(repo, index, x, y) {
   const padR = 16;
   const innerW = CARD_W - padL - padR;
 
-  parts.push(`<g class="card c${index}" transform="translate(${n(x)},${n(y)})">`);
+  // NOTE: the outer <g> carries the position. The inner <g> carries the CSS
+  // entrance animation, because a CSS `transform` overrides an SVG transform
+  // ATTRIBUTE on the same element — animating the positioned group directly
+  // would collapse every card onto the origin.
+  parts.push(`<g transform="translate(${n(x)},${n(y)})"><g class="card c${index}">`);
 
   // ---- panel -------------------------------------------------------------
   parts.push(
@@ -446,9 +454,12 @@ function renderCard(repo, index, x, y) {
   );
 
   // ---- description -------------------------------------------------------
+  const topicsAll = (Array.isArray(repo.topics) ? repo.topics : []).slice(0, 3);
   const descSize = 12.5;
-  const descY0 = 64;
   const descLineH = 17;
+  // with no chips to fill the middle band, drop the copy so the card does not
+  // read as a big empty hole between the title and the footer
+  const descY0 = topicsAll.length ? 64 : 80;
   if (repo.description && repo.description.trim()) {
     const lines = wrapText(repo.description.trim(), 62, 2);
     lines.forEach((line, i) => {
@@ -470,8 +481,7 @@ function renderCard(repo, index, x, y) {
   const chipY = 105;
   const chipPad = 7;
   let chipX = padL;
-  const topics = (Array.isArray(repo.topics) ? repo.topics : []).slice(0, 3);
-  for (const topicRaw of topics) {
+  for (const topicRaw of topicsAll) {
     const label = truncate(String(topicRaw), 18);
     const w = Math.round(textWidth(label, chipSize) + chipPad * 2);
     if (chipX + w > padL + innerW) break;
@@ -533,7 +543,7 @@ function renderCard(repo, index, x, y) {
       `begin="-${n((index * 1.37) % scanDur)}s" repeatCount="indefinite"/></rect></g>`
   );
 
-  parts.push('</g>');
+  parts.push('</g></g>');
 
   const defs =
     `<clipPath id="${clipId}"><rect x="0" y="0" width="${n(CARD_W)}" height="${n(CARD_H)}" rx="10"/></clipPath>`;
@@ -548,8 +558,7 @@ function renderCard(repo, index, x, y) {
 function buildSvg(repos, totalRepos, live) {
   const count = repos.length;
   const rowsUsed = Math.max(1, Math.ceil(count / COLS));
-  const height =
-    count >= MAX_CARDS ? FULL_HEIGHT : HEADER_Y + rowsUsed * CARD_H + (rowsUsed - 1) * GUTTER + MARGIN;
+  const height = HEADER_Y + rowsUsed * CARD_H + (rowsUsed - 1) * GUTTER_Y + BOTTOM_PAD;
 
   const gridW = COLS * CARD_W + (COLS - 1) * GUTTER;
   const x0 = Math.round((WIDTH - gridW) / 2);
@@ -566,7 +575,7 @@ function buildSvg(repos, totalRepos, live) {
     const rowX0 = inRow === COLS ? x0 : Math.round((WIDTH - rowW) / 2);
     const col = i - row * COLS;
     const cx = rowX0 + col * (CARD_W + GUTTER);
-    const cy = HEADER_Y + row * (CARD_H + GUTTER);
+    const cy = HEADER_Y + row * (CARD_H + GUTTER_Y);
     const card = renderCard(repos[i], i, cx, cy);
     defs.push(card.defs);
     cards.push(card.body);
@@ -652,9 +661,11 @@ function buildSvg(repos, totalRepos, live) {
     specks.join(''),
     header,
     rule,
-    cards.join(''),
-    `<text x="${n(WIDTH - x0)}" y="${n(height - 6)}" text-anchor="end" font-family="${FONT}" ` +
+    // the stamp lives in the 18px band between the rule and the first card row,
+    // so it can never overlap a card
+    `<text x="${n(WIDTH - x0)}" y="55" text-anchor="end" font-family="${FONT}" ` +
       `font-size="9" fill="${C.grid}">${escapeXml(footerNote, 40)}</text>`,
+    cards.join(''),
     '</svg>',
     '',
   ].join('\n');
