@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="340" viewBox="0 0 900 340" role="img" aria-label="Operative dossier identification card for secoolioo">
+  <title>OPERATIVE DOSSIER // Secoolioo</title>
+  <desc>Animated classified personnel file card with biometric scan, redaction bars and barcode.</desc>
+
+  <defs>
+    <clipPath id="cardClip">
+      <rect x="10" y="10" width="880" height="320" rx="12" />
+    </clipPath>
+
+    <clipPath id="portClip">
+      <rect x="30" y="70" width="150" height="180" rx="2" />
+    </clipPath>
+
+    <clipPath id="glitchA">
+      <rect x="10" y="100" width="880" height="17" />
+    </clipPath>
+
+    <clipPath id="glitchB">
+      <rect x="10" y="196" width="880" height="13" />
+    </clipPath>
+
+    <linearGradient id="holoSheen" gradientUnits="userSpaceOnUse" x1="-400" y1="-200" x2="-100" y2="100">
+      <stop offset="0" stop-color="#4dffa6" stop-opacity="0" />
+      <stop offset="0.35" stop-color="#4dffa6" stop-opacity="0.10" />
+      <stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.14" />
+      <stop offset="0.68" stop-color="#4dffa6" stop-opacity="0.07" />
+      <stop offset="1" stop-color="#4dffa6" stop-opacity="0" />
+      <animate attributeName="x1" values="-400;1000" dur="7.3s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="-100;1300" dur="7.3s" repeatCount="indefinite" />
+      <animate attributeName="y1" values="-200;200" dur="7.3s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="100;500" dur="7.3s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <linearGradient id="scanFade" gradientUnits="userSpaceOnUse" x1="0" y1="-22" x2="0" y2="0">
+      <stop offset="0" stop-color="#16d67a" stop-opacity="0" />
+      <stop offset="1" stop-color="#16d67a" stop-opacity="0.28" />
+    </linearGradient>
+
+    <linearGradient id="barcodeSheen" gradientUnits="userSpaceOnUse" x1="-200" y1="0" x2="-40" y2="0">
+      <stop offset="0" stop-color="#000000" />
+      <stop offset="0.5" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#000000" />
+      <animate attributeName="x1" values="-200;900" dur="6.7s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="-40;1060" dur="6.7s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <mask id="barcodeMask" maskUnits="userSpaceOnUse" x="20" y="268" width="870" height="52">
+      <rect x="20" y="268" width="870" height="52" fill="url(#barcodeSheen)" />
+    </mask>
+
+    <pattern id="crt" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="4" height="1" fill="#0d2a1c" />
+    </pattern>
+
+    <g id="barcodeBars">
+      <rect x="30" y="280" width="3" height="26" />
+      <rect x="40" y="280" width="6" height="26" />
+      <rect x="55" y="280" width="2" height="26" />
+      <rect x="63" y="280" width="4" height="26" />
+      <rect x="77" y="280" width="7" height="26" />
+      <rect x="92" y="280" width="3" height="26" />
+      <rect x="102" y="280" width="5" height="26" />
+      <rect x="118" y="280" width="2" height="26" />
+      <rect x="126" y="280" width="6" height="26" />
+      <rect x="141" y="280" width="4" height="26" />
+      <rect x="152" y="280" width="3" height="26" />
+      <rect x="165" y="280" width="3" height="26" />
+      <rect x="176" y="280" width="6" height="26" />
+      <rect x="188" y="280" width="2" height="26" />
+      <rect x="197" y="280" width="4" height="26" />
+      <rect x="210" y="280" width="7" height="26" />
+      <rect x="223" y="280" width="3" height="26" />
+      <rect x="236" y="280" width="5" height="26" />
+      <rect x="249" y="280" width="2" height="26" />
+      <rect x="258" y="280" width="6" height="26" />
+      <rect x="275" y="280" width="4" height="26" />
+      <rect x="285" y="280" width="3" height="26" />
+      <rect x="297" y="280" width="3" height="26" />
+      <rect x="307" y="280" width="6" height="26" />
+      <rect x="323" y="280" width="2" height="26" />
+      <rect x="333" y="280" width="4" height="26" />
+      <rect x="343" y="280" width="7" height="26" />
+      <rect x="357" y="280" width="3" height="26" />
+      <rect x="369" y="280" width="5" height="26" />
+      <rect x="380" y="280" width="2" height="26" />
+      <rect x="392" y="280" width="6" height="26" />
+      <rect x="406" y="280" width="4" height="26" />
+      <rect x="417" y="280" width="3" height="26" />
+      <rect x="431" y="280" width="3" height="26" />
+      <rect x="440" y="280" width="6" height="26" />
+      <rect x="455" y="280" width="2" height="26" />
+      <rect x="464" y="280" width="4" height="26" />
+      <rect x="478" y="280" width="7" height="26" />
+      <rect x="493" y="280" width="3" height="26" />
+      <rect x="502" y="280" width="5" height="26" />
+      <rect x="514" y="280" width="2" height="26" />
+      <rect x="525" y="280" width="6" height="26" />
+      <rect x="537" y="280" width="4" height="26" />
+      <rect x="551" y="280" width="3" height="26" />
+      <rect x="562" y="280" width="3" height="26" />
+      <rect x="572" y="280" width="6" height="26" />
+      <rect x="589" y="280" width="2" height="26" />
+      <rect x="597" y="280" width="4" height="26" />
+      <rect x="610" y="280" width="7" height="26" />
+      <rect x="624" y="280" width="3" height="26" />
+      <rect x="637" y="280" width="5" height="26" />
+      <rect x="650" y="280" width="2" height="26" />
+      <rect x="658" y="280" width="6" height="26" />
+      <rect x="671" y="280" width="4" height="26" />
+      <rect x="684" y="280" width="3" height="26" />
+      <rect x="693" y="280" width="3" height="26" />
+      <rect x="706" y="280" width="6" height="26" />
+      <rect x="720" y="280" width="2" height="26" />
+      <rect x="729" y="280" width="4" height="26" />
+      <rect x="744" y="280" width="7" height="26" />
+      <rect x="757" y="280" width="3" height="26" />
+      <rect x="769" y="280" width="5" height="26" />
+      <rect x="781" y="280" width="2" height="26" />
+      <rect x="793" y="280" width="6" height="26" />
+      <rect x="807" y="280" width="4" height="26" />
+      <rect x="817" y="280" width="3" height="26" />
+      <rect x="827" y="280" width="3" height="26" />
+      <rect x="839" y="280" width="6" height="26" />
+      <rect x="851" y="280" width="2" height="26" />
+      <rect x="863" y="280" width="4" height="26" />
+    </g>
+  </defs>
+
+  <style>
+    text {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+      white-space: pre;
+    }
+    .stamp {
+      animation: stampPulse 4.3s ease-in-out -1.7s infinite;
+    }
+    @keyframes stampPulse {
+      0% { opacity: 0.95; }
+      50% { opacity: 0.52; }
+      100% { opacity: 0.95; }
+    }
+    .recDot {
+      animation: recBlink 2.9s steps(1, end) -0.9s infinite;
+    }
+    @keyframes recBlink {
+      0% { opacity: 1; }
+      45% { opacity: 1; }
+      50% { opacity: 0.15; }
+      95% { opacity: 0.15; }
+      100% { opacity: 1; }
+    }
+    .telemLast {
+      animation: telemFlicker 5.9s ease-in-out -2.3s infinite;
+    }
+    @keyframes telemFlicker {
+      0% { opacity: 0.45; }
+      40% { opacity: 0.45; }
+      46% { opacity: 0.9; }
+      52% { opacity: 0.3; }
+      60% { opacity: 0.72; }
+      100% { opacity: 0.45; }
+    }
+    .bioBreath {
+      animation: bioBreath 8.3s ease-in-out -3.1s infinite;
+    }
+    @keyframes bioBreath {
+      0% { opacity: 0.72; }
+      50% { opacity: 1; }
+      100% { opacity: 0.72; }
+    }
+  </style>
+
+  <rect x="0" y="0" width="900" height="340" fill="#030806" />
+
+  <rect x="10" y="10" width="880" height="320" rx="12" fill="#06110c" />
+
+  <g clip-path="url(#cardClip)">
+
+    <rect x="10" y="10" width="880" height="44" fill="#0b7a3f" opacity="0.18" />
+    <rect x="10" y="53.4" width="880" height="1" fill="#16d67a" opacity="0.30" />
+
+    <text x="30" y="37" font-size="13" letter-spacing="4" fill="#4dffa6">CLASSIFIED // LEVEL 5 // EYES ONLY</text>
+
+    <g class="stamp" transform="rotate(-8 798 32)">
+      <rect x="736" y="14" width="124" height="36" rx="2" fill="none" stroke="#ff2e88" stroke-width="2" opacity="0.9" />
+      <rect x="741" y="19" width="114" height="26" rx="1" fill="none" stroke="#ff2e88" stroke-width="0.7" opacity="0.55" />
+      <rect x="736" y="14" width="124" height="36" rx="2" fill="#ff2e88" opacity="0.07" />
+      <text x="795" y="39" font-size="18" letter-spacing="6" text-anchor="middle" fill="#ff2e88">ACTIVE</text>
+    </g>
+
+    <rect x="30" y="70" width="150" height="180" rx="2" fill="#030806" stroke="#0d2a1c" stroke-width="1.5" />
+
+    <g clip-path="url(#portClip)" class="bioBreath">
+      <circle cx="105" cy="152" r="10" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.30" />
+      <circle cx="105" cy="152" r="18" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.26" />
+      <circle cx="105" cy="152" r="26" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.24" />
+      <circle cx="105" cy="152" r="34" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.21" />
+      <circle cx="105" cy="152" r="42" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.18" />
+      <circle cx="105" cy="152" r="50" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.16" />
+      <circle cx="105" cy="152" r="58" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.13" />
+      <circle cx="105" cy="152" r="66" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.11" />
+      <circle cx="105" cy="152" r="74" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.09" />
+      <circle cx="105" cy="152" r="82" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.07" />
+
+      <circle cx="128" cy="124" r="14" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.13" />
+      <circle cx="128" cy="124" r="24" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.11" />
+      <circle cx="128" cy="124" r="34" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.09" />
+      <circle cx="128" cy="124" r="44" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.08" />
+      <circle cx="128" cy="124" r="54" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.06" />
+
+      <circle cx="78" cy="196" r="12" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.12" />
+      <circle cx="78" cy="196" r="22" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.10" />
+      <circle cx="78" cy="196" r="32" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.09" />
+      <circle cx="78" cy="196" r="42" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.07" />
+      <circle cx="78" cy="196" r="52" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.06" />
+
+      <path d="M 45 160 A 60 60 0 0 1 165 160" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.14" />
+      <path d="M 51 176 A 54 54 0 0 0 159 176" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.12" />
+      <path d="M 39 128 A 66 66 0 0 1 171 128" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.11" />
+      <path d="M 57 204 A 48 48 0 0 0 153 204" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.10" />
+      <path d="M 33 108 A 72 72 0 0 1 177 108" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.09" />
+      <path d="M 63 220 A 42 42 0 0 0 147 220" fill="none" stroke="#16d67a" stroke-width="0.7" opacity="0.08" />
+
+      <ellipse cx="105" cy="150" rx="36" ry="48" fill="none" stroke="#16d67a" stroke-width="1" opacity="0.30" />
+      <path d="M 72 166 C 76 200 90 214 105 214 C 120 214 134 200 138 166" fill="none" stroke="#16d67a" stroke-width="0.9" opacity="0.26" />
+      <path d="M 78 128 C 86 121 96 120 102 124" fill="none" stroke="#16d67a" stroke-width="0.9" opacity="0.24" />
+      <path d="M 132 128 C 124 121 114 120 108 124" fill="none" stroke="#16d67a" stroke-width="0.9" opacity="0.24" />
+      <ellipse cx="90" cy="142" rx="9" ry="5" fill="none" stroke="#16d67a" stroke-width="0.9" opacity="0.32" />
+      <ellipse cx="120" cy="142" rx="9" ry="5" fill="none" stroke="#16d67a" stroke-width="0.9" opacity="0.32" />
+      <circle cx="90" cy="142" r="2.2" fill="#4dffa6" opacity="0.42" />
+      <circle cx="120" cy="142" r="2.2" fill="#4dffa6" opacity="0.42" />
+      <path d="M 105 140 L 105 164 L 99 168" fill="none" stroke="#16d67a" stroke-width="0.9" opacity="0.26" />
+      <path d="M 92 182 C 98 186 112 186 118 182" fill="none" stroke="#16d67a" stroke-width="0.9" opacity="0.26" />
+      <path d="M 71 118 C 88 112 122 112 139 118" fill="none" stroke="#16d67a" stroke-width="0.6" opacity="0.16" />
+      <path d="M 69 134 C 88 128 122 128 141 134" fill="none" stroke="#16d67a" stroke-width="0.6" opacity="0.16" />
+      <path d="M 69 152 C 88 146 122 146 141 152" fill="none" stroke="#16d67a" stroke-width="0.6" opacity="0.16" />
+      <path d="M 71 170 C 88 164 122 164 139 170" fill="none" stroke="#16d67a" stroke-width="0.6" opacity="0.16" />
+      <path d="M 76 188 C 90 182 120 182 134 188" fill="none" stroke="#16d67a" stroke-width="0.6" opacity="0.16" />
+      <path d="M 105 102 C 96 128 96 176 105 214" fill="none" stroke="#16d67a" stroke-width="0.6" opacity="0.16" />
+      <path d="M 105 102 C 114 128 114 176 105 214" fill="none" stroke="#16d67a" stroke-width="0.6" opacity="0.16" />
+      <path d="M 88 106 C 78 132 78 178 90 208" fill="none" stroke="#16d67a" stroke-width="0.6" opacity="0.12" />
+      <path d="M 122 106 C 132 132 132 178 120 208" fill="none" stroke="#16d67a" stroke-width="0.6" opacity="0.12" />
+    </g>
+
+    <g clip-path="url(#portClip)">
+      <g>
+        <rect x="30" y="-22" width="150" height="22" fill="url(#scanFade)" />
+        <rect x="30" y="0" width="150" height="1.4" fill="#ccffe5" opacity="0.85" />
+        <rect x="30" y="1.4" width="150" height="3" fill="#4dffa6" opacity="0.22" />
+        <animateTransform attributeName="transform" type="translate" values="0 68;0 252" dur="3.1s" repeatCount="indefinite" />
+      </g>
+    </g>
+
+    <path d="M 30 88 L 30 70 L 48 70" fill="none" stroke="#4dffa6" stroke-width="1.6" opacity="0.8" />
+    <path d="M 162 70 L 180 70 L 180 88" fill="none" stroke="#4dffa6" stroke-width="1.6" opacity="0.8" />
+    <path d="M 180 232 L 180 250 L 162 250" fill="none" stroke="#4dffa6" stroke-width="1.6" opacity="0.8" />
+    <path d="M 48 250 L 30 250 L 30 232" fill="none" stroke="#4dffa6" stroke-width="1.6" opacity="0.8" />
+
+    <text x="30" y="266" font-size="10" letter-spacing="1.2" fill="#0b7a3f">BIOMETRIC HASH 9f4c-11ae</text>
+
+    <text x="214" y="92" font-size="13" letter-spacing="1" fill="#0b7a3f">CODENAME</text>
+    <text x="340" y="92" font-size="13" letter-spacing="1" fill="#4dffa6">хофа</text>
+
+    <text x="214" y="115" font-size="13" letter-spacing="1" fill="#0b7a3f">HANDLE</text>
+    <text x="340" y="115" font-size="13" letter-spacing="1" fill="#4dffa6">Secoolioo</text>
+
+    <text x="214" y="138" font-size="13" letter-spacing="1" fill="#0b7a3f">ORIGIN</text>
+    <text x="340" y="138" font-size="13" letter-spacing="1" fill="#4dffa6">GERMANY, EU</text>
+    <rect x="338.5" y="126.5" width="53" height="14" fill="#0b7a3f">
+      <animate attributeName="width" values="53;53;0;0;53;53" keyTimes="0;0.18;0.225;0.30;0.345;1" dur="9.7s" repeatCount="indefinite" />
+    </rect>
+
+    <text x="214" y="161" font-size="13" letter-spacing="1" fill="#0b7a3f">CLEARANCE</text>
+    <text x="340" y="161" font-size="13" letter-spacing="1" fill="#4dffa6">root</text>
+
+    <text x="214" y="184" font-size="13" letter-spacing="1" fill="#0b7a3f">SPECIALTY</text>
+    <text x="340" y="184" font-size="13" letter-spacing="1" fill="#4dffa6">python / windows / automation</text>
+
+    <text x="214" y="207" font-size="13" letter-spacing="1" fill="#0b7a3f">LAST SEEN</text>
+    <text x="340" y="207" font-size="13" letter-spacing="1" fill="#4dffa6">git push --force</text>
+
+    <text x="214" y="230" font-size="13" letter-spacing="1" fill="#0b7a3f">THREAT</text>
+    <text x="340" y="230" font-size="13" letter-spacing="1" fill="#ff2e88">EXTREME</text>
+    <rect x="338.5" y="218.5" width="66" height="14" fill="#0b7a3f">
+      <animate attributeName="width" values="66;66;0;0;66;66" keyTimes="0;0.60;0.645;0.72;0.765;1" dur="9.7s" repeatCount="indefinite" />
+    </rect>
+
+    <rect x="618" y="74" width="1" height="150" fill="#0d2a1c" />
+    <circle cx="642" cy="74.5" r="3" fill="#ffb020" class="recDot" />
+    <text x="654" y="78" font-size="10" letter-spacing="1.4" fill="#0b7a3f" opacity="0.7">// TELEMETRY</text>
+    <text x="642" y="100" font-size="10" letter-spacing="0.8" fill="#0b7a3f" opacity="0.45">0x7F3A  9C 4E 11 AE 02 D4</text>
+    <text x="642" y="120" font-size="10" letter-spacing="0.8" fill="#0b7a3f" opacity="0.45">0x7F42  6B 88 F0 12 5C 90</text>
+    <text x="642" y="140" font-size="10" letter-spacing="0.8" fill="#0b7a3f" opacity="0.45">0x7F4A  A1 33 7D EE 4B 08</text>
+    <text x="642" y="160" font-size="10" letter-spacing="0.8" fill="#0b7a3f" opacity="0.45">0x7F52  20 C9 15 6F B2 77</text>
+    <text x="642" y="180" font-size="10" letter-spacing="0.8" fill="#0b7a3f" opacity="0.45">0x7F5A  E8 04 9A 3C D1 56</text>
+    <text x="642" y="200" font-size="10" letter-spacing="0.8" fill="#0b7a3f" opacity="0.45" class="telemLast">0x7F62  17 BD 62 08 FF 29</text>
+    <text x="642" y="220" font-size="10" letter-spacing="0.8" fill="#0b7a3f" opacity="0.28">0x7F6A  4D 91 C0 7E 35 BA</text>
+
+    <g transform="translate(872,86) rotate(90)">
+      <text x="0" y="0" font-size="10" letter-spacing="2" fill="#0b7a3f" opacity="0.5">// DOSSIER 0075</text>
+    </g>
+
+    <g fill="#16d67a" opacity="0.55">
+      <use href="#barcodeBars" xlink:href="#barcodeBars" />
+    </g>
+    <g fill="#ccffe5" mask="url(#barcodeMask)">
+      <use href="#barcodeBars" xlink:href="#barcodeBars" />
+    </g>
+
+    <text x="30" y="320" font-size="10" letter-spacing="2" fill="#0b7a3f">SC-0075-XOFA-2K26</text>
+    <text x="742" y="320" font-size="10" letter-spacing="2" fill="#0b7a3f" opacity="0.55">AUTH OMEGA-9</text>
+
+    <rect x="10" y="10" width="880" height="320" fill="url(#crt)" opacity="0.35" />
+    <rect x="10" y="10" width="880" height="320" fill="url(#holoSheen)" />
+
+    <rect x="19" y="19" width="862" height="302" rx="9" fill="none" stroke="#16d67a" stroke-width="1" opacity="0.22" stroke-dasharray="12 10">
+      <animate attributeName="stroke-dashoffset" values="0;-44" dur="5.1s" repeatCount="indefinite" />
+    </rect>
+    <rect x="23" y="23" width="854" height="294" rx="7" fill="none" stroke="#0d2a1c" stroke-width="1" opacity="0.7" />
+  </g>
+
+  <g clip-path="url(#cardClip)">
+    <g clip-path="url(#glitchA)" opacity="0">
+      <g transform="translate(8,0)">
+        <rect x="10" y="10" width="880" height="320" rx="12" fill="#06110c" />
+        <rect x="30" y="70" width="150" height="180" rx="2" fill="#030806" stroke="#0d2a1c" stroke-width="1.5" />
+        <circle cx="105" cy="152" r="42" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.18" />
+        <circle cx="105" cy="152" r="58" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.13" />
+        <ellipse cx="105" cy="150" rx="36" ry="48" fill="none" stroke="#16d67a" stroke-width="1" opacity="0.30" />
+        <text x="214" y="115" font-size="13" letter-spacing="1" fill="#0b7a3f">HANDLE</text>
+        <text x="340" y="115" font-size="13" letter-spacing="1" fill="#4dffa6">Secoolioo</text>
+        <text x="642" y="120" font-size="10" letter-spacing="0.8" fill="#0b7a3f" opacity="0.45">0x7F42  6B 88 F0 12 5C 90</text>
+      </g>
+      <rect x="10" y="100" width="880" height="17" fill="#22d3ee" opacity="0.22" />
+      <animate attributeName="opacity" values="0;1;0;1;0;0" keyTimes="0;0.310;0.319;0.700;0.712;1" calcMode="discrete" dur="11.9s" repeatCount="indefinite" />
+    </g>
+
+    <g clip-path="url(#glitchB)" opacity="0">
+      <g transform="translate(-7,0)">
+        <rect x="10" y="10" width="880" height="320" rx="12" fill="#06110c" />
+        <rect x="30" y="70" width="150" height="180" rx="2" fill="#030806" stroke="#0d2a1c" stroke-width="1.5" />
+        <circle cx="105" cy="152" r="50" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.16" />
+        <circle cx="105" cy="152" r="66" fill="none" stroke="#16d67a" stroke-width="0.8" opacity="0.11" />
+        <path d="M 72 166 C 76 200 90 214 105 214 C 120 214 134 200 138 166" fill="none" stroke="#16d67a" stroke-width="0.9" opacity="0.26" />
+        <text x="214" y="207" font-size="13" letter-spacing="1" fill="#0b7a3f">LAST SEEN</text>
+        <text x="340" y="207" font-size="13" letter-spacing="1" fill="#4dffa6">git push --force</text>
+        <text x="642" y="200" font-size="10" letter-spacing="0.8" fill="#0b7a3f" opacity="0.45">0x7F62  17 BD 62 08 FF 29</text>
+      </g>
+      <rect x="10" y="196" width="880" height="13" fill="#ff2e88" opacity="0.20" />
+      <animate attributeName="opacity" values="0;1;0;1;0;0" keyTimes="0;0.313;0.321;0.703;0.716;1" calcMode="discrete" dur="11.9s" repeatCount="indefinite" />
+    </g>
+  </g>
+
+  <rect x="10" y="10" width="880" height="320" rx="12" fill="none" stroke="#16d67a" stroke-width="1.5" opacity="0.45" />
+</svg>

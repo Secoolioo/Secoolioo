@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460" role="img" aria-label="Animated terminal session: neofetch, motd and skills listing">
+<title>zsh session — secoolioo</title>
+<defs>
+<linearGradient id="str" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#16d67a" stop-opacity="0"/>
+<stop offset="0.60" stop-color="#16d67a" stop-opacity="0.42"/>
+<stop offset="0.93" stop-color="#4dffa6" stop-opacity="0.95"/>
+<stop offset="1" stop-color="#ccffe5" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="swp" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#4dffa6" stop-opacity="0"/>
+<stop offset="0.5" stop-color="#4dffa6" stop-opacity="0.06"/>
+<stop offset="1" stop-color="#4dffa6" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#0b7a3f" stop-opacity="0.30"/>
+<stop offset="0.55" stop-color="#0b7a3f" stop-opacity="0.10"/>
+<stop offset="1" stop-color="#0b7a3f" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#16d67a" stop-opacity="0.16"/>
+<stop offset="1" stop-color="#16d67a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="vig" cx="0.5" cy="0.46" r="0.74">
+<stop offset="0.5" stop-color="#000000" stop-opacity="0"/>
+<stop offset="1" stop-color="#000000" stop-opacity="0.42"/>
+</radialGradient>
+<pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse">
+<rect x="0" y="0" width="4" height="1" fill="#4dffa6"/>
+</pattern>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+<rect x="0" y="0" width="1" height="1" fill="#16d67a"/>
+</pattern>
+<clipPath id="cc"><path d="M6 41 H894 V442 A12 12 0 0 1 882 454 H18 A12 12 0 0 1 6 442 Z"/></clipPath>
+<clipPath id="cp"><rect x="6" y="6" width="888" height="448" rx="12"/></clipPath>
+<filter id="gl" x="-120%" y="-120%" width="340%" height="340%" color-interpolation-filters="sRGB">
+<feGaussianBlur stdDeviation="2.4" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="sb" x="-200%" y="-30%" width="500%" height="160%" color-interpolation-filters="sRGB">
+<feGaussianBlur stdDeviation="1.7"/>
+</filter>
+<filter id="ds" x="-8%" y="-8%" width="116%" height="116%" color-interpolation-filters="sRGB">
+<feDropShadow dx="0" dy="5" stdDeviation="9" flood-color="#0b7a3f" flood-opacity="0.16"/>
+</filter>
+<style><![CDATA[
+.mn{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace}
+.t{font-size:14.5px}
+.tt{font-size:12px}
+.tg{font-size:12px}
+.k{animation-duration:26s;animation-timing-function:linear;animation-iteration-count:infinite;animation-delay:-14.2s;animation-fill-mode:both}
+.sl{animation-timing-function:cubic-bezier(.16,.9,.3,1)}
+#sess{animation-name:sess}
+.p1{animation-name:p1}
+.p2{animation-name:p2}
+.p3{animation-name:p3}
+.fp{animation-name:fp}
+.o2{animation-name:o2}
+.o3{animation-name:o3}
+.o4{animation-name:o4}
+.o5{animation-name:o5}
+.o6{animation-name:o6}
+.o7{animation-name:o7}
+.o9{animation-name:o9}
+.y1{animation-name:y1;animation-timing-function:steps(15,end)}
+.y2{animation-name:y2;animation-timing-function:steps(13,end)}
+.y3{animation-name:y3;animation-timing-function:steps(11,end)}
+.c1{animation-name:c1}
+.c2{animation-name:c2}
+.c3{animation-name:c3}
+@keyframes sess{0%,96.1%{opacity:1}100%{opacity:0}}
+@keyframes p1{0%,1.9%{opacity:0}2.9%,100%{opacity:1}}
+@keyframes y1{0%,3.27%{transform:translateX(0)}9.04%,100%{transform:translateX(130.5px)}}
+@keyframes c1{0%,3.1%{opacity:0}3.3%,9.1%{opacity:.85}9.7%,100%{opacity:0}}
+@keyframes o2{0%,10.19%{opacity:0;transform:translateX(-11px)}11.35%,100%{opacity:1;transform:translateX(0)}}
+@keyframes o3{0%,11.27%{opacity:0;transform:translateX(-11px)}12.42%,100%{opacity:1;transform:translateX(0)}}
+@keyframes o4{0%,12.46%{opacity:0;transform:translateX(-11px)}13.62%,100%{opacity:1;transform:translateX(0)}}
+@keyframes o5{0%,13.77%{opacity:0;transform:translateX(-11px)}14.92%,100%{opacity:1;transform:translateX(0)}}
+@keyframes o6{0%,14.96%{opacity:0;transform:translateX(-11px)}16.12%,100%{opacity:1;transform:translateX(0)}}
+@keyframes o7{0%,16.27%{opacity:0;transform:translateX(-11px)}17.42%,100%{opacity:1;transform:translateX(0)}}
+@keyframes p2{0%,20.96%{opacity:0}21.92%,100%{opacity:1}}
+@keyframes y2{0%,22.31%{transform:translateX(0)}27.31%,100%{transform:translateX(113.1px)}}
+@keyframes c2{0%,22.15%{opacity:0}22.35%,27.4%{opacity:.85}27.95%,100%{opacity:0}}
+@keyframes o9{0%,29.04%{opacity:0;transform:translateX(-11px)}30.58%,100%{opacity:1;transform:translateX(0)}}
+@keyframes p3{0%,33.65%{opacity:0}34.62%,100%{opacity:1}}
+@keyframes y3{0%,35%{transform:translateX(0)}39.23%,100%{transform:translateX(95.7px)}}
+@keyframes c3{0%,34.85%{opacity:0}35.05%,39.3%{opacity:.85}39.85%,100%{opacity:0}}
+@keyframes fp{0%,48.46%{opacity:0}49.62%,100%{opacity:1}}
+.cur{animation:blink 1.06s steps(1,end) infinite}
+@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}
+.rn{animation-name:fall;animation-timing-function:linear;animation-iteration-count:infinite}
+@keyframes fall{from{transform:translateY(-200px)}to{transform:translateY(420px)}}
+.r1{animation-duration:6.9s;animation-delay:-1.2s;opacity:.20}
+.r2{animation-duration:9.4s;animation-delay:-4.7s;opacity:.13}
+.r3{animation-duration:7.7s;animation-delay:-.4s;opacity:.23}
+.r4{animation-duration:11.3s;animation-delay:-6.1s;opacity:.11}
+.r5{animation-duration:8.6s;animation-delay:-2.9s;opacity:.17}
+.r6{animation-duration:12.7s;animation-delay:-8.3s;opacity:.14}
+.r7{animation-duration:7.1s;animation-delay:-5.5s;opacity:.21}
+.r8{animation-duration:10.2s;animation-delay:-3.1s;opacity:.12}
+.r9{animation-duration:13.4s;animation-delay:-9.8s;opacity:.18}
+.r10{animation-duration:8.1s;animation-delay:-6.6s;opacity:.15}
+.sw{animation:sweep 8.7s linear infinite}
+@keyframes sweep{from{transform:translateY(-130px)}to{transform:translateY(480px)}}
+.sc{animation:flick 5.9s steps(1) infinite}
+@keyframes flick{0%,100%{opacity:.06}18%{opacity:.078}37%{opacity:.048}56%{opacity:.086}74%{opacity:.055}}
+.gA{animation:glA 7.3s linear infinite}
+@keyframes glA{0%,11%{opacity:0;transform:translateY(0)}11.5%,12.4%{opacity:.5;transform:translateY(0)}13%,45%{opacity:0;transform:translateY(0)}45.6%,46.4%{opacity:.42;transform:translateY(134px)}47%,79%{opacity:0;transform:translateY(134px)}79.6%,80.4%{opacity:.46;transform:translateY(291px)}81%,100%{opacity:0;transform:translateY(291px)}}
+.gB{animation:glB 11.9s linear infinite}
+@keyframes glB{0%,26%{opacity:0;transform:translateY(0)}26.6%,27.3%{opacity:.34;transform:translateY(0)}27.9%,68%{opacity:0;transform:translateY(0)}68.6%,69.4%{opacity:.3;transform:translateY(212px)}70%,100%{opacity:0;transform:translateY(212px)}}
+.gm{animation:rgbs 6.7s steps(1) infinite}
+.gc{animation:rgbs 6.7s steps(1) infinite;animation-delay:-.05s}
+@keyframes rgbs{0%,95.4%{opacity:0}95.9%{opacity:.5}96.6%{opacity:0}97.3%{opacity:.38}98%,100%{opacity:0}}
+.d{animation:dot 3.7s ease-in-out infinite}
+.d2{animation-duration:4.9s}
+.d3{animation-duration:6.1s}
+@keyframes dot{0%,100%{opacity:.92}50%{opacity:.5}}
+.sbt{animation:sbd 13.7s ease-in-out infinite}
+@keyframes sbd{0%,100%{transform:translateY(0)}50%{transform:translateY(20px)}}
+]]></style>
+</defs>
+
+<rect x="0" y="0" width="900" height="460" fill="#030806"/>
+<rect x="6" y="6" width="888" height="448" rx="12" fill="#030806" filter="url(#ds)"/>
+<rect x="6" y="6" width="888" height="448" rx="12" fill="#06110c" stroke="#0d2a1c" stroke-width="1"/>
+
+<g clip-path="url(#cc)">
+<rect x="470" y="41" width="424" height="413" fill="url(#dots)" opacity="0.05"/>
+<ellipse cx="740" cy="112" rx="300" ry="200" fill="url(#glowA)"/>
+<ellipse cx="150" cy="472" rx="240" ry="112" fill="url(#glowB)"/>
+<rect class="rn r1" x="500" y="41" width="1.5" height="150" fill="url(#str)"/>
+<rect class="rn r2" x="536" y="41" width="3" height="110" fill="url(#str)" filter="url(#sb)"/>
+<rect class="rn r3" x="572" y="41" width="2" height="175" fill="url(#str)"/>
+<rect class="rn r4" x="610" y="41" width="3" height="125" fill="url(#str)" filter="url(#sb)"/>
+<rect class="rn r5" x="648" y="41" width="1.5" height="160" fill="url(#str)"/>
+<rect class="rn r6" x="686" y="41" width="1" height="100" fill="url(#str)"/>
+<rect class="rn r7" x="724" y="41" width="2" height="185" fill="url(#str)"/>
+<rect class="rn r8" x="762" y="41" width="3" height="135" fill="url(#str)" filter="url(#sb)"/>
+<rect class="rn r9" x="800" y="41" width="1.5" height="170" fill="url(#str)"/>
+<rect class="rn r10" x="840" y="41" width="1" height="115" fill="url(#str)"/>
+</g>
+
+<path d="M6 18 A12 12 0 0 1 18 6 H882 A12 12 0 0 1 894 18 V40 H6 Z" fill="#030806"/>
+<line x1="6" y1="40.5" x2="894" y2="40.5" stroke="#0d2a1c" stroke-width="1"/>
+<g filter="url(#gl)">
+<circle class="d" cx="26" cy="23" r="5.5" fill="#ff2e88"/>
+<circle class="d d2" cx="46" cy="23" r="5.5" fill="#ffb020"/>
+<circle class="d d3" cx="66" cy="23" r="5.5" fill="#16d67a"/>
+</g>
+<text class="mn tt gm" x="452" y="27" text-anchor="middle" fill="#ff2e88">— zsh — хофа@matrix — 120x40</text>
+<text class="mn tt gc" x="448" y="27" text-anchor="middle" fill="#22d3ee">— zsh — хофа@matrix — 120x40</text>
+<text class="mn tt" x="450" y="27" text-anchor="middle" fill="#0b7a3f">— zsh — хофа@matrix — 120x40</text>
+
+<g id="sess" class="k">
+
+<text class="mn t k p1" x="26" y="70" fill="#ccffe5">$</text>
+<text class="mn t k p1" x="43.5" y="70" fill="#4dffa6" textLength="130.5" lengthAdjust="spacing">neofetch --user</text>
+<g class="k y1">
+<rect x="43.5" y="55" width="170.5" height="21" fill="#06110c"/>
+<rect class="k c1" x="43.5" y="56" width="8.7" height="16" fill="#16d67a"/>
+</g>
+
+<text class="mn t k sl o2" x="26" y="92" xml:space="preserve"><tspan fill="#0b7a3f">  user .........</tspan><tspan fill="#16d67a"> хофа</tspan></text>
+<text class="mn t k sl o3" x="26" y="114" xml:space="preserve"><tspan fill="#0b7a3f">  handle .......</tspan><tspan fill="#16d67a"> secoolioo</tspan></text>
+<text class="mn t k sl o4" x="26" y="136" xml:space="preserve"><tspan fill="#0b7a3f">  shell ........</tspan><tspan fill="#16d67a"> pwsh + zsh + tmux</tspan></text>
+<text class="mn t k sl o5" x="26" y="158" xml:space="preserve"><tspan fill="#0b7a3f">  os ...........</tspan><tspan fill="#16d67a"> win11 / debian</tspan></text>
+<text class="mn t k sl o6" x="26" y="180" xml:space="preserve"><tspan fill="#0b7a3f">  editor .......</tspan><tspan fill="#16d67a"> vscode + neovim (when brave)</tspan></text>
+<text class="mn t k sl o7" x="26" y="202" xml:space="preserve"><tspan fill="#0b7a3f">  currently ....</tspan><tspan fill="#16d67a"> breaking prod, fixing prod</tspan></text>
+
+<text class="mn t k p2" x="26" y="246" fill="#ccffe5">$</text>
+<text class="mn t k p2" x="43.5" y="246" fill="#4dffa6" textLength="113.1" lengthAdjust="spacing">cat /etc/motd</text>
+<g class="k y2">
+<rect x="43.5" y="231" width="153.1" height="21" fill="#06110c"/>
+<rect class="k c2" x="43.5" y="232" width="8.7" height="16" fill="#16d67a"/>
+</g>
+
+<text class="mn t k sl o9" x="26" y="268" xml:space="preserve"><tspan fill="#0b7a3f">  "</tspan><tspan fill="#22d3ee">there is no spoon, only stack traces</tspan><tspan fill="#0b7a3f">"</tspan></text>
+
+<text class="mn t k p3" x="26" y="312" fill="#ccffe5">$</text>
+<text class="mn t k p3" x="43.5" y="312" fill="#4dffa6" textLength="95.7" lengthAdjust="spacing">ls ~/skills</text>
+<g class="k y3">
+<rect x="43.5" y="297" width="135.7" height="21" fill="#06110c"/>
+<rect class="k c3" x="43.5" y="298" width="8.7" height="16" fill="#16d67a"/>
+</g>
+
+<g transform="translate(74.5,334)"><g class="tag">
+<rect x="-30.5" y="-10" width="61" height="20" rx="4" fill="#0b7a3f" fill-opacity="0.18" stroke="#0b7a3f"/>
+<text class="mn tg" x="0" y="4" text-anchor="middle" fill="#4dffa6">python</text>
+<animateTransform attributeName="transform" type="scale" dur="26s" begin="-14.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4058;0.4181;1" values="0.8;0.8;1;1" keySplines="0 0 1 1;0.16 0.9 0.3 1;0 0 1 1"/>
+<animate attributeName="opacity" dur="26s" begin="-14.2s" repeatCount="indefinite" keyTimes="0;0.4058;0.4181;1" values="0;0;1;1"/>
+</g></g>
+<g transform="translate(138.5,334)"><g class="tag">
+<rect x="-23.5" y="-10" width="47" height="20" rx="4" fill="#0b7a3f" fill-opacity="0.18" stroke="#0b7a3f"/>
+<text class="mn tg" x="0" y="4" text-anchor="middle" fill="#4dffa6">java</text>
+<animateTransform attributeName="transform" type="scale" dur="26s" begin="-14.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4108;0.4231;1" values="0.8;0.8;1;1" keySplines="0 0 1 1;0.16 0.9 0.3 1;0 0 1 1"/>
+<animate attributeName="opacity" dur="26s" begin="-14.2s" repeatCount="indefinite" keyTimes="0;0.4108;0.4231;1" values="0;0;1;1"/>
+</g></g>
+<g transform="translate(217,334)"><g class="tag">
+<rect x="-45" y="-10" width="90" height="20" rx="4" fill="#0b7a3f" fill-opacity="0.18" stroke="#0b7a3f"/>
+<text class="mn tg" x="0" y="4" text-anchor="middle" fill="#4dffa6">powershell</text>
+<animateTransform attributeName="transform" type="scale" dur="26s" begin="-14.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4158;0.4281;1" values="0.8;0.8;1;1" keySplines="0 0 1 1;0.16 0.9 0.3 1;0 0 1 1"/>
+<animate attributeName="opacity" dur="26s" begin="-14.2s" repeatCount="indefinite" keyTimes="0;0.4158;0.4281;1" values="0;0;1;1"/>
+</g></g>
+<g transform="translate(288.5,334)"><g class="tag">
+<rect x="-16.5" y="-10" width="33" height="20" rx="4" fill="#0b7a3f" fill-opacity="0.18" stroke="#0b7a3f"/>
+<text class="mn tg" x="0" y="4" text-anchor="middle" fill="#4dffa6">go</text>
+<animateTransform attributeName="transform" type="scale" dur="26s" begin="-14.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4208;0.4331;1" values="0.8;0.8;1;1" keySplines="0 0 1 1;0.16 0.9 0.3 1;0 0 1 1"/>
+<animate attributeName="opacity" dur="26s" begin="-14.2s" repeatCount="indefinite" keyTimes="0;0.4208;0.4331;1" values="0;0;1;1"/>
+</g></g>
+
+<g transform="translate(74.5,360)"><g class="tag">
+<rect x="-30.5" y="-10" width="61" height="20" rx="4" fill="#0b7a3f" fill-opacity="0.18" stroke="#0b7a3f"/>
+<text class="mn tg" x="0" y="4" text-anchor="middle" fill="#4dffa6">win32</text>
+<animateTransform attributeName="transform" type="scale" dur="26s" begin="-14.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4265;0.4388;1" values="0.8;0.8;1;1" keySplines="0 0 1 1;0.16 0.9 0.3 1;0 0 1 1"/>
+<animate attributeName="opacity" dur="26s" begin="-14.2s" repeatCount="indefinite" keyTimes="0;0.4265;0.4388;1" values="0;0;1;1"/>
+</g></g>
+<g transform="translate(135,360)"><g class="tag">
+<rect x="-20" y="-10" width="40" height="20" rx="4" fill="#0b7a3f" fill-opacity="0.18" stroke="#0b7a3f"/>
+<text class="mn tg" x="0" y="4" text-anchor="middle" fill="#4dffa6">sql</text>
+<animateTransform attributeName="transform" type="scale" dur="26s" begin="-14.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4315;0.4438;1" values="0.8;0.8;1;1" keySplines="0 0 1 1;0.16 0.9 0.3 1;0 0 1 1"/>
+<animate attributeName="opacity" dur="26s" begin="-14.2s" repeatCount="indefinite" keyTimes="0;0.4315;0.4438;1" values="0;0;1;1"/>
+</g></g>
+<g transform="translate(206.5,360)"><g class="tag">
+<rect x="-41.5" y="-10" width="83" height="20" rx="4" fill="#0b7a3f" fill-opacity="0.18" stroke="#0b7a3f"/>
+<text class="mn tg" x="0" y="4" text-anchor="middle" fill="#4dffa6">automate</text>
+<animateTransform attributeName="transform" type="scale" dur="26s" begin="-14.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4365;0.4488;1" values="0.8;0.8;1;1" keySplines="0 0 1 1;0.16 0.9 0.3 1;0 0 1 1"/>
+<animate attributeName="opacity" dur="26s" begin="-14.2s" repeatCount="indefinite" keyTimes="0;0.4365;0.4488;1" values="0;0;1;1"/>
+</g></g>
+<g transform="translate(274.5,360)"><g class="tag">
+<rect x="-16.5" y="-10" width="33" height="20" rx="4" fill="#0b7a3f" fill-opacity="0.18" stroke="#0b7a3f"/>
+<text class="mn tg" x="0" y="4" text-anchor="middle" fill="#4dffa6">ci</text>
+<animateTransform attributeName="transform" type="scale" dur="26s" begin="-14.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4415;0.4538;1" values="0.8;0.8;1;1" keySplines="0 0 1 1;0.16 0.9 0.3 1;0 0 1 1"/>
+<animate attributeName="opacity" dur="26s" begin="-14.2s" repeatCount="indefinite" keyTimes="0;0.4415;0.4538;1" values="0;0;1;1"/>
+</g></g>
+
+<g transform="translate(92.5,386)"><g class="tag">
+<rect x="-48.5" y="-10" width="97" height="20" rx="4" fill="#0b7a3f" fill-opacity="0.18" stroke="#0b7a3f"/>
+<text class="mn tg" x="0" y="4" text-anchor="middle" fill="#4dffa6">minecraft</text>
+<animateTransform attributeName="transform" type="scale" dur="26s" begin="-14.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4473;0.4596;1" values="0.8;0.8;1;1" keySplines="0 0 1 1;0.16 0.9 0.3 1;0 0 1 1"/>
+<animate attributeName="opacity" dur="26s" begin="-14.2s" repeatCount="indefinite" keyTimes="0;0.4473;0.4596;1" values="0;0;1;1"/>
+</g></g>
+<g transform="translate(196,386)"><g class="tag">
+<rect x="-45" y="-10" width="90" height="20" rx="4" fill="#0b7a3f" fill-opacity="0.18" stroke="#0b7a3f"/>
+<text class="mn tg" x="0" y="4" text-anchor="middle" fill="#4dffa6">home-lab</text>
+<animateTransform attributeName="transform" type="scale" dur="26s" begin="-14.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4523;0.4646;1" values="0.8;0.8;1;1" keySplines="0 0 1 1;0.16 0.9 0.3 1;0 0 1 1"/>
+<animate attributeName="opacity" dur="26s" begin="-14.2s" repeatCount="indefinite" keyTimes="0;0.4523;0.4646;1" values="0;0;1;1"/>
+</g></g>
+<g transform="translate(285,386)"><g class="tag">
+<rect x="-34" y="-10" width="68" height="20" rx="4" fill="#0b7a3f" fill-opacity="0.18" stroke="#0b7a3f"/>
+<text class="mn tg" x="0" y="4" text-anchor="middle" fill="#4dffa6">solar</text>
+<animateTransform attributeName="transform" type="scale" dur="26s" begin="-14.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.4573;0.4696;1" values="0.8;0.8;1;1" keySplines="0 0 1 1;0.16 0.9 0.3 1;0 0 1 1"/>
+<animate attributeName="opacity" dur="26s" begin="-14.2s" repeatCount="indefinite" keyTimes="0;0.4573;0.4696;1" values="0;0;1;1"/>
+</g></g>
+
+<g class="k fp">
+<text class="mn t" x="26" y="422" fill="#ccffe5">$</text>
+<rect class="cur" x="43.5" y="409" width="8.7" height="16" fill="#4dffa6" filter="url(#gl)"/>
+</g>
+
+</g>
+
+<rect x="878" y="50" width="4" height="396" rx="2" fill="#0d2a1c"/>
+<rect class="sbt" x="878" y="286" width="4" height="150" rx="2" fill="#0b7a3f" opacity="0.55"/>
+
+<g clip-path="url(#cc)">
+<rect class="sw" x="6" y="41" width="888" height="120" fill="url(#swp)"/>
+<rect class="gA" x="6" y="96" width="888" height="2" fill="#ff2e88"/>
+<rect class="gB" x="6" y="152" width="888" height="3" fill="#22d3ee"/>
+</g>
+
+<rect class="sc" x="6" y="41" width="888" height="413" fill="url(#scan)" clip-path="url(#cc)"/>
+<rect x="6" y="6" width="888" height="448" rx="12" fill="url(#vig)" clip-path="url(#cp)"/>
+<rect x="6" y="6" width="888" height="448" rx="12" fill="none" stroke="#0d2a1c" stroke-width="1"/>
+</svg>

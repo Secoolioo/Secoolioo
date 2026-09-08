@@ -1,0 +1,79 @@
+# Live assets
+#
+# Regenerates the data-driven profile SVGs in assets/ and commits them back to main.
+# Runs every 3 hours on a schedule, on manual dispatch, and whenever the generator
+# scripts or this workflow change.
+#
+# Each generator runs in its own step with continue-on-error: true, so a single failing
+# API call cannot block the remaining generators.
+#
+# GITHUB_TOKEN is the automatic token GitHub Actions provides for every run --
+# no manual secret needs to be configured.
+
+name: live assets
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - ".github/workflows/live.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-assets
+  cancel-in-progress: false
+
+jobs:
+  live-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate live HUD
+        continue-on-error: true
+        run: node scripts/gen-live-hud.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+
+      - name: Generate repo rain
+        continue-on-error: true
+        run: node scripts/gen-repo-rain.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+
+      - name: Generate contribution pulse
+        continue-on-error: true
+        run: node scripts/gen-contrib-pulse.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+
+      - name: Generate language cores
+        continue-on-error: true
+        run: node scripts/gen-lang-cores.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+
+      - name: Commit and push assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git diff --staged --quiet || git commit -m "chore: refresh live assets [skip ci]"
+          git push

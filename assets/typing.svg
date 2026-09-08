@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="130" viewBox="0 0 900 130" role="img" aria-label="terminal typing animation">
+<title>хофа@matrix</title>
+<style><![CDATA[
+.mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace}
+.ln{font-size:22px;fill:#4dffa6;white-space:pre}
+.pr{font-size:22px}
+@keyframes t1{
+0%{width:4px;animation-timing-function:steps(16,end)}
+10%{width:215.2px;animation-timing-function:steps(1,end)}
+19%{width:215.2px;animation-timing-function:steps(16,end)}
+24%{width:4px;animation-timing-function:steps(1,end)}
+100%{width:4px}
+}
+@keyframes t2{
+0%{width:4px;animation-timing-function:steps(37,end)}
+10%{width:492.4px;animation-timing-function:steps(1,end)}
+19%{width:492.4px;animation-timing-function:steps(37,end)}
+24%{width:4px;animation-timing-function:steps(1,end)}
+100%{width:4px}
+}
+@keyframes t3{
+0%{width:4px;animation-timing-function:steps(42,end)}
+10%{width:558.4px;animation-timing-function:steps(1,end)}
+19%{width:558.4px;animation-timing-function:steps(42,end)}
+24%{width:4px;animation-timing-function:steps(1,end)}
+100%{width:4px}
+}
+@keyframes t4{
+0%{width:4px;animation-timing-function:steps(15,end)}
+10%{width:202px;animation-timing-function:steps(1,end)}
+19%{width:202px;animation-timing-function:steps(15,end)}
+24%{width:4px;animation-timing-function:steps(1,end)}
+100%{width:4px}
+}
+@keyframes slot{0%{opacity:1}23%{opacity:1}24%{opacity:0}100%{opacity:0}}
+@keyframes caret{
+0%{transform:translateX(211.2px);animation-timing-function:steps(1,end)}
+6.5%{transform:translateX(211.2px);animation-timing-function:steps(16,end)}
+11.5%{transform:translateX(0px);animation-timing-function:steps(1,end)}
+12.5%{transform:translateX(0px);animation-timing-function:steps(37,end)}
+22.5%{transform:translateX(488.4px);animation-timing-function:steps(1,end)}
+31.5%{transform:translateX(488.4px);animation-timing-function:steps(37,end)}
+36.5%{transform:translateX(0px);animation-timing-function:steps(1,end)}
+37.5%{transform:translateX(0px);animation-timing-function:steps(42,end)}
+47.5%{transform:translateX(554.4px);animation-timing-function:steps(1,end)}
+56.5%{transform:translateX(554.4px);animation-timing-function:steps(42,end)}
+61.5%{transform:translateX(0px);animation-timing-function:steps(1,end)}
+62.5%{transform:translateX(0px);animation-timing-function:steps(15,end)}
+72.5%{transform:translateX(198px);animation-timing-function:steps(1,end)}
+81.5%{transform:translateX(198px);animation-timing-function:steps(15,end)}
+86.5%{transform:translateX(0px);animation-timing-function:steps(1,end)}
+87.5%{transform:translateX(0px);animation-timing-function:steps(16,end)}
+97.5%{transform:translateX(211.2px);animation-timing-function:steps(1,end)}
+100%{transform:translateX(211.2px)}
+}
+@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}
+@keyframes fall{from{transform:translateY(-110px)}to{transform:translateY(248px)}}
+@keyframes sweep{from{transform:translateY(-86px)}to{transform:translateY(146px)}}
+@keyframes rail{0%{transform:translateX(0)}50%{transform:translateX(757px)}100%{transform:translateX(0)}}
+@keyframes pulse{0%{opacity:.5}100%{opacity:1}}
+@keyframes mtr{0%{opacity:.22}50%{opacity:1}100%{opacity:.22}}
+.cr1{animation:t1 24s linear -3s infinite}
+.cr2{animation:t2 24s linear 3s infinite}
+.cr3{animation:t3 24s linear 9s infinite}
+.cr4{animation:t4 24s linear 15s infinite}
+.l1{animation:slot 24s steps(1,end) -3s infinite}
+.l2{animation:slot 24s steps(1,end) 3s infinite}
+.l3{animation:slot 24s steps(1,end) 9s infinite}
+.l4{animation:slot 24s steps(1,end) 15s infinite}
+.caret{animation:caret 24s linear 0s infinite,blink 1.05s steps(1,end) 0s infinite}
+.sweep{animation:sweep 9.7s linear -2.3s infinite}
+.rail{animation:rail 24s cubic-bezier(.45,0,.55,1) 0s infinite}
+.g1{animation:pulse 7.9s ease-in-out -1.4s infinite alternate}
+.g2{animation:pulse 6.3s ease-in-out -3.8s infinite alternate}
+.m1{animation:mtr 2.3s ease-in-out -0.7s infinite}
+.m2{animation:mtr 3.1s ease-in-out -1.9s infinite}
+.m3{animation:mtr 2.7s ease-in-out -0.3s infinite}
+]]></style>
+<defs>
+<clipPath id="pnl"><rect x="1" y="1" width="898" height="128" rx="10"/></clipPath>
+<clipPath id="c1"><rect class="cr1" x="220" y="62" width="4" height="40"/></clipPath>
+<clipPath id="c2"><rect class="cr2" x="220" y="62" width="4" height="40"/></clipPath>
+<clipPath id="c3"><rect class="cr3" x="220" y="62" width="4" height="40"/></clipPath>
+<clipPath id="c4"><rect class="cr4" x="220" y="62" width="4" height="40"/></clipPath>
+<pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+<path d="M30 0H0V30" fill="none" stroke="#0d2a1c" stroke-width="1"/>
+</pattern>
+<pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse">
+<rect width="4" height="1" fill="#0b7a3f" opacity="0.4"/>
+</pattern>
+<linearGradient id="rain" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#16d67a" stop-opacity="0"/>
+<stop offset="0.55" stop-color="#16d67a" stop-opacity="0.5"/>
+<stop offset="0.9" stop-color="#4dffa6" stop-opacity="0.95"/>
+<stop offset="1" stop-color="#ccffe5" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#16d67a" stop-opacity="0"/>
+<stop offset="0.5" stop-color="#16d67a" stop-opacity="0.055"/>
+<stop offset="1" stop-color="#16d67a" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="railg" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#16d67a" stop-opacity="0"/>
+<stop offset="0.5" stop-color="#4dffa6" stop-opacity="0.85"/>
+<stop offset="1" stop-color="#16d67a" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="amb" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#16d67a" stop-opacity="0.13"/>
+<stop offset="1" stop-color="#16d67a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="amc" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#22d3ee" stop-opacity="0.1"/>
+<stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+</radialGradient>
+<filter id="glow" filterUnits="userSpaceOnUse" x="200" y="52" width="620" height="60">
+<feGaussianBlur stdDeviation="2.6" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="pglow" filterUnits="userSpaceOnUse" x="8" y="52" width="230" height="60">
+<feGaussianBlur stdDeviation="2.2" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="cglow" filterUnits="userSpaceOnUse" x="210" y="56" width="40" height="54">
+<feGaussianBlur stdDeviation="2" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+
+<rect width="900" height="130" fill="#030806"/>
+
+<g clip-path="url(#pnl)">
+<rect x="1" y="1" width="898" height="128" fill="#06110c"/>
+<rect x="1" y="1" width="898" height="128" fill="url(#grid)" opacity="0.5" shape-rendering="crispEdges"/>
+<ellipse class="g1" cx="150" cy="86" rx="230" ry="120" fill="url(#amb)"/>
+<ellipse class="g2" cx="96" cy="86" rx="130" ry="80" fill="url(#amc)"/>
+
+<g>
+<rect x="28" y="0" width="1.3" height="64" fill="url(#rain)" opacity="0.16" style="animation:fall 8.3s linear -2.1s infinite"/>
+<rect x="66" y="0" width="1.3" height="82" fill="url(#rain)" opacity="0.12" style="animation:fall 11.6s linear -6.4s infinite"/>
+<rect x="112" y="0" width="2.2" height="54" fill="url(#rain)" opacity="0.2" style="animation:fall 6.7s linear -0.9s infinite"/>
+<rect x="158" y="0" width="1.8" height="74" fill="url(#rain)" opacity="0.14" style="animation:fall 9.9s linear -4.7s infinite"/>
+<rect x="196" y="0" width="1.8" height="60" fill="url(#rain)" opacity="0.18" style="animation:fall 7.4s linear -3.3s infinite"/>
+<rect x="240" y="0" width="1.3" height="90" fill="url(#rain)" opacity="0.11" style="animation:fall 13.1s linear -8.8s infinite"/>
+<rect x="286" y="0" width="2.2" height="58" fill="url(#rain)" opacity="0.19" style="animation:fall 6.2s linear -1.6s infinite"/>
+<rect x="330" y="0" width="1.3" height="70" fill="url(#rain)" opacity="0.13" style="animation:fall 10.4s linear -5.5s infinite"/>
+<rect x="372" y="0" width="2.2" height="50" fill="url(#rain)" opacity="0.22" style="animation:fall 5.6s linear -2.8s infinite"/>
+<rect x="418" y="0" width="1.3" height="78" fill="url(#rain)" opacity="0.12" style="animation:fall 12.3s linear -7.1s infinite"/>
+<rect x="462" y="0" width="1.8" height="66" fill="url(#rain)" opacity="0.17" style="animation:fall 8.9s linear -4.1s infinite"/>
+<rect x="508" y="0" width="2.2" height="56" fill="url(#rain)" opacity="0.21" style="animation:fall 6.9s linear -0.4s infinite"/>
+<rect x="552" y="0" width="1.3" height="86" fill="url(#rain)" opacity="0.1" style="animation:fall 13.7s linear -9.6s infinite"/>
+<rect x="598" y="0" width="1.8" height="62" fill="url(#rain)" opacity="0.18" style="animation:fall 7.8s linear -3.9s infinite"/>
+<rect x="644" y="0" width="1.8" height="72" fill="url(#rain)" opacity="0.14" style="animation:fall 10.9s linear -6.2s infinite"/>
+<rect x="688" y="0" width="2.2" height="52" fill="url(#rain)" opacity="0.23" style="animation:fall 5.9s linear -1.2s infinite"/>
+<rect x="736" y="0" width="1.3" height="80" fill="url(#rain)" opacity="0.12" style="animation:fall 12.7s linear -8.1s infinite"/>
+<rect x="782" y="0" width="1.8" height="68" fill="url(#rain)" opacity="0.16" style="animation:fall 9.3s linear -5s infinite"/>
+<rect x="828" y="0" width="2.2" height="58" fill="url(#rain)" opacity="0.19" style="animation:fall 7.1s linear -2.4s infinite"/>
+<rect x="868" y="0" width="1.3" height="76" fill="url(#rain)" opacity="0.13" style="animation:fall 11.2s linear -6.9s infinite"/>
+</g>
+
+<rect x="1" y="1" width="898" height="35" fill="#08170f"/>
+<rect x="1" y="35.5" width="898" height="1" fill="#0d2a1c" shape-rendering="crispEdges"/>
+<circle cx="22" cy="18.5" r="4.5" fill="#ff2e88" opacity="0.8"/>
+<circle cx="40" cy="18.5" r="4.5" fill="#ffb020" opacity="0.8"/>
+<circle cx="58" cy="18.5" r="4.5" fill="#16d67a" opacity="0.8"/>
+<text class="mono" x="76" y="22.5" font-size="11" fill="#0b7a3f">хофа@matrix: ~</text>
+<rect class="m1" x="850" y="13" width="3" height="11" rx="1.5" fill="#0b7a3f"/>
+<rect class="m2" x="858" y="13" width="3" height="11" rx="1.5" fill="#0b7a3f"/>
+<rect class="m3" x="866" y="13" width="3" height="11" rx="1.5" fill="#0b7a3f"/>
+
+<rect x="1" y="1" width="898" height="128" fill="url(#scan)" opacity="0.16" shape-rendering="crispEdges"/>
+<rect class="sweep" x="1" y="0" width="898" height="86" fill="url(#band)"/>
+</g>
+
+<g opacity="0.55">
+<rect x="26" y="112" width="847" height="1" fill="#0d2a1c" shape-rendering="crispEdges"/>
+<rect class="rail" x="26" y="112" width="90" height="1" fill="url(#railg)"/>
+</g>
+
+<g class="mono pr" filter="url(#pglow)">
+<text x="26" y="90" textLength="145.2" lengthAdjust="spacing" fill="#22d3ee">хофа@matrix</text>
+<text x="171.2" y="90" fill="#0b7a3f">:</text>
+<text x="184.4" y="90" fill="#16d67a">~</text>
+<text x="197.6" y="90" fill="#ccffe5">$</text>
+</g>
+
+<g filter="url(#glow)">
+<text class="mono ln l1" xml:space="preserve" x="224" y="90" textLength="211.2" lengthAdjust="spacing" clip-path="url(#c1)" opacity="1">whoami  ->  хофа</text>
+<text class="mono ln l2" xml:space="preserve" x="224" y="90" textLength="488.4" lengthAdjust="spacing" clip-path="url(#c2)" opacity="0">building things that should not exist</text>
+<text class="mono ln l3" xml:space="preserve" x="224" y="90" textLength="554.4" lengthAdjust="spacing" clip-path="url(#c3)" opacity="0">git push --force  (i know what i am doing)</text>
+<text class="mono ln l4" xml:space="preserve" x="224" y="90" textLength="198" lengthAdjust="spacing" clip-path="url(#c4)" opacity="0">wake up, Neo...</text>
+</g>
+
+<rect class="caret" x="224" y="71" width="11" height="24" fill="#4dffa6" filter="url(#cglow)"/>
+
+<path d="M12 1.5H888" stroke="#16d67a" stroke-opacity="0.09" stroke-width="1"/>
+<rect x="1" y="1" width="898" height="128" rx="10" fill="none" stroke="#0d2a1c" stroke-width="1"/>
+</svg>

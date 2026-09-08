@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Neovim writing itself</title>
+<desc id="dsc">An editor window in which syntax highlighted Rust that draws matrix rain types itself out line by line, forever.</desc>
+<defs>
+<clipPath id="win"><rect x="0" y="0" width="900" height="460" rx="10"/></clipPath>
+<clipPath id="codearea"><rect x="0" y="30" width="900" height="406"/></clipPath>
+<clipPath id="c1"><rect class="t1" x="58" y="36" width="126" height="21"/></clipPath>
+<clipPath id="c2"><rect class="t2" x="58" y="57" width="414" height="21"/></clipPath>
+<clipPath id="c3"><rect class="t3" x="58" y="78" width="207" height="21"/></clipPath>
+<clipPath id="c4"><rect class="t4" x="58" y="99" width="477" height="21"/></clipPath>
+<clipPath id="c5"><rect class="t5" x="58" y="120" width="117" height="21"/></clipPath>
+<clipPath id="c6"><rect class="t6" x="58" y="141" width="297" height="21"/></clipPath>
+<clipPath id="c7"><rect class="t7" x="58" y="162" width="522" height="21"/></clipPath>
+<clipPath id="c8"><rect class="t8" x="58" y="183" width="423" height="21"/></clipPath>
+<clipPath id="c9"><rect class="t9" x="58" y="204" width="45" height="21"/></clipPath>
+<clipPath id="c10"><rect class="t10" x="58" y="225" width="9" height="21"/></clipPath>
+<clipPath id="c11"><rect class="t11" x="58" y="246" width="99" height="21"/></clipPath>
+<clipPath id="c12"><rect class="t12" x="58" y="267" width="495" height="21"/></clipPath>
+<clipPath id="c13"><rect class="t13" x="58" y="288" width="504" height="21"/></clipPath>
+<clipPath id="c14"><rect class="t14" x="58" y="309" width="333" height="21"/></clipPath>
+<clipPath id="c15"><rect class="t15" x="58" y="330" width="450" height="21"/></clipPath>
+<clipPath id="c16"><rect class="t16" x="58" y="351" width="9" height="21"/></clipPath>
+<linearGradient id="panelg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#0a1a11"/>
+<stop offset="1" stop-color="#06110c"/>
+</linearGradient>
+<linearGradient id="sweepg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#4dffa6" stop-opacity="0"/>
+<stop offset="0.5" stop-color="#4dffa6" stop-opacity="1"/>
+<stop offset="1" stop-color="#4dffa6" stop-opacity="0"/>
+</linearGradient>
+<pattern id="scan" width="6" height="5" patternUnits="userSpaceOnUse">
+<rect x="0" y="0" width="6" height="1" fill="#000000" opacity="0.16"/>
+</pattern>
+<style type="text/css"><![CDATA[
+text{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace;}
+.cl{font-size:15px;text-rendering:geometricPrecision;}
+.k{fill:#ff2e88}
+.t{fill:#22d3ee}
+.s{fill:#ffb020}
+.n{fill:#4dffa6}
+.c{fill:#0b7a3f}
+.i{fill:#16d67a}
+.ln{font-size:12px;fill:#0b7a3f}
+.lna{font-size:12px;fill:#ffb020}
+.st{font-size:11px}
+.tb{font-size:11px;fill:#0b7a3f;letter-spacing:0.4px}
+.t1{animation:ty1 22s linear -14.5s infinite}
+.t2{animation:ty2 22s linear -14.5s infinite}
+.t3{animation:ty3 22s linear -14.5s infinite}
+.t4{animation:ty4 22s linear -14.5s infinite}
+.t5{animation:ty5 22s linear -14.5s infinite}
+.t6{animation:ty6 22s linear -14.5s infinite}
+.t7{animation:ty7 22s linear -14.5s infinite}
+.t8{animation:ty8 22s linear -14.5s infinite}
+.t9{animation:ty9 22s linear -14.5s infinite}
+.t10{animation:ty10 22s linear -14.5s infinite}
+.t11{animation:ty11 22s linear -14.5s infinite}
+.t12{animation:ty12 22s linear -14.5s infinite}
+.t13{animation:ty13 22s linear -14.5s infinite}
+.t14{animation:ty14 22s linear -14.5s infinite}
+.t15{animation:ty15 22s linear -14.5s infinite}
+.t16{animation:ty16 22s linear -14.5s infinite}
+.a1{animation:ac1 22s linear -14.5s infinite}
+.a2{animation:ac2 22s linear -14.5s infinite}
+.a3{animation:ac3 22s linear -14.5s infinite}
+.a4{animation:ac4 22s linear -14.5s infinite}
+.a5{animation:ac5 22s linear -14.5s infinite}
+.a6{animation:ac6 22s linear -14.5s infinite}
+.a7{animation:ac7 22s linear -14.5s infinite}
+.a8{animation:ac8 22s linear -14.5s infinite}
+.a9{animation:ac9 22s linear -14.5s infinite}
+.a10{animation:ac10 22s linear -14.5s infinite}
+.a11{animation:ac11 22s linear -14.5s infinite}
+.a12{animation:ac12 22s linear -14.5s infinite}
+.a13{animation:ac13 22s linear -14.5s infinite}
+.a14{animation:ac14 22s linear -14.5s infinite}
+.a15{animation:ac15 22s linear -14.5s infinite}
+.a16{animation:ac16 22s linear -14.5s infinite}
+.hl{animation:hlstep 22s linear -14.5s infinite}
+.cur{animation:curpos 22s linear -14.5s infinite, blink 1.05s steps(1,end) -0.4s infinite}
+.code{animation:cycle 22s linear -14.5s infinite}
+.sweep{animation:sweep 7.3s linear -3.1s infinite}
+.rec{animation:rec 1.37s steps(1,end) -0.7s infinite}
+.d1{animation:dot1 3.7s ease-in-out -1.9s infinite}
+.d2{animation:dot2 4.3s ease-in-out -0.6s infinite}
+.d3{animation:dot3 5.1s ease-in-out -2.8s infinite}
+@keyframes ty1{0%{width:0px}1.364%{width:0px;animation-timing-function:steps(14,end)}3.018%{width:126px}95.454%{width:126px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty2{0%{width:0px}3.564%{width:0px;animation-timing-function:steps(46,end)}9%{width:414px}95.454%{width:414px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty3{0%{width:0px}9.545%{width:0px;animation-timing-function:steps(23,end)}12.264%{width:207px}95.454%{width:207px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty4{0%{width:0px}12.809%{width:0px;animation-timing-function:steps(53,end)}19.073%{width:477px}95.454%{width:477px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty5{0%{width:0px}19.618%{width:0px;animation-timing-function:steps(13,end)}21.155%{width:117px}95.454%{width:117px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty6{0%{width:0px}21.7%{width:0px;animation-timing-function:steps(33,end)}25.6%{width:297px}95.454%{width:297px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty7{0%{width:0px}26.145%{width:0px;animation-timing-function:steps(58,end)}33%{width:522px}95.454%{width:522px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty8{0%{width:0px}33.545%{width:0px;animation-timing-function:steps(47,end)}39.1%{width:423px}95.454%{width:423px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty9{0%{width:0px}39.645%{width:0px;animation-timing-function:steps(5,end)}40.236%{width:45px}95.454%{width:45px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty10{0%{width:0px}40.782%{width:0px;animation-timing-function:steps(1,end)}40.9%{width:9px}95.454%{width:9px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty11{0%{width:0px}41.445%{width:0px;animation-timing-function:steps(11,end)}42.745%{width:99px}95.454%{width:99px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty12{0%{width:0px}43.291%{width:0px;animation-timing-function:steps(55,end)}49.791%{width:495px}95.454%{width:495px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty13{0%{width:0px}50.336%{width:0px;animation-timing-function:steps(56,end)}56.955%{width:504px}95.454%{width:504px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty14{0%{width:0px}57.5%{width:0px;animation-timing-function:steps(37,end)}61.873%{width:333px}95.454%{width:333px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty15{0%{width:0px}62.418%{width:0px;animation-timing-function:steps(50,end)}68.327%{width:450px}95.454%{width:450px}95.455%{width:0px}100%{width:0px}}
+@keyframes ty16{0%{width:0px}68.873%{width:0px;animation-timing-function:steps(1,end)}68.991%{width:9px}95.454%{width:9px}95.455%{width:0px}100%{width:0px}}
+@keyframes curpos{
+0%{x:58px;y:37px}
+1.364%{x:58px;y:37px;animation-timing-function:steps(14,end)}
+3.018%{x:184px;y:37px}
+3.564%{x:58px;y:58px;animation-timing-function:steps(46,end)}
+9%{x:472px;y:58px}
+9.545%{x:58px;y:79px;animation-timing-function:steps(23,end)}
+12.264%{x:265px;y:79px}
+12.809%{x:58px;y:100px;animation-timing-function:steps(53,end)}
+19.073%{x:535px;y:100px}
+19.618%{x:58px;y:121px;animation-timing-function:steps(13,end)}
+21.155%{x:175px;y:121px}
+21.7%{x:58px;y:142px;animation-timing-function:steps(33,end)}
+25.6%{x:355px;y:142px}
+26.145%{x:58px;y:163px;animation-timing-function:steps(58,end)}
+33%{x:580px;y:163px}
+33.545%{x:58px;y:184px;animation-timing-function:steps(47,end)}
+39.1%{x:481px;y:184px}
+39.645%{x:58px;y:205px;animation-timing-function:steps(5,end)}
+40.236%{x:103px;y:205px}
+40.782%{x:58px;y:226px;animation-timing-function:steps(1,end)}
+40.9%{x:67px;y:226px}
+41.445%{x:58px;y:247px;animation-timing-function:steps(11,end)}
+42.745%{x:157px;y:247px}
+43.291%{x:58px;y:268px;animation-timing-function:steps(55,end)}
+49.791%{x:553px;y:268px}
+50.336%{x:58px;y:289px;animation-timing-function:steps(56,end)}
+56.955%{x:562px;y:289px}
+57.5%{x:58px;y:310px;animation-timing-function:steps(37,end)}
+61.873%{x:391px;y:310px}
+62.418%{x:58px;y:331px;animation-timing-function:steps(50,end)}
+68.327%{x:508px;y:331px}
+68.873%{x:58px;y:352px;animation-timing-function:steps(1,end)}
+68.991%{x:67px;y:352px}
+95.454%{x:67px;y:352px}
+95.455%{x:58px;y:37px}
+100%{x:58px;y:37px}
+}
+@keyframes hlstep{
+0%,3.563%{y:36px}
+3.564%,9.544%{y:57px}
+9.545%,12.808%{y:78px}
+12.809%,19.617%{y:99px}
+19.618%,21.699%{y:120px}
+21.7%,26.144%{y:141px}
+26.145%,33.544%{y:162px}
+33.545%,39.644%{y:183px}
+39.645%,40.781%{y:204px}
+40.782%,41.444%{y:225px}
+41.445%,43.29%{y:246px}
+43.291%,50.335%{y:267px}
+50.336%,57.499%{y:288px}
+57.5%,62.417%{y:309px}
+62.418%,68.872%{y:330px}
+68.873%,95.454%{y:351px}
+95.455%,100%{y:36px}
+}
+@keyframes ac1{0%,3.563%{opacity:1}3.564%,95.454%{opacity:0}95.455%,100%{opacity:1}}
+@keyframes ac2{0%,3.563%{opacity:0}3.564%,9.544%{opacity:1}9.545%,100%{opacity:0}}
+@keyframes ac3{0%,9.544%{opacity:0}9.545%,12.808%{opacity:1}12.809%,100%{opacity:0}}
+@keyframes ac4{0%,12.808%{opacity:0}12.809%,19.617%{opacity:1}19.618%,100%{opacity:0}}
+@keyframes ac5{0%,19.617%{opacity:0}19.618%,21.699%{opacity:1}21.7%,100%{opacity:0}}
+@keyframes ac6{0%,21.699%{opacity:0}21.7%,26.144%{opacity:1}26.145%,100%{opacity:0}}
+@keyframes ac7{0%,26.144%{opacity:0}26.145%,33.544%{opacity:1}33.545%,100%{opacity:0}}
+@keyframes ac8{0%,33.544%{opacity:0}33.545%,39.644%{opacity:1}39.645%,100%{opacity:0}}
+@keyframes ac9{0%,39.644%{opacity:0}39.645%,40.781%{opacity:1}40.782%,100%{opacity:0}}
+@keyframes ac10{0%,40.781%{opacity:0}40.782%,41.444%{opacity:1}41.445%,100%{opacity:0}}
+@keyframes ac11{0%,41.444%{opacity:0}41.445%,43.29%{opacity:1}43.291%,100%{opacity:0}}
+@keyframes ac12{0%,43.29%{opacity:0}43.291%,50.335%{opacity:1}50.336%,100%{opacity:0}}
+@keyframes ac13{0%,50.335%{opacity:0}50.336%,57.499%{opacity:1}57.5%,100%{opacity:0}}
+@keyframes ac14{0%,57.499%{opacity:0}57.5%,62.417%{opacity:1}62.418%,100%{opacity:0}}
+@keyframes ac15{0%,62.417%{opacity:0}62.418%,68.872%{opacity:1}68.873%,100%{opacity:0}}
+@keyframes ac16{0%,68.872%{opacity:0}68.873%,95.454%{opacity:1}95.455%,100%{opacity:0}}
+@keyframes cycle{0%,90.909%{opacity:1}94.545%{opacity:0}96.364%{opacity:0}100%{opacity:1}}
+@keyframes blink{0%,50%{opacity:1}50.001%,100%{opacity:0.18}}
+@keyframes sweep{0%{y:-120px}100%{y:440px}}
+@keyframes rec{0%,44%{opacity:1}45%,100%{opacity:0.14}}
+@keyframes dot1{0%,100%{opacity:0.9}50%{opacity:0.5}}
+@keyframes dot2{0%,100%{opacity:0.85}50%{opacity:0.45}}
+@keyframes dot3{0%,100%{opacity:0.95}50%{opacity:0.55}}
+]]></style>
+</defs>
+
+<rect x="0" y="0" width="900" height="460" fill="#030806"/>
+<g clip-path="url(#win)">
+<rect x="0" y="0" width="900" height="460" fill="#06110c"/>
+<rect x="0" y="30" width="900" height="406" fill="url(#panelg)"/>
+
+<rect x="0" y="0" width="900" height="30" fill="#08170f"/>
+<rect x="0" y="29" width="900" height="1" fill="#0d2a1c"/>
+<circle class="d1" cx="18" cy="15" r="5.5" fill="#ff2e88"/>
+<circle class="d2" cx="38" cy="15" r="5.5" fill="#ffb020"/>
+<circle class="d3" cx="58" cy="15" r="5.5" fill="#4dffa6"/>
+<text class="tb" x="450" y="19" text-anchor="middle" xml:space="preserve">NORMAL  ~/src/matrix/rain.rs  [+]</text>
+
+<rect x="0" y="30" width="46" height="406" fill="#030806"/>
+<rect x="46" y="30" width="1" height="406" fill="#0d2a1c" shape-rendering="crispEdges"/>
+<rect x="778" y="30" width="1" height="406" fill="#0d2a1c" shape-rendering="crispEdges"/>
+
+<g clip-path="url(#codearea)">
+<rect class="sweep" x="46" y="-120" width="840" height="120" fill="url(#sweepg)" opacity="0.055"/>
+</g>
+
+<text class="ln" x="36" y="52" text-anchor="end">1</text>
+<text class="ln" x="36" y="73" text-anchor="end">2</text>
+<text class="ln" x="36" y="94" text-anchor="end">3</text>
+<text class="ln" x="36" y="115" text-anchor="end">4</text>
+<text class="ln" x="36" y="136" text-anchor="end">5</text>
+<text class="ln" x="36" y="157" text-anchor="end">6</text>
+<text class="ln" x="36" y="178" text-anchor="end">7</text>
+<text class="ln" x="36" y="199" text-anchor="end">8</text>
+<text class="ln" x="36" y="220" text-anchor="end">9</text>
+<text class="ln" x="36" y="241" text-anchor="end">10</text>
+<text class="ln" x="36" y="262" text-anchor="end">11</text>
+<text class="ln" x="36" y="283" text-anchor="end">12</text>
+<text class="ln" x="36" y="304" text-anchor="end">13</text>
+<text class="ln" x="36" y="325" text-anchor="end">14</text>
+<text class="ln" x="36" y="346" text-anchor="end">15</text>
+<text class="ln" x="36" y="367" text-anchor="end">16</text>
+<text class="ln" x="36" y="388" text-anchor="end">17</text>
+<text class="ln" x="36" y="409" text-anchor="end">18</text>
+
+<g class="code">
+<rect class="hl" x="46" y="36" width="840" height="21" fill="#4dffa6" opacity="0.05"/>
+
+<text class="lna a1" x="36" y="52" text-anchor="end">1</text>
+<text class="lna a2" x="36" y="73" text-anchor="end">2</text>
+<text class="lna a3" x="36" y="94" text-anchor="end">3</text>
+<text class="lna a4" x="36" y="115" text-anchor="end">4</text>
+<text class="lna a5" x="36" y="136" text-anchor="end">5</text>
+<text class="lna a6" x="36" y="157" text-anchor="end">6</text>
+<text class="lna a7" x="36" y="178" text-anchor="end">7</text>
+<text class="lna a8" x="36" y="199" text-anchor="end">8</text>
+<text class="lna a9" x="36" y="220" text-anchor="end">9</text>
+<text class="lna a10" x="36" y="241" text-anchor="end">10</text>
+<text class="lna a11" x="36" y="262" text-anchor="end">11</text>
+<text class="lna a12" x="36" y="283" text-anchor="end">12</text>
+<text class="lna a13" x="36" y="304" text-anchor="end">13</text>
+<text class="lna a14" x="36" y="325" text-anchor="end">14</text>
+<text class="lna a15" x="36" y="346" text-anchor="end">15</text>
+<text class="lna a16" x="36" y="367" text-anchor="end">16</text>
+
+<text class="cl" x="58" y="52" clip-path="url(#c1)"><tspan class="k" x="58" textLength="27">use</tspan><tspan class="i" x="94" textLength="54">rand::</tspan><tspan class="t" x="148" textLength="27">Rng</tspan><tspan class="i" x="175" textLength="9">;</tspan></text>
+<text class="cl" x="58" y="73" clip-path="url(#c2)"><tspan class="k" x="58" textLength="45">const</tspan><tspan class="i" x="112" textLength="63">GLYPHS:</tspan><tspan class="t" x="184" textLength="36">&amp;str</tspan><tspan class="i" x="229" textLength="9">=</tspan><tspan class="s" x="247" textLength="216" lengthAdjust="spacingAndGlyphs">&quot;ｱｲｳｴｵｶｷｸ0123456789хофа&quot;</tspan><tspan class="i" x="463" textLength="9">;</tspan></text>
+<text class="cl" x="58" y="94" clip-path="url(#c3)"><tspan class="k" x="58" textLength="45">const</tspan><tspan class="i" x="112" textLength="45">ROWS:</tspan><tspan class="t" x="166" textLength="45">usize</tspan><tspan class="i" x="220" textLength="9">=</tspan><tspan class="n" x="238" textLength="18">24</tspan><tspan class="i" x="256" textLength="9">;</tspan></text>
+<text class="cl" x="58" y="115" clip-path="url(#c4)"><tspan class="k" x="58" textLength="27">pub</tspan><tspan class="k" x="94" textLength="54">struct</tspan><tspan class="t" x="157" textLength="54">Column</tspan><tspan class="i" x="220" textLength="9">{</tspan><tspan class="i" x="238" textLength="18">x:</tspan><tspan class="t" x="265" textLength="27">f32</tspan><tspan class="i" x="292" textLength="9">,</tspan><tspan class="i" x="310" textLength="54">speed:</tspan><tspan class="t" x="373" textLength="27">f32</tspan><tspan class="i" x="400" textLength="9">,</tspan><tspan class="i" x="418" textLength="45">head:</tspan><tspan class="t" x="472" textLength="45">usize</tspan><tspan class="i" x="526" textLength="9">}</tspan></text>
+<text class="cl" x="58" y="136" clip-path="url(#c5)"><tspan class="k" x="58" textLength="36">impl</tspan><tspan class="t" x="103" textLength="54">Column</tspan><tspan class="i" x="166" textLength="9">{</tspan></text>
+<text class="cl" x="58" y="157" clip-path="url(#c6)"><tspan class="k" x="94" textLength="18">fn</tspan><tspan class="i" x="121" textLength="45">tick(</tspan><tspan class="i" x="166" textLength="9">&amp;</tspan><tspan class="k" x="175" textLength="27">mut</tspan><tspan class="i" x="211" textLength="45">self,</tspan><tspan class="i" x="265" textLength="27">dt:</tspan><tspan class="t" x="301" textLength="27">f32</tspan><tspan class="i" x="328" textLength="9">)</tspan><tspan class="i" x="346" textLength="9">{</tspan></text>
+<text class="cl" x="58" y="178" clip-path="url(#c7)"><tspan class="i" x="130" textLength="81">self.head</tspan><tspan class="i" x="220" textLength="18">+=</tspan><tspan class="i" x="247" textLength="99">(self.speed</tspan><tspan class="i" x="355" textLength="9">*</tspan><tspan class="i" x="373" textLength="27">dt)</tspan><tspan class="k" x="409" textLength="18">as</tspan><tspan class="t" x="436" textLength="45">usize</tspan><tspan class="i" x="481" textLength="9">;</tspan><tspan class="c" x="517" textLength="63">// fall</tspan></text>
+<text class="cl" x="58" y="199" clip-path="url(#c8)"><tspan class="k" x="130" textLength="18">if</tspan><tspan class="i" x="157" textLength="81">self.head</tspan><tspan class="i" x="247" textLength="9">&gt;</tspan><tspan class="i" x="265" textLength="36">ROWS</tspan><tspan class="i" x="310" textLength="9">{</tspan><tspan class="i" x="328" textLength="135">self.respawn();</tspan><tspan class="i" x="472" textLength="9">}</tspan></text>
+<text class="cl" x="58" y="220" clip-path="url(#c9)"><tspan class="i" x="94" textLength="9">}</tspan></text>
+<text class="cl" x="58" y="241" clip-path="url(#c10)"><tspan class="i" x="58" textLength="9">}</tspan></text>
+<text class="cl" x="58" y="262" clip-path="url(#c11)"><tspan class="k" x="58" textLength="18">fn</tspan><tspan class="i" x="85" textLength="54">main()</tspan><tspan class="i" x="148" textLength="9">{</tspan></text>
+<text class="cl" x="58" y="283" clip-path="url(#c12)"><tspan class="k" x="94" textLength="27">let</tspan><tspan class="k" x="130" textLength="27">mut</tspan><tspan class="i" x="166" textLength="45">cols:</tspan><tspan class="t" x="220" textLength="27">Vec</tspan><tspan class="i" x="247" textLength="9">&lt;</tspan><tspan class="t" x="256" textLength="54">Column</tspan><tspan class="i" x="310" textLength="9">&gt;</tspan><tspan class="i" x="328" textLength="9">=</tspan><tspan class="t" x="346" textLength="27">Vec</tspan><tspan class="i" x="373" textLength="144">::with_capacity(</tspan><tspan class="n" x="517" textLength="18">52</tspan><tspan class="i" x="535" textLength="18">);</tspan></text>
+<text class="cl" x="58" y="304" clip-path="url(#c13)"><tspan class="k" x="94" textLength="27">for</tspan><tspan class="i" x="130" textLength="9">x</tspan><tspan class="k" x="148" textLength="18">in</tspan><tspan class="n" x="175" textLength="9">0</tspan><tspan class="i" x="184" textLength="18">..</tspan><tspan class="n" x="202" textLength="18">52</tspan><tspan class="i" x="229" textLength="9">{</tspan><tspan class="i" x="247" textLength="90">cols.push(</tspan><tspan class="t" x="337" textLength="54">Column</tspan><tspan class="i" x="391" textLength="54">::new(</tspan><tspan class="i" x="445" textLength="9">x</tspan><tspan class="k" x="463" textLength="18">as</tspan><tspan class="t" x="490" textLength="27">f32</tspan><tspan class="i" x="517" textLength="45">)); }</tspan></text>
+<text class="cl" x="58" y="325" clip-path="url(#c14)"><tspan class="k" x="94" textLength="27">let</tspan><tspan class="k" x="130" textLength="27">mut</tspan><tspan class="i" x="166" textLength="27">rng</tspan><tspan class="i" x="202" textLength="9">=</tspan><tspan class="i" x="220" textLength="171">rand::thread_rng();</tspan></text>
+<text class="cl" x="58" y="346" clip-path="url(#c15)"><tspan class="k" x="94" textLength="36">loop</tspan><tspan class="i" x="139" textLength="9">{</tspan><tspan class="i" x="157" textLength="63">render(</tspan><tspan class="i" x="220" textLength="45">&amp;cols</tspan><tspan class="i" x="265" textLength="18">);</tspan><tspan class="i" x="292" textLength="9">}</tspan><tspan class="c" x="328" textLength="180">// there is no spoon</tspan></text>
+<text class="cl" x="58" y="367" clip-path="url(#c16)"><tspan class="i" x="58" textLength="9">}</tspan></text>
+
+<rect class="cur" x="58" y="37" width="9" height="19" fill="#4dffa6"/>
+</g>
+
+<rect x="0" y="30" width="900" height="406" fill="url(#scan)"/>
+
+<rect x="0" y="436" width="900" height="24" fill="#0b7a3f" opacity="0.18"/>
+<rect x="0" y="436" width="76" height="24" fill="#4dffa6"/>
+<text class="st" x="38" y="452" text-anchor="middle" fill="#030806" letter-spacing="1">NORMAL</text>
+<text class="st" x="88" y="452" fill="#16d67a">rain.rs</text>
+<g class="rec">
+<circle cx="176" cy="447.5" r="3.2" fill="#ff2e88"/>
+<text class="st" x="186" y="452" fill="#ffb020">recording @q</text>
+</g>
+<rect x="768" y="440" width="1" height="16" fill="#0d2a1c" shape-rendering="crispEdges"/>
+<rect x="818" y="440" width="1" height="16" fill="#0d2a1c" shape-rendering="crispEdges"/>
+<text class="st" x="756" y="452" text-anchor="end" fill="#0b7a3f">utf-8</text>
+<text class="st" x="806" y="452" text-anchor="end" fill="#0b7a3f">rust</text>
+<text class="st" x="886" y="452" text-anchor="end" fill="#4dffa6" xml:space="preserve">16:1  All</text>
+</g>
+<rect x="0.5" y="0.5" width="899" height="459" rx="10" fill="none" stroke="#0d2a1c" stroke-width="1"/>
+</svg>

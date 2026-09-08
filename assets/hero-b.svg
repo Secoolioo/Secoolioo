@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img">
+<title>хофа — terminal boot</title>
+<defs>
+<pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+<rect x="0" y="0" width="3" height="1" fill="#0b7a3f" opacity="0.10"/>
+</pattern>
+<radialGradient id="vig" cx="50%" cy="50%" r="72%">
+<stop offset="0" stop-color="#000000" stop-opacity="0"/>
+<stop offset="0.55" stop-color="#000000" stop-opacity="0.10"/>
+<stop offset="0.82" stop-color="#000000" stop-opacity="0.36"/>
+<stop offset="1" stop-color="#000000" stop-opacity="0.72"/>
+</radialGradient>
+<radialGradient id="nglow" cx="50%" cy="50%" r="50%">
+<stop offset="0" stop-color="#16d67a" stop-opacity="0.16"/>
+<stop offset="0.55" stop-color="#0b7a3f" stop-opacity="0.06"/>
+<stop offset="1" stop-color="#0b7a3f" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#16d67a" stop-opacity="0"/>
+<stop offset="0.45" stop-color="#ccffe5" stop-opacity="0.06"/>
+<stop offset="0.52" stop-color="#4dffa6" stop-opacity="0.09"/>
+<stop offset="1" stop-color="#16d67a" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="rainG" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#0b7a3f" stop-opacity="0"/>
+<stop offset="0.7" stop-color="#16d67a" stop-opacity="0.5"/>
+<stop offset="1" stop-color="#4dffa6" stop-opacity="0.95"/>
+</linearGradient>
+<linearGradient id="trailG" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#16d67a" stop-opacity="0"/>
+<stop offset="1" stop-color="#4dffa6" stop-opacity="0.85"/>
+</linearGradient>
+<linearGradient id="panelG" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#06110c" stop-opacity="0.92"/>
+<stop offset="1" stop-color="#030806" stop-opacity="0.55"/>
+</linearGradient>
+<filter id="nameFx" x="-14%" y="-58%" width="128%" height="216%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="2" seed="11" result="turb">
+<animate attributeName="baseFrequency" dur="5.5s" repeatCount="indefinite" keyTimes="0;0.52;0.74;1" values="0.008;0.04;0.9;0.008" calcMode="spline" keySplines="0.5 0 0.9 0.4;0.2 0 0.8 1;0.16 0.85 0.3 1"/>
+</feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="turb" scale="0" xChannelSelector="R" yChannelSelector="G" result="disp">
+<animate attributeName="scale" dur="5.5s" repeatCount="indefinite" keyTimes="0;0.52;0.74;1" values="0;0;42;0" calcMode="spline" keySplines="0.5 0 0.9 0.4;0.2 0 0.8 1;0.16 0.85 0.3 1"/>
+</feDisplacementMap>
+<feGaussianBlur in="disp" stdDeviation="7" result="glow"/>
+<feMerge>
+<feMergeNode in="glow"/>
+<feMergeNode in="glow"/>
+<feMergeNode in="disp"/>
+</feMerge>
+</filter>
+<filter id="soft" x="-18%" y="-45%" width="136%" height="190%" color-interpolation-filters="sRGB">
+<feGaussianBlur stdDeviation="4.5"/>
+</filter>
+<filter id="dotGlow" x="-300%" y="-300%" width="700%" height="700%" color-interpolation-filters="sRGB">
+<feGaussianBlur stdDeviation="2.4" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<clipPath id="subClip">
+<rect x="602" y="256" width="578" height="34">
+<animate attributeName="width" dur="9.1s" repeatCount="indefinite" keyTimes="0;0.58;0.71;1" values="578;578;0;578" calcMode="spline" keySplines="0 0 1 1;0.65 0 0.35 1;0.2 0.6 0.2 1"/>
+</rect>
+</clipPath>
+</defs>
+
+<style>
+.mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace}
+.ln{font-size:14px;fill:#16d67a;animation:bootln 9s cubic-bezier(.2,.85,.3,1) infinite}
+.ts{fill:#0b7a3f}
+.lv{fill:#4dffa6}
+.warn .lb,.warn .lv{fill:#ffb020}
+.hdr{font-size:10px;fill:#0b7a3f;letter-spacing:2px}
+.hdr2{font-size:10px;fill:#16d67a;letter-spacing:2px}
+.prompt{font-size:14px;fill:#0b7a3f}
+.cur{fill:#4dffa6;animation:blink 1.06s steps(1) infinite}
+.nm{font-size:130px;font-weight:700;letter-spacing:10px}
+.name{fill:#4dffa6}
+.ghost{fill:#16d67a;opacity:.12;animation:ghost 6.3s ease-in-out infinite}
+.glitch{fill:#ff2e88;opacity:0;animation:rgbs 5.5s linear infinite}
+.sub{font-size:14px;fill:#22d3ee}
+.rain{animation:fall linear infinite}
+.band{animation:sweep 7.3s linear infinite;animation-delay:-2.1s}
+.hud{fill:none;stroke:#16d67a;stroke-width:1.5;stroke-linecap:square;animation:hudpulse 3.4s ease-in-out infinite}
+.hudc{fill:none;stroke:#22d3ee;stroke-width:1;animation:hudpulse 4.7s ease-in-out infinite}
+@keyframes bootln{0%{opacity:0;transform:translateY(4px)}2%{opacity:1;transform:translateY(0)}88%{opacity:1;transform:translateY(0)}92%{opacity:0;transform:translateY(0)}100%{opacity:0;transform:translateY(4px)}}
+@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}
+@keyframes ghost{0%{opacity:.07}50%{opacity:.18}100%{opacity:.07}}
+@keyframes rgbs{0%,50%{opacity:0;transform:translate(0,0)}52%{opacity:.55;transform:translate(-7px,3px)}55%{opacity:0;transform:translate(0,0)}58%{opacity:.38;transform:translate(6px,-4px)}62%,100%{opacity:0;transform:translate(0,0)}}
+@keyframes fall{from{transform:translateY(-190px)}to{transform:translateY(430px)}}
+@keyframes sweep{from{transform:translateY(-130px)}to{transform:translateY(400px)}}
+@keyframes hudpulse{0%{opacity:.28}50%{opacity:.9}100%{opacity:.28}}
+</style>
+
+<rect x="0" y="0" width="1200" height="380" fill="#030806"/>
+<ellipse cx="890" cy="196" rx="330" ry="150" fill="url(#nglow)"/>
+
+<g>
+<rect class="rain" x="628" y="0" width="1.5" height="70" fill="url(#rainG)" opacity="0.16" style="animation-duration:8.2s;animation-delay:-1.2s"/>
+<rect class="rain" x="668" y="0" width="1.5" height="110" fill="url(#rainG)" opacity="0.11" style="animation-duration:11.3s;animation-delay:-4.7s"/>
+<rect class="rain" x="706" y="0" width="2" height="52" fill="url(#rainG)" opacity="0.2" style="animation-duration:6.7s;animation-delay:-2.3s"/>
+<rect class="rain" x="752" y="0" width="1.5" height="90" fill="url(#rainG)" opacity="0.13" style="animation-duration:9.6s;animation-delay:-6.8s"/>
+<rect class="rain" x="798" y="0" width="1" height="130" fill="url(#rainG)" opacity="0.09" style="animation-duration:12.4s;animation-delay:-0.6s"/>
+<rect class="rain" x="842" y="0" width="2" height="64" fill="url(#rainG)" opacity="0.18" style="animation-duration:7.4s;animation-delay:-3.9s"/>
+<rect class="rain" x="884" y="0" width="1.5" height="98" fill="url(#rainG)" opacity="0.12" style="animation-duration:10.1s;animation-delay:-8.4s"/>
+<rect class="rain" x="926" y="0" width="1.5" height="76" fill="url(#rainG)" opacity="0.15" style="animation-duration:8.8s;animation-delay:-5.1s"/>
+<rect class="rain" x="968" y="0" width="1" height="120" fill="url(#rainG)" opacity="0.1" style="animation-duration:13.2s;animation-delay:-2.9s"/>
+<rect class="rain" x="1012" y="0" width="2" height="58" fill="url(#rainG)" opacity="0.19" style="animation-duration:6.2s;animation-delay:-7.2s"/>
+<rect class="rain" x="1058" y="0" width="1.5" height="86" fill="url(#rainG)" opacity="0.13" style="animation-duration:9.1s;animation-delay:-4.1s"/>
+<rect class="rain" x="1104" y="0" width="1.5" height="104" fill="url(#rainG)" opacity="0.11" style="animation-duration:11.8s;animation-delay:-9.6s"/>
+<rect class="rain" x="1146" y="0" width="1" height="68" fill="url(#rainG)" opacity="0.17" style="animation-duration:7.9s;animation-delay:-1.8s"/>
+</g>
+
+<rect x="40" y="28" width="526" height="324" rx="4" fill="url(#panelG)" stroke="#0d2a1c" stroke-width="1"/>
+<g class="mono">
+<text class="hdr" x="60" y="50">SYSTEM BOOT · tty0 · secoolioo</text>
+<text class="hdr2" x="546" y="50" text-anchor="end">[ ok ]</text>
+</g>
+<line x1="60" y1="58" x2="546" y2="58" stroke="#0d2a1c" stroke-width="1"/>
+
+<g class="mono">
+<text class="ln" x="60" y="72" style="animation-delay:0s"><tspan class="ts">[ 0.000 ]</tspan><tspan class="lb"> boot secoolioo/os ................ </tspan><tspan class="lv">rev 7f3a9c</tspan></text>
+<text class="ln" x="60" y="96" style="animation-delay:.28s"><tspan class="ts">[ 0.001 ]</tspan><tspan class="lb"> init kernel ...................... </tspan><tspan class="lv">ok</tspan></text>
+<text class="ln" x="60" y="120" style="animation-delay:.52s"><tspan class="ts">[ 0.014 ]</tspan><tspan class="lb"> mount /dev/brain ................. </tspan><tspan class="lv">ok</tspan></text>
+<text class="ln" x="60" y="144" style="animation-delay:.74s"><tspan class="ts">[ 0.037 ]</tspan><tspan class="lb"> load module: coffee.ko ........... </tspan><tspan class="lv">ok</tspan></text>
+<text class="ln" x="60" y="168" style="animation-delay:.95s"><tspan class="ts">[ 0.061 ]</tspan><tspan class="lb"> resolving identity ............... </tspan><tspan class="lv">хофа</tspan></text>
+<text class="ln" x="60" y="192" style="animation-delay:1.18s"><tspan class="ts">[ 0.088 ]</tspan><tspan class="lb"> link secoolioo@github ............ </tspan><tspan class="lv">up</tspan></text>
+<text class="ln" x="60" y="216" style="animation-delay:1.42s"><tspan class="ts">[ 0.140 ]</tspan><tspan class="lb"> entropy pool ..................... </tspan><tspan class="lv">4096 bits</tspan></text>
+<text class="ln" x="60" y="240" style="animation-delay:1.63s"><tspan class="ts">[ 0.201 ]</tspan><tspan class="lb"> compiling ideas .................. </tspan><tspan class="lv">100%</tspan></text>
+<text class="ln warn" x="60" y="264" style="animation-delay:1.88s"><tspan class="ts">[ 0.233 ]</tspan><tspan class="lb"> WARN: sleep.service .............. </tspan><tspan class="lv">failed</tspan></text>
+<text class="ln" x="60" y="288" style="animation-delay:2.12s"><tspan class="ts">[ 0.290 ]</tspan><tspan class="lb"> starting matrix daemon ........... </tspan><tspan class="lv">ok</tspan></text>
+<text class="ln" x="60" y="312" style="animation-delay:2.4s"><tspan class="ts">[ 0.311 ]</tspan><tspan class="lb"> all systems ...................... </tspan><tspan class="lv">nominal</tspan></text>
+<text class="prompt" x="60" y="336">secoolioo@matrix:~$</text>
+</g>
+<rect class="cur" x="232" y="322" width="9" height="14"/>
+
+<line x1="590" y1="40" x2="590" y2="340" stroke="#0d2a1c" stroke-width="1"/>
+<g stroke="#0d2a1c" stroke-width="1">
+<line x1="585" y1="90" x2="590" y2="90"/>
+<line x1="585" y1="140" x2="590" y2="140"/>
+<line x1="585" y1="190" x2="590" y2="190"/>
+<line x1="585" y1="240" x2="590" y2="240"/>
+<line x1="585" y1="290" x2="590" y2="290"/>
+</g>
+<g>
+<rect x="589.2" y="14" width="1.6" height="26" fill="url(#trailG)"/>
+<circle cx="590" cy="40" r="5" fill="#16d67a" opacity="0.18"/>
+<circle cx="590" cy="40" r="2" fill="#ccffe5" filter="url(#dotGlow)"/>
+<animateTransform attributeName="transform" type="translate" from="0 0" to="0 300" dur="4.9s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.06;0.9;1" dur="4.9s" repeatCount="indefinite"/>
+</g>
+
+<g transform="translate(895,212) scale(1.06) translate(-895,-212)">
+<text class="mono nm ghost" x="895" y="212" text-anchor="middle" filter="url(#soft)">хофа</text>
+</g>
+<text class="mono nm glitch" x="895" y="212" text-anchor="middle">хофа</text>
+<text class="mono nm name" x="895" y="212" text-anchor="middle" filter="url(#nameFx)">хофа</text>
+
+<g clip-path="url(#subClip)">
+<text class="mono sub" x="890" y="278" text-anchor="middle" textLength="536" lengthAdjust="spacing">full-stack // automation // reverse-engineering</text>
+</g>
+<line x1="622" y1="252" x2="700" y2="252" stroke="#22d3ee" stroke-width="1" opacity="0.35"/>
+<line x1="1080" y1="252" x2="1158" y2="252" stroke="#22d3ee" stroke-width="1" opacity="0.35"/>
+
+<rect x="0" y="0" width="1200" height="380" fill="url(#vig)"/>
+<rect x="0" y="0" width="1200" height="380" fill="url(#scan)"/>
+<rect class="band" x="0" y="0" width="1200" height="110" fill="url(#band)"/>
+
+<g>
+<path class="hud" d="M24 54 L24 24 L54 24" style="animation-duration:2.9s"/>
+<path class="hud" d="M1176 54 L1176 24 L1146 24" style="animation-duration:3.4s;animation-delay:-.7s"/>
+<path class="hud" d="M24 326 L24 356 L54 356" style="animation-duration:3.9s;animation-delay:-1.5s"/>
+<path class="hud" d="M1176 326 L1176 356 L1146 356" style="animation-duration:4.4s;animation-delay:-2.2s"/>
+<rect class="hudc" x="33" y="33" width="5" height="5" style="animation-duration:4.7s"/>
+<rect class="hudc" x="1162" y="33" width="5" height="5" style="animation-duration:5.3s;animation-delay:-1.1s"/>
+<rect class="hudc" x="33" y="342" width="5" height="5" style="animation-duration:5.9s;animation-delay:-2.6s"/>
+<rect class="hudc" x="1162" y="342" width="5" height="5" style="animation-duration:6.5s;animation-delay:-3.8s"/>
+<line x1="70" y1="24" x2="106" y2="24" stroke="#0b7a3f" stroke-width="1" opacity="0.5"/>
+<line x1="1094" y1="356" x2="1130" y2="356" stroke="#0b7a3f" stroke-width="1" opacity="0.5"/>
+</g>
+</svg>

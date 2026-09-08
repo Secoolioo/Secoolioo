@@ -1,0 +1,296 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="460" viewBox="0 0 900 460" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+<title>Tech stack orbit</title>
+<style>
+.blink{animation:bl 1.9s steps(1,end) infinite}
+@keyframes bl{0%,44%{opacity:1}45%,58%{opacity:.1}59%,100%{opacity:1}}
+.flick{animation:fk 5.7s ease-in-out infinite}
+@keyframes fk{0%,100%{opacity:.75}37%{opacity:.95}52%{opacity:.35}68%{opacity:.85}}
+.scan{animation:sc 9.3s linear infinite}
+@keyframes sc{from{transform:translateY(-80px)}to{transform:translateY(470px)}}
+.np{animation:np 4.3s ease-in-out infinite}
+@keyframes np{0%,100%{stroke-opacity:.95}50%{stroke-opacity:.42}}
+.halo{animation:hl 6.1s ease-in-out infinite}
+@keyframes hl{0%,100%{opacity:.16}50%{opacity:.05}}
+.dim{animation:dm 7.9s ease-in-out infinite}
+@keyframes dm{0%,100%{opacity:.5}50%{opacity:.22}}
+</style>
+<defs>
+<pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+<circle cx="1" cy="1" r="1" fill="#0d2a1c"/>
+</pattern>
+<pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+<path d="M52 0H0V52" fill="none" stroke="#0d2a1c" stroke-width=".6"/>
+</pattern>
+<pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+<rect x="0" y="0" width="4" height="1" fill="#0d2a1c"/>
+</pattern>
+<radialGradient id="vig" cx="50%" cy="50%" r="66%">
+<stop offset="0" stop-color="#030806" stop-opacity="0"/>
+<stop offset=".62" stop-color="#030806" stop-opacity=".35"/>
+<stop offset="1" stop-color="#030806" stop-opacity=".96"/>
+</radialGradient>
+<radialGradient id="coreHalo" cx="50%" cy="50%" r="50%">
+<stop offset="0" stop-color="#16d67a" stop-opacity=".34"/>
+<stop offset=".55" stop-color="#16d67a" stop-opacity=".08"/>
+<stop offset="1" stop-color="#16d67a" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="sweep" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#16d67a" stop-opacity="0"/>
+<stop offset=".5" stop-color="#16d67a" stop-opacity=".09"/>
+<stop offset="1" stop-color="#16d67a" stop-opacity="0"/>
+</linearGradient>
+<filter id="glow" x="-90%" y="-90%" width="280%" height="280%">
+<feGaussianBlur stdDeviation="3" result="b">
+<animate attributeName="stdDeviation" values="2.1;5.4;2.1" dur="2.7s" repeatCount="indefinite"/>
+</feGaussianBlur>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<filter id="softglow" x="-60%" y="-60%" width="220%" height="220%">
+<feGaussianBlur stdDeviation="1.6" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<path id="orbit1" fill="none" d="M307.34 276.35A150 62 -18 1 1 592.66 183.65A150 62 -18 1 1 307.34 276.35Z"/>
+<path id="orbit2" fill="none" d="M220.14 181.14A235 96 12 1 0 679.86 278.86A235 96 12 1 0 220.14 181.14Z"/>
+<path id="orbit3" fill="none" d="M176.42 45.47A330 132 34 1 1 723.58 414.53A330 132 34 1 1 176.42 45.47Z"/>
+</defs>
+
+<rect x="0" y="0" width="900" height="460" fill="#030806"/>
+<rect x="0" y="0" width="900" height="460" fill="url(#grid)" opacity=".18"/>
+<rect x="0" y="0" width="900" height="460" fill="url(#dots)" opacity=".25"/>
+<rect x="0" y="0" width="900" height="460" fill="url(#vig)"/>
+
+<g transform="rotate(12 450 230)">
+<ellipse cx="450" cy="230" rx="60" ry="24" fill="none" stroke="#16d67a" stroke-width="1">
+<animate attributeName="rx" values="58;238" dur="7.1s" repeatCount="indefinite"/>
+<animate attributeName="ry" values="24;97" dur="7.1s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values=".4;0" dur="7.1s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="450" cy="230" rx="60" ry="24" fill="none" stroke="#16d67a" stroke-width="1">
+<animate attributeName="rx" values="58;238" dur="7.1s" begin="-3.55s" repeatCount="indefinite"/>
+<animate attributeName="ry" values="24;97" dur="7.1s" begin="-3.55s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values=".4;0" dur="7.1s" begin="-3.55s" repeatCount="indefinite"/>
+</ellipse>
+</g>
+<g transform="rotate(34 450 230)">
+<ellipse cx="450" cy="230" rx="70" ry="28" fill="none" stroke="#0b7a3f" stroke-width="1">
+<animate attributeName="rx" values="66;334" dur="9.7s" begin="-2.4s" repeatCount="indefinite"/>
+<animate attributeName="ry" values="26;134" dur="9.7s" begin="-2.4s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values=".42;0" dur="9.7s" begin="-2.4s" repeatCount="indefinite"/>
+</ellipse>
+</g>
+
+<g stroke="#0d2a1c" stroke-width="1.1" stroke-linecap="round">
+<line x1="393.8" y1="203.8" x2="187.2" y2="107.4"/>
+<line x1="508.3" y1="251.2" x2="741.3" y2="336.0"/>
+<line x1="433.9" y1="289.9" x2="395.6" y2="432.8"/>
+</g>
+<g fill="#0d2a1c">
+<circle cx="187.2" cy="107.4" r="2.2"/>
+<circle cx="741.3" cy="336" r="2.2"/>
+<circle cx="395.6" cy="432.8" r="2.2"/>
+</g>
+
+<path fill="none" stroke="#0d2a1c" stroke-width="1.4" d="M176.42 45.47A330 132 34 1 1 723.58 414.53A330 132 34 1 1 176.42 45.47Z"/>
+<path fill="none" stroke="#0b7a3f" stroke-width="1" stroke-dasharray="3 14" opacity=".38" d="M176.42 45.47A330 132 34 1 1 723.58 414.53A330 132 34 1 1 176.42 45.47Z">
+<animate attributeName="stroke-dashoffset" values="0;-170" dur="37s" repeatCount="indefinite"/>
+</path>
+
+<path fill="none" stroke="#0d2a1c" stroke-width="1.4" d="M220.14 181.14A235 96 12 1 0 679.86 278.86A235 96 12 1 0 220.14 181.14Z"/>
+<path fill="none" stroke="#0b7a3f" stroke-width="1" stroke-dasharray="3 14" opacity=".46" d="M220.14 181.14A235 96 12 1 0 679.86 278.86A235 96 12 1 0 220.14 181.14Z">
+<animate attributeName="stroke-dashoffset" values="0;170" dur="31s" repeatCount="indefinite"/>
+</path>
+
+<path fill="none" stroke="#0d2a1c" stroke-width="1.4" d="M307.34 276.35A150 62 -18 1 1 592.66 183.65A150 62 -18 1 1 307.34 276.35Z"/>
+<path fill="none" stroke="#0b7a3f" stroke-width="1" stroke-dasharray="3 14" opacity=".55" d="M307.34 276.35A150 62 -18 1 1 592.66 183.65A150 62 -18 1 1 307.34 276.35Z">
+<animate attributeName="stroke-dashoffset" values="0;-170" dur="24s" repeatCount="indefinite"/>
+</path>
+
+<g opacity=".75">
+<g>
+<animateMotion dur="29s" begin="-1.3s" repeatCount="indefinite"><mpath xlink:href="#orbit3" href="#orbit3"/></animateMotion>
+<circle r="21" fill="none" stroke="#16d67a" class="halo" style="animation-delay:-1.1s"/>
+<circle r="15" fill="#06110c" stroke="#16d67a" stroke-width="1.15" class="np" style="animation-delay:-0.6s"/>
+<text x="0" y="3.2" font-size="9" fill="#4dffa6" text-anchor="middle">IOT</text>
+</g>
+<g>
+<animateMotion dur="29s" begin="-7.1s" repeatCount="indefinite"><mpath xlink:href="#orbit3" href="#orbit3"/></animateMotion>
+<circle r="21" fill="none" stroke="#16d67a" class="halo" style="animation-delay:-2.7s"/>
+<circle r="15" fill="#06110c" stroke="#16d67a" stroke-width="1.15" class="np" style="animation-delay:-1.9s"/>
+<text x="0" y="2.1" font-size="6" fill="#4dffa6" text-anchor="middle" letter-spacing=".2">PAPER</text>
+</g>
+<g>
+<animateMotion dur="29s" begin="-12.8s" repeatCount="indefinite"><mpath xlink:href="#orbit3" href="#orbit3"/></animateMotion>
+<circle r="21" fill="none" stroke="#16d67a" class="halo" style="animation-delay:-4.3s"/>
+<circle r="15" fill="#06110c" stroke="#16d67a" stroke-width="1.15" class="np" style="animation-delay:-3.4s"/>
+<text x="0" y="2.7" font-size="7.5" fill="#4dffa6" text-anchor="middle">CI/CD</text>
+</g>
+<g>
+<animateMotion dur="29s" begin="-18.5s" repeatCount="indefinite"><mpath xlink:href="#orbit3" href="#orbit3"/></animateMotion>
+<circle r="21" fill="none" stroke="#16d67a" class="halo" style="animation-delay:-0.4s"/>
+<circle r="15" fill="#06110c" stroke="#16d67a" stroke-width="1.15" class="np" style="animation-delay:-2.5s"/>
+<text x="0" y="3.2" font-size="9" fill="#4dffa6" text-anchor="middle">TKINTER</text>
+</g>
+<g>
+<animateMotion dur="29s" begin="-24.1s" repeatCount="indefinite"><mpath xlink:href="#orbit3" href="#orbit3"/></animateMotion>
+<circle r="21" fill="none" stroke="#16d67a" class="halo" style="animation-delay:-5.2s"/>
+<circle r="15" fill="#06110c" stroke="#16d67a" stroke-width="1.15" class="np" style="animation-delay:-3.9s"/>
+<text x="0" y="2.9" font-size="8" fill="#4dffa6" text-anchor="middle">PWSH</text>
+</g>
+</g>
+
+<g opacity=".92">
+<g>
+<animateMotion dur="21s" begin="-0.9s" repeatCount="indefinite"><mpath xlink:href="#orbit2" href="#orbit2"/></animateMotion>
+<circle r="23" fill="none" stroke="#16d67a" class="halo" style="animation-delay:-0.9s"/>
+<circle r="17" fill="#06110c" stroke="#16d67a" stroke-width="1.2" class="np" style="animation-delay:-1.4s"/>
+<text x="0" y="2.9" font-size="8" fill="#4dffa6" text-anchor="middle">WIN</text>
+</g>
+<g>
+<animateMotion dur="21s" begin="-5.1s" repeatCount="indefinite"><mpath xlink:href="#orbit2" href="#orbit2"/></animateMotion>
+<circle r="23" fill="none" stroke="#16d67a" class="halo" style="animation-delay:-2.2s"/>
+<circle r="17" fill="#06110c" stroke="#16d67a" stroke-width="1.2" class="np" style="animation-delay:-0.3s"/>
+<text x="0" y="3.4" font-size="9.5" fill="#4dffa6" text-anchor="middle">K8S</text>
+</g>
+<g>
+<animateMotion dur="21s" begin="-9.2s" repeatCount="indefinite"><mpath xlink:href="#orbit2" href="#orbit2"/></animateMotion>
+<circle r="23" fill="none" stroke="#16d67a" class="halo" style="animation-delay:-3.6s"/>
+<circle r="17" fill="#06110c" stroke="#16d67a" stroke-width="1.2" class="np" style="animation-delay:-2.8s"/>
+<text x="0" y="3" font-size="8.5" fill="#4dffa6" text-anchor="middle">LINUX</text>
+</g>
+<g>
+<animateMotion dur="21s" begin="-13.4s" repeatCount="indefinite"><mpath xlink:href="#orbit2" href="#orbit2"/></animateMotion>
+<circle r="23" fill="none" stroke="#16d67a" class="halo" style="animation-delay:-4.8s"/>
+<circle r="17" fill="#06110c" stroke="#16d67a" stroke-width="1.2" class="np" style="animation-delay:-1.7s"/>
+<text x="0" y="3.4" font-size="9.5" fill="#4dffa6" text-anchor="middle">SQL</text>
+</g>
+<g>
+<animateMotion dur="21s" begin="-17.5s" repeatCount="indefinite"><mpath xlink:href="#orbit2" href="#orbit2"/></animateMotion>
+<circle r="23" fill="none" stroke="#16d67a" class="halo" style="animation-delay:-1.5s"/>
+<circle r="17" fill="#06110c" stroke="#16d67a" stroke-width="1.2" class="np" style="animation-delay:-3.1s"/>
+<text x="0" y="3.4" font-size="9.5" fill="#4dffa6" text-anchor="middle">GIT</text>
+</g>
+</g>
+
+<g>
+<g>
+<animateMotion dur="14s" begin="-0.4s" repeatCount="indefinite"><mpath xlink:href="#orbit1" href="#orbit1"/></animateMotion>
+<circle r="24" fill="none" stroke="#4dffa6" class="halo" style="animation-delay:-0.2s"/>
+<circle r="17" fill="#06110c" stroke="#16d67a" stroke-width="1.35" class="np" style="animation-delay:-2.1s" filter="url(#softglow)"/>
+<text x="0" y="3.4" font-size="9.5" fill="#4dffa6" text-anchor="middle" letter-spacing=".5">PY</text>
+</g>
+<g>
+<animateMotion dur="14s" begin="-3.9s" repeatCount="indefinite"><mpath xlink:href="#orbit1" href="#orbit1"/></animateMotion>
+<circle r="24" fill="none" stroke="#4dffa6" class="halo" style="animation-delay:-1.8s"/>
+<circle r="17" fill="#06110c" stroke="#16d67a" stroke-width="1.35" class="np" style="animation-delay:-0.9s" filter="url(#softglow)"/>
+<text x="0" y="3.4" font-size="9.5" fill="#4dffa6" text-anchor="middle" letter-spacing=".5">CTYPES</text>
+</g>
+<g>
+<animateMotion dur="14s" begin="-7.3s" repeatCount="indefinite"><mpath xlink:href="#orbit1" href="#orbit1"/></animateMotion>
+<circle r="24" fill="none" stroke="#4dffa6" class="halo" style="animation-delay:-3.3s"/>
+<circle r="17" fill="#06110c" stroke="#16d67a" stroke-width="1.35" class="np" style="animation-delay:-2.6s" filter="url(#softglow)"/>
+<text x="0" y="3.4" font-size="9.5" fill="#4dffa6" text-anchor="middle" letter-spacing=".5">HTML</text>
+</g>
+<g>
+<animateMotion dur="14s" begin="-10.6s" repeatCount="indefinite"><mpath xlink:href="#orbit1" href="#orbit1"/></animateMotion>
+<circle r="24" fill="none" stroke="#4dffa6" class="halo" style="animation-delay:-4.6s"/>
+<circle r="17" fill="#06110c" stroke="#16d67a" stroke-width="1.35" class="np" style="animation-delay:-1.3s" filter="url(#softglow)"/>
+<text x="0" y="3.4" font-size="9.5" fill="#4dffa6" text-anchor="middle" letter-spacing=".5">JAVA</text>
+</g>
+</g>
+
+<g fill="#4dffa6">
+<circle r="2" opacity=".55">
+<animateMotion dur="9.1s" begin="-2s" repeatCount="indefinite"><mpath xlink:href="#orbit1" href="#orbit1"/></animateMotion>
+</circle>
+<circle r="1.6" opacity=".4">
+<animateMotion dur="9.1s" begin="-6.4s" repeatCount="indefinite"><mpath xlink:href="#orbit1" href="#orbit1"/></animateMotion>
+</circle>
+<circle r="2" opacity=".45">
+<animateMotion dur="15.7s" begin="-3.3s" repeatCount="indefinite"><mpath xlink:href="#orbit2" href="#orbit2"/></animateMotion>
+</circle>
+<circle r="1.5" opacity=".35">
+<animateMotion dur="15.7s" begin="-11s" repeatCount="indefinite"><mpath xlink:href="#orbit2" href="#orbit2"/></animateMotion>
+</circle>
+<circle r="1.8" opacity=".3">
+<animateMotion dur="22.3s" begin="-5s" repeatCount="indefinite"><mpath xlink:href="#orbit3" href="#orbit3"/></animateMotion>
+</circle>
+<circle r="1.4" opacity=".26">
+<animateMotion dur="22.3s" begin="-14.8s" repeatCount="indefinite"><mpath xlink:href="#orbit3" href="#orbit3"/></animateMotion>
+</circle>
+</g>
+
+<circle cx="450" cy="230" r="96" fill="url(#coreHalo)"/>
+<circle cx="450" cy="230" r="66" fill="none" stroke="#0b7a3f" stroke-width="5" stroke-dasharray="1.5 15" opacity=".3">
+<animateTransform attributeName="transform" type="rotate" from="0 450 230" to="360 450 230" dur="41s" repeatCount="indefinite"/>
+</circle>
+<circle cx="450" cy="230" r="72" fill="none" stroke="#22d3ee" stroke-width="1.1" stroke-dasharray="20 430" opacity=".55" stroke-linecap="round">
+<animateTransform attributeName="transform" type="rotate" from="0 450 230" to="360 450 230" dur="8.7s" repeatCount="indefinite"/>
+</circle>
+<circle cx="450" cy="230" r="58" fill="none" stroke="#16d67a" stroke-width="1" opacity=".2" stroke-dasharray="1 6">
+<animateTransform attributeName="transform" type="rotate" from="360 450 230" to="0 450 230" dur="24s" repeatCount="indefinite"/>
+</circle>
+<circle cx="450" cy="230" r="40" fill="none" stroke="#16d67a" stroke-width="1.6" opacity=".5" stroke-dasharray="46 18 8 18">
+<animate attributeName="stroke-dashoffset" values="0;180" dur="6.3s" repeatCount="indefinite"/>
+</circle>
+<circle cx="450" cy="230" r="26" fill="none" stroke="#16d67a" stroke-width="1" opacity=".72"/>
+<g filter="url(#glow)">
+<circle cx="450" cy="230" r="18" fill="#06110c" stroke="#4dffa6" stroke-width="1.3">
+<animate attributeName="r" values="17;19;17" dur="2.7s" repeatCount="indefinite"/>
+<animate attributeName="stroke-opacity" values=".7;1;.7" dur="2.7s" repeatCount="indefinite"/>
+</circle>
+<text x="450" y="234.6" font-size="13" fill="#4dffa6" text-anchor="middle" letter-spacing=".4">хофа</text>
+</g>
+
+<rect x="0" y="0" width="900" height="460" fill="url(#scanlines)" opacity=".3"/>
+<rect class="scan" x="0" y="-80" width="900" height="80" fill="url(#sweep)"/>
+
+<g fill="none" stroke="#0d2a1c" stroke-width="1.4">
+<path d="M14 34V14H34"/>
+<path d="M866 14H886V34"/>
+<path d="M14 426V446H34"/>
+<path d="M886 426V446H866"/>
+</g>
+
+<text x="44" y="26" font-size="10" fill="#0b7a3f" letter-spacing="2.2">ORBITAL STACK MONITOR</text>
+<text x="44" y="40" font-size="8" fill="#0b7a3f" opacity=".55" letter-spacing="1.4">3 RINGS / 14 MODULES / SYNC LOCKED</text>
+<text class="flick" x="852" y="27" font-size="9.5" fill="#ffb020" text-anchor="end" letter-spacing="1.6">PWR 98%</text>
+<text x="852" y="41" font-size="8" fill="#0b7a3f" opacity=".5" text-anchor="end" letter-spacing="1.2">CORE TEMP NOMINAL</text>
+
+<circle class="blink" cx="42" cy="430.4" r="3.2" fill="#16d67a"/>
+<text x="54" y="434" font-size="11" fill="#0b7a3f" letter-spacing="1.8">STACK.SYS  //  ONLINE</text>
+
+<g fill="#16d67a" opacity=".6">
+<rect x="780" y="430" width="7" height="6">
+<animate attributeName="y" values="430;418;427;430" dur="1.3s" repeatCount="indefinite"/>
+<animate attributeName="height" values="6;18;9;6" dur="1.3s" repeatCount="indefinite"/>
+</rect>
+<rect x="791" y="426" width="7" height="10">
+<animate attributeName="y" values="426;414;429;426" dur="1.7s" repeatCount="indefinite"/>
+<animate attributeName="height" values="10;22;7;10" dur="1.7s" repeatCount="indefinite"/>
+</rect>
+<rect x="802" y="428" width="7" height="8">
+<animate attributeName="y" values="428;422;412;428" dur="2.1s" repeatCount="indefinite"/>
+<animate attributeName="height" values="8;14;24;8" dur="2.1s" repeatCount="indefinite"/>
+</rect>
+<rect x="813" y="420" width="7" height="16">
+<animate attributeName="y" values="420;430;417;420" dur="1.9s" repeatCount="indefinite"/>
+<animate attributeName="height" values="16;6;19;16" dur="1.9s" repeatCount="indefinite"/>
+</rect>
+<rect x="824" y="429" width="7" height="7">
+<animate attributeName="y" values="429;415;424;429" dur="2.5s" repeatCount="indefinite"/>
+<animate attributeName="height" values="7;21;12;7" dur="2.5s" repeatCount="indefinite"/>
+</rect>
+<rect x="835" y="424" width="7" height="12" fill="#ffb020">
+<animate attributeName="y" values="424;427;414;424" dur="1.5s" repeatCount="indefinite"/>
+<animate attributeName="height" values="12;9;22;12" dur="1.5s" repeatCount="indefinite"/>
+</rect>
+</g>
+<text x="842" y="446" font-size="7.5" fill="#0b7a3f" opacity=".45" text-anchor="end" letter-spacing="1.2">SOLAR</text>
+</svg>

@@ -1,0 +1,24 @@
+# Optional: a small daily nudge that re-triggers the generator workflows, so the
+# profile assets stay fresh even if their own schedules get throttled by GitHub
+# (cron on low-activity repos can be delayed or dropped). Safe to delete.
+name: refresh
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Re-run generator workflows
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh workflow run snake.yml --ref "${{ github.ref_name }}"
+          gh workflow run profile-3d.yml --ref "${{ github.ref_name }}"
