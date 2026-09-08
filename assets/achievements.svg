@@ -73,195 +73,253 @@
   </g>
   <g>
     <g>
-      <line x1="281" y1="132" x2="349" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="3 3"/>
-      <circle cx="281" cy="132" r="2.1" fill="#4dffa6">
-        <animate attributeName="cx" values="281;349" dur="2.9s" repeatCount="indefinite"/>
+      <line x1="174.13" y1="132" x2="214.42" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="174.13" cy="132" r="2.1" fill="#4dffa6">
+        <animate attributeName="cx" values="174.13;214.42" dur="2.9s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.18;0.82;1" dur="2.9s" repeatCount="indefinite"/>
       </circle>
     </g>
     <g>
-      <line x1="471" y1="132" x2="539" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="3 3"/>
-      <circle cx="471" cy="132" r="2.1" fill="#4dffa6">
-        <animate attributeName="cx" values="471;539" dur="3.7s" repeatCount="indefinite"/>
+      <line x1="336.42" y1="132" x2="376.71" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="336.42" cy="132" r="2.1" fill="#4dffa6">
+        <animate attributeName="cx" values="336.42;376.71" dur="3.7s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.18;0.82;1" dur="3.7s" repeatCount="indefinite"/>
       </circle>
     </g>
     <g>
-      <line x1="661" y1="132" x2="729" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="3 3"/>
-      <circle cx="661" cy="132" r="2.1" fill="#4dffa6">
-        <animate attributeName="cx" values="661;729" dur="4.3s" repeatCount="indefinite"/>
+      <line x1="498.71" y1="132" x2="539" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="498.71" cy="132" r="2.1" fill="#4dffa6">
+        <animate attributeName="cx" values="498.71;539" dur="4.3s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.18;0.82;1" dur="4.3s" repeatCount="indefinite"/>
       </circle>
     </g>
     <g>
-      <line x1="851" y1="132" x2="919" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="3 3"/>
-      <circle cx="851" cy="132" r="2.1" fill="#4dffa6">
-        <animate attributeName="cx" values="851;919" dur="3.1s" repeatCount="indefinite"/>
+      <line x1="661" y1="132" x2="701.29" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="661" cy="132" r="2.1" fill="#4dffa6">
+        <animate attributeName="cx" values="661;701.29" dur="3.1s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.18;0.82;1" dur="3.1s" repeatCount="indefinite"/>
       </circle>
     </g>
-    <g opacity="0.7">
-      <line x1="32" y1="132" x2="159" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="4 5">
-        <animate attributeName="stroke-dashoffset" values="0;-27" dur="7.9s" repeatCount="indefinite"/>
-      </line>
-      <rect x="29.5" y="125" width="5" height="14" fill="none" stroke="#0b7a3f" stroke-width="1.1"/>
-      <line x1="46" y1="127" x2="46" y2="137" stroke="#0d2a1c" stroke-width="1.1"/>
+    <g>
+      <line x1="823.29" y1="132" x2="863.58" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="823.29" cy="132" r="2.1" fill="#4dffa6">
+        <animate attributeName="cx" values="823.29;863.58" dur="5.1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.18;0.82;1" dur="5.1s" repeatCount="indefinite"/>
+      </circle>
     </g>
-    <g opacity="0.7">
-      <line x1="1041" y1="132" x2="1168" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="4 5">
-        <animate attributeName="stroke-dashoffset" values="0;27" dur="7.9s" repeatCount="indefinite"/>
-      </line>
-      <rect x="1165.5" y="125" width="5" height="14" fill="none" stroke="#0b7a3f" stroke-width="1.1"/>
-      <line x1="1154" y1="127" x2="1154" y2="137" stroke="#0d2a1c" stroke-width="1.1"/>
+    <g>
+      <line x1="985.58" y1="132" x2="1025.87" y2="132" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="985.58" cy="132" r="2.1" fill="#4dffa6">
+        <animate attributeName="cx" values="985.58;1025.87" dur="3.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.18;0.82;1" dur="3.4s" repeatCount="indefinite"/>
+      </circle>
     </g>
+
+
   </g>
   <g>
     <g>
-      <polygon points="270,132 245,175.3 195,175.3 170,132 195,88.7 245,88.7" fill="url(#mcore)"/>
-      <polygon points="272,132 246,177.03 194,177.03 168,132 194,86.97 246,86.97" fill="#06110c" stroke="#16d67a" stroke-width="1.6" stroke-opacity="0.55"/>
-      <polygon points="262.8,132 241.4,169.07 198.6,169.07 177.2,132 198.6,94.93 241.4,94.93" fill="none" stroke="#0d2a1c" stroke-width="1.2"/>
-      <polygon class="br b0" points="278,132 249,182.23 191,182.23 162,132 191,81.77 249,81.77" fill="none"
+      <polygon points="163.13,132 138.13,175.3 88.13,175.3 63.13,132 88.13,88.7 138.13,88.7" fill="url(#mcore)"/>
+      <polygon points="165.13,132 139.13,177.03 87.13,177.03 61.13,132 87.13,86.97 139.13,86.97" fill="#06110c" stroke="#16d67a" stroke-width="1.6" stroke-opacity="0.55"/>
+      <polygon points="155.93,132 134.53,169.07 91.73,169.07 70.33,132 91.73,94.93 134.53,94.93" fill="none" stroke="#0d2a1c" stroke-width="1.2"/>
+      <polygon class="br b0" points="171.13,132 142.13,182.23 84.13,182.23 55.13,132 84.13,81.77 142.13,81.77" fill="none"
         stroke="#16d67a" stroke-width="1.1"
         stroke-dasharray="6 6" stroke-dashoffset="135.53">
         <animate attributeName="stroke-dashoffset" from="135.53" to="483.53" dur="9.1s" repeatCount="indefinite"/>
       </polygon>
-      <g transform="translate(220,112)" filter="url(#iglow)">
+      <g transform="translate(113.13,112)" filter="url(#iglow)">
         <polygon points="0,-7.6 1.88,-2.59 7.23,-2.35 3.04,0.99 4.47,6.15 0,3.2 -4.47,6.15 -3.04,0.99 -7.23,-2.35 -1.88,-2.59" fill="#4dffa6" opacity="0.92"/>
       </g>
       <g filter="url(#mglow)">
-        <text class="cu d0" style="animation-name:cu0" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d0" style="animation-name:cu1" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
-        <text class="cu d0" style="animation-name:cu2" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
-        <text class="cu d0" style="animation-name:cu3" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
-        <text class="cu d0" style="animation-name:cu4" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
-        <text class="cu d0" style="animation-name:cu5" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d0" style="animation-name:cu6" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d0" style="animation-name:cu7" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d0" style="animation-name:cu8" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d0" style="animation-name:cu9" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d0" style="animation-name:cu10" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d0" style="animation-name:cu11" x="220" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d0" style="animation-name:cu0" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d0" style="animation-name:cu1" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
+        <text class="cu d0" style="animation-name:cu2" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
+        <text class="cu d0" style="animation-name:cu3" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d0" style="animation-name:cu4" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d0" style="animation-name:cu5" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d0" style="animation-name:cu6" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d0" style="animation-name:cu7" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d0" style="animation-name:cu8" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d0" style="animation-name:cu9" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d0" style="animation-name:cu10" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d0" style="animation-name:cu11" x="113.13" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
       </g>
-      <text x="220" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">STARS</text>
+      <text x="113.13" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">STARS</text>
     </g>
     <g>
-      <polygon points="460,132 435,175.3 385,175.3 360,132 385,88.7 435,88.7" fill="url(#mcore)"/>
-      <polygon points="462,132 436,177.03 384,177.03 358,132 384,86.97 436,86.97" fill="#06110c" stroke="#16d67a" stroke-width="1.6" stroke-opacity="0.55"/>
-      <polygon points="452.8,132 431.4,169.07 388.6,169.07 367.2,132 388.6,94.93 431.4,94.93" fill="none" stroke="#0d2a1c" stroke-width="1.2"/>
-      <polygon class="br b1" points="468,132 439,182.23 381,182.23 352,132 381,81.77 439,81.77" fill="none"
+      <polygon points="325.42,132 300.42,175.3 250.42,175.3 225.42,132 250.42,88.7 300.42,88.7" fill="url(#mcore)"/>
+      <polygon points="327.42,132 301.42,177.03 249.42,177.03 223.42,132 249.42,86.97 301.42,86.97" fill="#06110c" stroke="#16d67a" stroke-width="1.6" stroke-opacity="0.55"/>
+      <polygon points="318.22,132 296.82,169.07 254.02,169.07 232.62,132 254.02,94.93 296.82,94.93" fill="none" stroke="#0d2a1c" stroke-width="1.2"/>
+      <polygon class="br b1" points="333.42,132 304.42,182.23 246.42,182.23 217.42,132 246.42,81.77 304.42,81.77" fill="none"
         stroke="#16d67a" stroke-width="1.1"
         stroke-dasharray="6 6" stroke-dashoffset="187.45">
         <animate attributeName="stroke-dashoffset" from="187.45" to="535.45" dur="11.3s" repeatCount="indefinite"/>
       </polygon>
-      <g transform="translate(410,112)" filter="url(#iglow)">
+      <g transform="translate(275.42,112)" filter="url(#iglow)">
         <g fill="none" stroke="#4dffa6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="-5.5" cy="-5" r="2.1"/><circle cx="5.5" cy="-5" r="2.1"/><circle cx="0" cy="6" r="2.1"/><path d="M-5.5,-2.9 L-5.5,0.4 L5.5,0.4 L5.5,-2.9"/><path d="M0,0.4 L0,3.9"/></g>
       </g>
       <g filter="url(#mglow)">
-        <text class="cu d1" style="animation-name:cu0" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d1" style="animation-name:cu1" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d1" style="animation-name:cu2" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d1" style="animation-name:cu3" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d1" style="animation-name:cu4" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d1" style="animation-name:cu5" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d1" style="animation-name:cu6" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d1" style="animation-name:cu7" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d1" style="animation-name:cu8" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d1" style="animation-name:cu9" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d1" style="animation-name:cu10" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d1" style="animation-name:cu11" x="410" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu0" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu1" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu2" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu3" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu4" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu5" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu6" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu7" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu8" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu9" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu10" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d1" style="animation-name:cu11" x="275.42" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
       </g>
-      <text x="410" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">FORKS</text>
+      <text x="275.42" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">FORKS</text>
+    </g>
+    <g>
+      <polygon points="487.71,132 462.71,175.3 412.71,175.3 387.71,132 412.71,88.7 462.71,88.7" fill="url(#mcore)"/>
+      <polygon points="489.71,132 463.71,177.03 411.71,177.03 385.71,132 411.71,86.97 463.71,86.97" fill="#06110c" stroke="#16d67a" stroke-width="1.6" stroke-opacity="0.55"/>
+      <polygon points="480.51,132 459.11,169.07 416.31,169.07 394.91,132 416.31,94.93 459.11,94.93" fill="none" stroke="#0d2a1c" stroke-width="1.2"/>
+      <polygon class="br b2" points="495.71,132 466.71,182.23 408.71,182.23 379.71,132 408.71,81.77 466.71,81.77" fill="none"
+        stroke="#16d67a" stroke-width="1.1"
+        stroke-dasharray="6 6" stroke-dashoffset="59.71">
+        <animate attributeName="stroke-dashoffset" from="59.71" to="407.71" dur="13.7s" repeatCount="indefinite"/>
+      </polygon>
+      <g transform="translate(437.71,112)" filter="url(#iglow)">
+        <g fill="none" stroke="#4dffa6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M-6.4,-7 L4.4,-7 A2,2 0 0 1 6.4,-5 L6.4,6.2 A2,2 0 0 1 4.4,8.2 L-4.4,8.2 A2,2 0 0 1 -6.4,6.2 Z"/><path d="M-6.4,4.4 L4.4,4.4"/><path d="M-2.6,-7 L-2.6,4.4"/></g>
+      </g>
+      <g filter="url(#mglow)">
+        <text class="cu d2" style="animation-name:cu0" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d2" style="animation-name:cu1" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d2" style="animation-name:cu2" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d2" style="animation-name:cu3" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">4</text>
+        <text class="cu d2" style="animation-name:cu4" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">5</text>
+        <text class="cu d2" style="animation-name:cu5" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">6</text>
+        <text class="cu d2" style="animation-name:cu6" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">6</text>
+        <text class="cu d2" style="animation-name:cu7" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">7</text>
+        <text class="cu d2" style="animation-name:cu8" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">7</text>
+        <text class="cu d2" style="animation-name:cu9" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">7</text>
+        <text class="cu d2" style="animation-name:cu10" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">7</text>
+        <text class="cu d2" style="animation-name:cu11" x="437.71" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">7</text>
+      </g>
+      <text x="437.71" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">REPOS</text>
     </g>
     <g>
       <polygon points="650,132 625,175.3 575,175.3 550,132 575,88.7 625,88.7" fill="url(#mcore)"/>
       <polygon points="652,132 626,177.03 574,177.03 548,132 574,86.97 626,86.97" fill="#06110c" stroke="#16d67a" stroke-width="1.6" stroke-opacity="0.55"/>
       <polygon points="642.8,132 621.4,169.07 578.6,169.07 557.2,132 578.6,94.93 621.4,94.93" fill="none" stroke="#0d2a1c" stroke-width="1.2"/>
-      <polygon class="br b2" points="658,132 629,182.23 571,182.23 542,132 571,81.77 629,81.77" fill="none"
-        stroke="#16d67a" stroke-width="1.1"
-        stroke-dasharray="6 6" stroke-dashoffset="59.71">
-        <animate attributeName="stroke-dashoffset" from="59.71" to="407.71" dur="13.7s" repeatCount="indefinite"/>
-      </polygon>
-      <g transform="translate(600,112)" filter="url(#iglow)">
-        <g fill="none" stroke="#4dffa6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M-6.4,-7 L4.4,-7 A2,2 0 0 1 6.4,-5 L6.4,6.2 A2,2 0 0 1 4.4,8.2 L-4.4,8.2 A2,2 0 0 1 -6.4,6.2 Z"/><path d="M-6.4,4.4 L4.4,4.4"/><path d="M-2.6,-7 L-2.6,4.4"/></g>
-      </g>
-      <g filter="url(#mglow)">
-        <text class="cu d2" style="animation-name:cu0" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d2" style="animation-name:cu1" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
-        <text class="cu d2" style="animation-name:cu2" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d2" style="animation-name:cu3" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">4</text>
-        <text class="cu d2" style="animation-name:cu4" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">5</text>
-        <text class="cu d2" style="animation-name:cu5" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">6</text>
-        <text class="cu d2" style="animation-name:cu6" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">6</text>
-        <text class="cu d2" style="animation-name:cu7" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">7</text>
-        <text class="cu d2" style="animation-name:cu8" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">7</text>
-        <text class="cu d2" style="animation-name:cu9" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">7</text>
-        <text class="cu d2" style="animation-name:cu10" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">7</text>
-        <text class="cu d2" style="animation-name:cu11" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">7</text>
-      </g>
-      <text x="600" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">REPOS</text>
-    </g>
-    <g>
-      <polygon points="840,132 815,175.3 765,175.3 740,132 765,88.7 815,88.7" fill="url(#mcore)"/>
-      <polygon points="842,132 816,177.03 764,177.03 738,132 764,86.97 816,86.97" fill="#06110c" stroke="#16d67a" stroke-width="1.6" stroke-opacity="0.55"/>
-      <polygon points="832.8,132 811.4,169.07 768.6,169.07 747.2,132 768.6,94.93 811.4,94.93" fill="none" stroke="#0d2a1c" stroke-width="1.2"/>
-      <polygon class="br b3" points="848,132 819,182.23 761,182.23 732,132 761,81.77 819,81.77" fill="none"
+      <polygon class="br b3" points="658,132 629,182.23 571,182.23 542,132 571,81.77 629,81.77" fill="none"
         stroke="#16d67a" stroke-width="1.1"
         stroke-dasharray="6 6" stroke-dashoffset="202.61">
         <animate attributeName="stroke-dashoffset" from="202.61" to="550.61" dur="10.1s" repeatCount="indefinite"/>
       </polygon>
-      <g transform="translate(790,112)" filter="url(#iglow)">
+      <g transform="translate(600,112)" filter="url(#iglow)">
         <g fill="none" stroke="#4dffa6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="-3.6" r="3.3"/><path d="M-6.6,7.4 C-6.6,2.6 -3.6,0.6 0,0.6 C3.6,0.6 6.6,2.6 6.6,7.4"/></g>
       </g>
       <g filter="url(#mglow)">
-        <text class="cu d3" style="animation-name:cu0" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d3" style="animation-name:cu1" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d3" style="animation-name:cu2" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
-        <text class="cu d3" style="animation-name:cu3" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
-        <text class="cu d3" style="animation-name:cu4" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
-        <text class="cu d3" style="animation-name:cu5" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
-        <text class="cu d3" style="animation-name:cu6" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
-        <text class="cu d3" style="animation-name:cu7" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
-        <text class="cu d3" style="animation-name:cu8" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
-        <text class="cu d3" style="animation-name:cu9" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
-        <text class="cu d3" style="animation-name:cu10" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
-        <text class="cu d3" style="animation-name:cu11" x="790" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d3" style="animation-name:cu0" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d3" style="animation-name:cu1" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d3" style="animation-name:cu2" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
+        <text class="cu d3" style="animation-name:cu3" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
+        <text class="cu d3" style="animation-name:cu4" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
+        <text class="cu d3" style="animation-name:cu5" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d3" style="animation-name:cu6" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d3" style="animation-name:cu7" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d3" style="animation-name:cu8" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d3" style="animation-name:cu9" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d3" style="animation-name:cu10" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d3" style="animation-name:cu11" x="600" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
       </g>
-      <text x="790" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">FOLLOWERS</text>
+      <text x="600" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">FOLLOWERS</text>
     </g>
     <g>
-      <polygon points="1030,132 1005,175.3 955,175.3 930,132 955,88.7 1005,88.7" fill="url(#mcore)"/>
-      <polygon points="1032,132 1006,177.03 954,177.03 928,132 954,86.97 1006,86.97" fill="#06110c" stroke="#16d67a" stroke-width="1.6" stroke-opacity="0.55"/>
-      <polygon points="1022.8,132 1001.4,169.07 958.6,169.07 937.2,132 958.6,94.93 1001.4,94.93" fill="none" stroke="#0d2a1c" stroke-width="1.2"/>
-      <polygon class="br b4" points="1038,132 1009,182.23 951,182.23 922,132 951,81.77 1009,81.77" fill="none"
+      <polygon points="812.29,132 787.29,175.3 737.29,175.3 712.29,132 737.29,88.7 787.29,88.7" fill="url(#mcore)"/>
+      <polygon points="814.29,132 788.29,177.03 736.29,177.03 710.29,132 736.29,86.97 788.29,86.97" fill="#06110c" stroke="#16d67a" stroke-width="1.6" stroke-opacity="0.55"/>
+      <polygon points="805.09,132 783.69,169.07 740.89,169.07 719.49,132 740.89,94.93 783.69,94.93" fill="none" stroke="#0d2a1c" stroke-width="1.2"/>
+      <polygon class="br b4" points="820.29,132 791.29,182.23 733.29,182.23 704.29,132 733.29,81.77 791.29,81.77" fill="none"
         stroke="#16d67a" stroke-width="1.1"
         stroke-dasharray="6 6" stroke-dashoffset="39.24">
         <animate attributeName="stroke-dashoffset" from="39.24" to="387.24" dur="12.9s" repeatCount="indefinite"/>
       </polygon>
-      <g transform="translate(980,112)" filter="url(#iglow)">
+      <g transform="translate(762.29,112)" filter="url(#iglow)">
         <g fill="none" stroke="#4dffa6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M-3.2,-6.4 L-7.6,0 L-3.2,6.4"/><path d="M3.2,-6.4 L7.6,0 L3.2,6.4"/><path d="M1.3,-6.6 L-1.3,6.6" opacity="0.6"/></g>
       </g>
       <g filter="url(#mglow)">
-        <text class="cu d4" style="animation-name:cu0" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
-        <text class="cu d4" style="animation-name:cu1" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
-        <text class="cu d4" style="animation-name:cu2" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
-        <text class="cu d4" style="animation-name:cu3" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
-        <text class="cu d4" style="animation-name:cu4" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
-        <text class="cu d4" style="animation-name:cu5" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d4" style="animation-name:cu6" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d4" style="animation-name:cu7" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d4" style="animation-name:cu8" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d4" style="animation-name:cu9" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d4" style="animation-name:cu10" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
-        <text class="cu d4" style="animation-name:cu11" x="980" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d4" style="animation-name:cu0" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d4" style="animation-name:cu1" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
+        <text class="cu d4" style="animation-name:cu2" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
+        <text class="cu d4" style="animation-name:cu3" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d4" style="animation-name:cu4" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d4" style="animation-name:cu5" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d4" style="animation-name:cu6" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d4" style="animation-name:cu7" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d4" style="animation-name:cu8" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d4" style="animation-name:cu9" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d4" style="animation-name:cu10" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d4" style="animation-name:cu11" x="762.29" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
       </g>
-      <text x="980" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">LANGUAGES</text>
+      <text x="762.29" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">LANGUAGES</text>
+    </g>
+    <g>
+      <polygon points="974.58,132 949.58,175.3 899.58,175.3 874.58,132 899.58,88.7 949.58,88.7" fill="url(#mcore)"/>
+      <polygon points="976.58,132 950.58,177.03 898.58,177.03 872.58,132 898.58,86.97 950.58,86.97" fill="#06110c" stroke="#16d67a" stroke-width="1.6" stroke-opacity="0.55"/>
+      <polygon points="967.38,132 945.98,169.07 903.18,169.07 881.78,132 903.18,94.93 945.98,94.93" fill="none" stroke="#0d2a1c" stroke-width="1.2"/>
+      <polygon class="br b5" points="982.58,132 953.58,182.23 895.58,182.23 866.58,132 895.58,81.77 953.58,81.77" fill="none"
+        stroke="#16d67a" stroke-width="1.1"
+        stroke-dasharray="6 6" stroke-dashoffset="181.59">
+        <animate attributeName="stroke-dashoffset" from="181.59" to="529.59" dur="8.7s" repeatCount="indefinite"/>
+      </polygon>
+      <g transform="translate(924.58,112)" filter="url(#iglow)">
+        <path d="M0,-8 C3.1,-4.4 5.4,-2.4 5.4,1.1 A5.4,5.4 0 0 1 -5.4,1.1 C-5.4,-0.9 -4.2,-2.4 -3.1,-3.6 C-3.1,-1.4 -2.1,-0.4 -1.1,-0.4 C-0.1,-2.4 -1.1,-5.4 0,-8 Z" fill="#4dffa6" opacity="0.92"/>
+      </g>
+      <g filter="url(#mglow)">
+        <text class="cu d5" style="animation-name:cu0" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d5" style="animation-name:cu1" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
+        <text class="cu d5" style="animation-name:cu2" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
+        <text class="cu d5" style="animation-name:cu3" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d5" style="animation-name:cu4" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d5" style="animation-name:cu5" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d5" style="animation-name:cu6" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d5" style="animation-name:cu7" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d5" style="animation-name:cu8" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d5" style="animation-name:cu9" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d5" style="animation-name:cu10" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d5" style="animation-name:cu11" x="924.58" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+      </g>
+      <text x="924.58" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">CURRENT STREAK</text>
+    </g>
+    <g>
+      <polygon points="1136.87,132 1111.87,175.3 1061.87,175.3 1036.87,132 1061.87,88.7 1111.87,88.7" fill="url(#mcore)"/>
+      <polygon points="1138.87,132 1112.87,177.03 1060.87,177.03 1034.87,132 1060.87,86.97 1112.87,86.97" fill="#06110c" stroke="#16d67a" stroke-width="1.6" stroke-opacity="0.55"/>
+      <polygon points="1129.67,132 1108.27,169.07 1065.47,169.07 1044.07,132 1065.47,94.93 1108.27,94.93" fill="none" stroke="#0d2a1c" stroke-width="1.2"/>
+      <polygon class="br b6" points="1144.87,132 1115.87,182.23 1057.87,182.23 1028.87,132 1057.87,81.77 1115.87,81.77" fill="none"
+        stroke="#16d67a" stroke-width="1.1"
+        stroke-dasharray="6 6" stroke-dashoffset="315.43">
+        <animate attributeName="stroke-dashoffset" from="315.43" to="663.43" dur="14.3s" repeatCount="indefinite"/>
+      </polygon>
+      <g transform="translate(1086.87,112)" filter="url(#iglow)">
+        <g fill="none" stroke="#4dffa6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="-6.6" y="-5" width="13.2" height="12.6" rx="1.6"/><path d="M-6.6,-1.2 L6.6,-1.2"/><path d="M-3.4,-7.4 L-3.4,-3.4"/><path d="M3.4,-7.4 L3.4,-3.4"/><path d="M-3.4,2.4 L-0.6,2.4"/></g>
+      </g>
+      <g filter="url(#mglow)">
+        <text class="cu d6" style="animation-name:cu0" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">0</text>
+        <text class="cu d6" style="animation-name:cu1" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">1</text>
+        <text class="cu d6" style="animation-name:cu2" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d6" style="animation-name:cu3" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">2</text>
+        <text class="cu d6" style="animation-name:cu4" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d6" style="animation-name:cu5" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">3</text>
+        <text class="cu d6" style="animation-name:cu6" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">4</text>
+        <text class="cu d6" style="animation-name:cu7" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">4</text>
+        <text class="cu d6" style="animation-name:cu8" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">4</text>
+        <text class="cu d6" style="animation-name:cu9" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">4</text>
+        <text class="cu d6" style="animation-name:cu10" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">4</text>
+        <text class="cu d6" style="animation-name:cu11" x="1086.87" y="146" font-size="26" fill="#ccffe5" text-anchor="middle">4</text>
+      </g>
+      <text x="1086.87" y="197" font-size="10.5" fill="#16d67a" letter-spacing="2" text-anchor="middle" dx="1">LONGEST STREAK</text>
     </g>
   </g>
   <g>
     <line class="fl" x1="32" y1="226" x2="1168" y2="226" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="6 6">
       <animate attributeName="stroke-dashoffset" values="0;-48" dur="6.3s" repeatCount="indefinite"/>
     </line>
-    <text x="32" y="244" font-size="9.5" fill="#0b7a3f" letter-spacing="1.2" opacity="0.6">gen 2026-09-08 08:54Z  //  last push 2026-09-08</text>
+    <text x="32" y="244" font-size="9.5" fill="#0b7a3f" letter-spacing="1.2" opacity="0.6">gen 2026-09-08 08:58Z  //  last push 2026-09-08</text>
     <text x="1168" y="244" font-size="9.5" fill="#0b7a3f" letter-spacing="1.6" text-anchor="end" opacity="0.75">LIVE DATA</text>
   </g>
 </svg>
