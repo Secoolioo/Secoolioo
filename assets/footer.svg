@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+<title>thanks for scrolling</title>
+<desc>Matrix rain dissipating into a footer banner.</desc>
+<defs>
+<radialGradient id="bgGlow" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#0b7a3f" stop-opacity="0.55"/>
+<stop offset="0.42" stop-color="#0b7a3f" stop-opacity="0.22"/>
+<stop offset="0.75" stop-color="#0b7a3f" stop-opacity="0.06"/>
+<stop offset="1" stop-color="#0b7a3f" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="coreGlow" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#16d67a" stop-opacity="0.20"/>
+<stop offset="0.5" stop-color="#16d67a" stop-opacity="0.07"/>
+<stop offset="1" stop-color="#16d67a" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="topAmb" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#0b7a3f" stop-opacity="0.13"/>
+<stop offset="0.55" stop-color="#0b7a3f" stop-opacity="0.05"/>
+<stop offset="1" stop-color="#0b7a3f" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="fadeGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="134">
+<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+<stop offset="0.30" stop-color="#ffffff" stop-opacity="0.97"/>
+<stop offset="0.62" stop-color="#ffffff" stop-opacity="0.55"/>
+<stop offset="0.85" stop-color="#ffffff" stop-opacity="0.16"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+</linearGradient>
+<mask id="rainMask">
+<rect x="0" y="0" width="1200" height="134" fill="url(#fadeGrad)"/>
+</mask>
+<filter id="softBlur" filterUnits="userSpaceOnUse" x="-20" y="-130" width="1240" height="300">
+<feGaussianBlur stdDeviation="0.85"/>
+</filter>
+<linearGradient id="shim" gradientUnits="userSpaceOnUse" x1="-380" y1="0" x2="-120" y2="0">
+<stop offset="0" stop-color="#ccffe5" stop-opacity="0"/>
+<stop offset="0.32" stop-color="#ccffe5" stop-opacity="0.30"/>
+<stop offset="0.5" stop-color="#ffffff" stop-opacity="0.95"/>
+<stop offset="0.68" stop-color="#ccffe5" stop-opacity="0.30"/>
+<stop offset="1" stop-color="#ccffe5" stop-opacity="0"/>
+<animate attributeName="x1" values="-380;1250" dur="6.5s" repeatCount="indefinite"/>
+<animate attributeName="x2" values="-120;1510" dur="6.5s" repeatCount="indefinite"/>
+</linearGradient>
+<filter id="tglow" x="-4%" y="-170%" width="108%" height="440%">
+<feGaussianBlur stdDeviation="4.2" result="b1"/>
+<feMerge><feMergeNode in="b1"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="sglow" x="-4%" y="-170%" width="108%" height="440%">
+<feGaussianBlur stdDeviation="2.1" result="b2"/>
+<feMerge><feMergeNode in="b2"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="pglow" x="-6%" y="-700%" width="112%" height="1500%">
+<feGaussianBlur stdDeviation="2.6" result="b3"/>
+<feMerge><feMergeNode in="b3"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<linearGradient id="pulseGrad" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#0b7a3f" stop-opacity="0"/>
+<stop offset="0.55" stop-color="#16d67a" stop-opacity="0.14"/>
+<stop offset="0.88" stop-color="#ccffe5" stop-opacity="0.92"/>
+<stop offset="1" stop-color="#ccffe5" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="pulseGrad2" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#0b7a3f" stop-opacity="0"/>
+<stop offset="0.7" stop-color="#16d67a" stop-opacity="0.10"/>
+<stop offset="0.94" stop-color="#4dffa6" stop-opacity="0.55"/>
+<stop offset="1" stop-color="#4dffa6" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="vignL" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#030806" stop-opacity="0.96"/>
+<stop offset="0.55" stop-color="#030806" stop-opacity="0.42"/>
+<stop offset="1" stop-color="#030806" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="vignR" x1="1" y1="0" x2="0" y2="0">
+<stop offset="0" stop-color="#030806" stop-opacity="0.96"/>
+<stop offset="0.55" stop-color="#030806" stop-opacity="0.42"/>
+<stop offset="1" stop-color="#030806" stop-opacity="0"/>
+</linearGradient>
+<pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+<rect x="0" y="0" width="4" height="1" fill="#16d67a" opacity="0.055"/>
+<animateTransform attributeName="patternTransform" type="translate" from="0 0" to="0 4" dur="7.3s" repeatCount="indefinite"/>
+</pattern>
+</defs>
+<style>
+.c{animation-name:fall;animation-timing-function:linear;animation-iteration-count:infinite}
+.b{animation-name:fallb;animation-timing-function:linear;animation-iteration-count:infinite}
+@keyframes fall{from{transform:translateY(-88px)}to{transform:translateY(166px)}}
+@keyframes fallb{from{transform:translateY(-70px)}to{transform:translateY(152px)}}
+.h{fill:#ccffe5}
+.a{fill:#4dffa6}
+.n1{fill:#16d67a;opacity:.92}
+.n2{fill:#16d67a;opacity:.70}
+.n3{fill:#0b7a3f;opacity:.74}
+.n4{fill:#0b7a3f;opacity:.50}
+.n5{fill:#0b7a3f;opacity:.30}
+.bh{fill:#4dffa6;opacity:.50}
+.b1{fill:#16d67a;opacity:.36}
+.b2{fill:#0b7a3f;opacity:.30}
+.b3{fill:#0b7a3f;opacity:.18}
+.fk{animation-name:flk;animation-iteration-count:infinite;animation-timing-function:steps(1,end)}
+@keyframes flk{0%,86%{opacity:1}88%{opacity:.18}90%{opacity:1}93%{opacity:.45}95%,100%{opacity:1}}
+.breathe{animation:br1 9.7s ease-in-out infinite alternate}
+@keyframes br1{from{opacity:.62}to{opacity:1}}
+.breathe2{animation:br2 6.9s ease-in-out infinite alternate}
+@keyframes br2{from{opacity:.48}to{opacity:.95}}
+.tb{animation:tbr 5.3s ease-in-out infinite alternate}
+@keyframes tbr{from{opacity:.87}to{opacity:1}}
+.gm{animation:gmk 7.3s steps(1,end) infinite}
+@keyframes gmk{0%,90.5%{opacity:0;transform:translate(0,0)}91%{opacity:.5;transform:translate(-2.5px,0)}92.5%{opacity:0;transform:translate(0,0)}94%{opacity:.34;transform:translate(2px,-1px)}95%,100%{opacity:0;transform:translate(0,0)}}
+.gc{animation:gck 9.1s steps(1,end) infinite}
+@keyframes gck{0%,93%{opacity:0;transform:translate(0,0)}93.5%{opacity:.46;transform:translate(2.5px,0)}95%{opacity:0;transform:translate(0,0)}96.5%{opacity:.30;transform:translate(-2px,1px)}97.5%,100%{opacity:0;transform:translate(0,0)}}
+.cur{animation:blink 1.08s steps(1,end) infinite}
+@keyframes blink{0%,48%{opacity:1}49%,100%{opacity:0}}
+</style>
+<rect x="0" y="0" width="1200" height="220" fill="#030806"/>
+<ellipse class="breathe" cx="600" cy="240" rx="760" ry="178" fill="url(#bgGlow)"/>
+<ellipse class="breathe2" cx="600" cy="152" rx="430" ry="62" fill="url(#coreGlow)"/>
+<rect x="0" y="0" width="1200" height="142" fill="url(#topAmb)"/>
+<g mask="url(#rainMask)">
+<g font-size="10" text-anchor="middle" filter="url(#softBlur)">
+<g transform="translate(22 0)"><g class="b" style="animation-duration:8.6s;animation-delay:-1.2s"><text class="bh">ﾈ</text><text class="b1" y="-13">3</text><text class="b2" y="-26">ｻ</text><text class="b3" y="-39">7</text></g></g>
+<g transform="translate(82 0)"><g class="b" style="animation-duration:10.3s;animation-delay:-4.7s"><text class="bh">5</text><text class="b1" y="-13">ﾗ</text><text class="b2" y="-26">ｲ</text><text class="b3" y="-39">1</text></g></g>
+<g transform="translate(142 0)"><g class="b" style="animation-duration:7.9s;animation-delay:-2.4s"><text class="bh">ﾑ</text><text class="b1" y="-13">9</text><text class="b2" y="-26">ﾄ</text><text class="b3" y="-39">2</text></g></g>
+<g transform="translate(202 0)"><g class="b" style="animation-duration:11.2s;animation-delay:-6.8s"><text class="bh">ｷ</text><text class="b1" y="-13">4</text><text class="b2" y="-26">ﾒ</text><text class="b3" y="-39">8</text></g></g>
+<g transform="translate(262 0)"><g class="b" style="animation-duration:9.1s;animation-delay:-0.7s"><text class="bh">0</text><text class="b1" y="-13">ﾊ</text><text class="b2" y="-26">ｽ</text><text class="b3" y="-39">6</text></g></g>
+<g transform="translate(322 0)"><g class="b" style="animation-duration:8.2s;animation-delay:-5.3s"><text class="bh">ﾜ</text><text class="b1" y="-13">2</text><text class="b2" y="-26">ﾆ</text><text class="b3" y="-39">3</text></g></g>
+<g transform="translate(382 0)"><g class="b" style="animation-duration:10.9s;animation-delay:-3.1s"><text class="bh">ﾙ</text><text class="b1" y="-13">7</text><text class="b2" y="-26">ｺ</text><text class="b3" y="-39">1</text></g></g>
+<g transform="translate(442 0)"><g class="b" style="animation-duration:7.5s;animation-delay:-1.9s"><text class="bh">6</text><text class="b1" y="-13">ﾏ</text><text class="b2" y="-26">ﾂ</text><text class="b3" y="-39">4</text></g></g>
+<g transform="translate(502 0)"><g class="b" style="animation-duration:9.8s;animation-delay:-7.2s"><text class="bh">ｴ</text><text class="b1" y="-13">8</text><text class="b2" y="-26">ﾖ</text><text class="b3" y="-39">0</text></g></g>
+<g transform="translate(562 0)"><g class="b" style="animation-duration:11.6s;animation-delay:-2.6s"><text class="bh">ﾁ</text><text class="b1" y="-13">1</text><text class="b2" y="-26">ﾘ</text><text class="b3" y="-39">9</text></g></g>
+<g transform="translate(622 0)"><g class="b" style="animation-duration:8.9s;animation-delay:-4.1s"><text class="bh">3</text><text class="b1" y="-13">ｿ</text><text class="b2" y="-26">ﾅ</text><text class="b3" y="-39">5</text></g></g>
+<g transform="translate(682 0)"><g class="b" style="animation-duration:7.7s;animation-delay:-0.4s"><text class="bh">ﾕ</text><text class="b1" y="-13">6</text><text class="b2" y="-26">ｶ</text><text class="b3" y="-39">2</text></g></g>
+<g transform="translate(742 0)"><g class="b" style="animation-duration:10.1s;animation-delay:-6.2s"><text class="bh">ﾎ</text><text class="b1" y="-13">0</text><text class="b2" y="-26">ﾚ</text><text class="b3" y="-39">7</text></g></g>
+<g transform="translate(802 0)"><g class="b" style="animation-duration:9.4s;animation-delay:-3.8s"><text class="bh">4</text><text class="b1" y="-13">ﾓ</text><text class="b2" y="-26">ｼ</text><text class="b3" y="-39">8</text></g></g>
+<g transform="translate(862 0)"><g class="b" style="animation-duration:8.4s;animation-delay:-1.5s"><text class="bh">ﾉ</text><text class="b1" y="-13">5</text><text class="b2" y="-26">ﾝ</text><text class="b3" y="-39">3</text></g></g>
+<g transform="translate(922 0)"><g class="b" style="animation-duration:11.0s;animation-delay:-5.9s"><text class="bh">ｸ</text><text class="b1" y="-13">2</text><text class="b2" y="-26">ﾋ</text><text class="b3" y="-39">6</text></g></g>
+<g transform="translate(982 0)"><g class="b" style="animation-duration:7.4s;animation-delay:-2.1s"><text class="bh">9</text><text class="b1" y="-13">ﾔ</text><text class="b2" y="-26">ｱ</text><text class="b3" y="-39">1</text></g></g>
+<g transform="translate(1042 0)"><g class="b" style="animation-duration:10.6s;animation-delay:-4.9s"><text class="bh">ﾐ</text><text class="b1" y="-13">7</text><text class="b2" y="-26">ﾛ</text><text class="b3" y="-39">4</text></g></g>
+<g transform="translate(1102 0)"><g class="b" style="animation-duration:9.6s;animation-delay:-0.9s"><text class="bh">ｾ</text><text class="b1" y="-13">3</text><text class="b2" y="-26">ﾌ</text><text class="b3" y="-39">0</text></g></g>
+<g transform="translate(1162 0)"><g class="b" style="animation-duration:8.1s;animation-delay:-3.4s"><text class="bh">8</text><text class="b1" y="-13">ﾀ</text><text class="b2" y="-26">ｹ</text><text class="b3" y="-39">5</text></g></g>
+</g>
+<g font-size="13" text-anchor="middle">
+<g transform="translate(15 0)"><g class="c" style="animation-duration:4.7s;animation-delay:-0.4s"><text class="h">ﾂ</text><text class="a" y="-16">7</text><text class="n1" y="-32">ｻ</text><text class="n2" y="-48">ﾐ</text><text class="n3" y="-64">3</text><text class="n4" y="-80">ﾈ</text></g></g>
+<g transform="translate(45 0)"><g class="c" style="animation-duration:3.9s;animation-delay:-2.8s"><text class="h">ﾔ</text><text class="a" y="-16">1</text><text class="n1" y="-32">ﾎ</text><text class="n2" y="-48">ｸ</text><text class="n3" y="-64">9</text></g></g>
+<g transform="translate(75 0)"><g class="c" style="animation-duration:5.6s;animation-delay:-1.3s"><text class="h fk" style="animation-duration:2.9s;animation-delay:-1.7s">ﾑ</text><text class="a" y="-16">4</text><text class="n1" y="-32">ｴ</text><text class="n2" y="-48">ﾗ</text><text class="n3" y="-64">0</text><text class="n4" y="-80">ﾃ</text><text class="n5" y="-96">ｷ</text></g></g>
+<g transform="translate(105 0)"><g class="c" style="animation-duration:4.1s;animation-delay:-4.6s"><text class="h">ﾅ</text><text class="a" y="-16">8</text><text class="n1" y="-32">ﾘ</text><text class="n2" y="-48">ｼ</text><text class="n3" y="-64">2</text><text class="n4" y="-80">ﾜ</text></g></g>
+<g transform="translate(135 0)"><g class="c" style="animation-duration:6.2s;animation-delay:-0.9s"><text class="h">ｹ</text><text class="a" y="-16">5</text><text class="n1" y="-32">ﾏ</text><text class="n2" y="-48">ﾄ</text><text class="n3" y="-64">6</text></g></g>
+<g transform="translate(165 0)"><g class="c" style="animation-duration:3.4s;animation-delay:-3.2s"><text class="h fk" style="animation-duration:3.4s;animation-delay:-0.6s">ﾖ</text><text class="a" y="-16">3</text><text class="n1" y="-32">ｺ</text><text class="n2" y="-48">ﾒ</text><text class="n3" y="-64">1</text><text class="n4" y="-80">ﾁ</text><text class="n5" y="-96">ｽ</text></g></g>
+<g transform="translate(195 0)"><g class="c" style="animation-duration:5.1s;animation-delay:-5.4s"><text class="h">ﾆ</text><text class="a" y="-16">9</text><text class="n1" y="-32">ﾙ</text><text class="n2" y="-48">ｶ</text><text class="n3" y="-64">4</text><text class="n4" y="-80">ﾋ</text></g></g>
+<g transform="translate(225 0)"><g class="c" style="animation-duration:4.4s;animation-delay:-1.8s"><text class="h fk" style="animation-duration:2.6s;animation-delay:-2.2s">ﾌ</text><text class="a" y="-16">2</text><text class="n1" y="-32">ｿ</text><text class="n2" y="-48">ﾚ</text><text class="n3" y="-64">7</text></g></g>
+<g transform="translate(255 0)"><g class="c" style="animation-duration:6.7s;animation-delay:-2.2s"><text class="h">ｱ</text><text class="a" y="-16">6</text><text class="n1" y="-32">ﾓ</text><text class="n2" y="-48">ﾝ</text><text class="n3" y="-64">5</text><text class="n4" y="-80">ﾔ</text><text class="n5" y="-96">ｳ</text></g></g>
+<g transform="translate(285 0)"><g class="c" style="animation-duration:3.7s;animation-delay:-6.1s"><text class="h">ﾊ</text><text class="a" y="-16">0</text><text class="n1" y="-32">ﾂ</text><text class="n2" y="-48">ｾ</text><text class="n3" y="-64">8</text><text class="n4" y="-80">ﾐ</text></g></g>
+<g transform="translate(315 0)"><g class="c" style="animation-duration:5.9s;animation-delay:-0.6s"><text class="h">ﾛ</text><text class="a" y="-16">3</text><text class="n1" y="-32">ｲ</text><text class="n2" y="-48">ﾉ</text><text class="n3" y="-64">1</text></g></g>
+<g transform="translate(345 0)"><g class="c" style="animation-duration:4.9s;animation-delay:-3.9s"><text class="h fk" style="animation-duration:4.1s;animation-delay:-3.3s">ｷ</text><text class="a" y="-16">7</text><text class="n1" y="-32">ﾅ</text><text class="n2" y="-48">ﾜ</text><text class="n3" y="-64">2</text><text class="n4" y="-80">ﾒ</text><text class="n5" y="-96">ﾀ</text></g></g>
+<g transform="translate(375 0)"><g class="c" style="animation-duration:3.3s;animation-delay:-4.8s"><text class="h">ﾇ</text><text class="a" y="-16">4</text><text class="n1" y="-32">ｹ</text><text class="n2" y="-48">ﾏ</text><text class="n3" y="-64">9</text><text class="n4" y="-80">ﾘ</text></g></g>
+<g transform="translate(405 0)"><g class="c" style="animation-duration:6.4s;animation-delay:-1.1s"><text class="h fk" style="animation-duration:3.7s;animation-delay:-0.9s">ｺ</text><text class="a" y="-16">8</text><text class="n1" y="-32">ﾍ</text><text class="n2" y="-48">ﾂ</text><text class="n3" y="-64">0</text></g></g>
+<g transform="translate(435 0)"><g class="c" style="animation-duration:4.2s;animation-delay:-2.6s"><text class="h">ﾆ</text><text class="a" y="-16">5</text><text class="n1" y="-32">ﾖ</text><text class="n2" y="-48">ｻ</text><text class="n3" y="-64">3</text><text class="n4" y="-80">ﾙ</text><text class="n5" y="-96">ﾃ</text></g></g>
+<g transform="translate(465 0)"><g class="c" style="animation-duration:5.4s;animation-delay:-5.7s"><text class="h">ﾏ</text><text class="a" y="-16">1</text><text class="n1" y="-32">ｸ</text><text class="n2" y="-48">ﾄ</text><text class="n3" y="-64">6</text><text class="n4" y="-80">ｼ</text></g></g>
+<g transform="translate(495 0)"><g class="c" style="animation-duration:3.8s;animation-delay:-0.3s"><text class="h fk" style="animation-duration:2.3s;animation-delay:-1.4s">ﾑ</text><text class="a" y="-16">2</text><text class="n1" y="-32">ﾗ</text><text class="n2" y="-48">ｵ</text><text class="n3" y="-64">4</text></g></g>
+<g transform="translate(525 0)"><g class="c" style="animation-duration:6.9s;animation-delay:-4.1s"><text class="h">ﾉ</text><text class="a" y="-16">9</text><text class="n1" y="-32">ﾁ</text><text class="n2" y="-48">ﾚ</text><text class="n3" y="-64">7</text><text class="n4" y="-80">ｶ</text><text class="n5" y="-96">ﾝ</text></g></g>
+<g transform="translate(555 0)"><g class="c" style="animation-duration:4.6s;animation-delay:-3.5s"><text class="h">ｽ</text><text class="a" y="-16">0</text><text class="n1" y="-32">ﾎ</text><text class="n2" y="-48">ﾐ</text><text class="n3" y="-64">5</text><text class="n4" y="-80">ﾔ</text></g></g>
+<g transform="translate(585 0)"><g class="c" style="animation-duration:5.2s;animation-delay:-2.0s"><text class="h">ﾆ</text><text class="a" y="-16">3</text><text class="n1" y="-32">ｱ</text><text class="n2" y="-48">ﾛ</text><text class="n3" y="-64">8</text></g></g>
+<g transform="translate(615 0)"><g class="c" style="animation-duration:3.6s;animation-delay:-1.6s"><text class="h">ﾜ</text><text class="a" y="-16">6</text><text class="n1" y="-32">ﾆ</text><text class="n2" y="-48">ｼ</text><text class="n3" y="-64">1</text><text class="n4" y="-80">ﾓ</text><text class="n5" y="-96">ﾂ</text></g></g>
+<g transform="translate(645 0)"><g class="c" style="animation-duration:6.1s;animation-delay:-5.2s"><text class="h fk" style="animation-duration:3.1s;animation-delay:-2.8s">ｴ</text><text class="a" y="-16">4</text><text class="n1" y="-32">ﾙ</text><text class="n2" y="-48">ﾊ</text><text class="n3" y="-64">2</text><text class="n4" y="-80">ﾒ</text></g></g>
+<g transform="translate(675 0)"><g class="c" style="animation-duration:4.3s;animation-delay:-0.8s"><text class="h">ﾄ</text><text class="a" y="-16">7</text><text class="n1" y="-32">ｿ</text><text class="n2" y="-48">ﾕ</text><text class="n3" y="-64">9</text></g></g>
+<g transform="translate(705 0)"><g class="c" style="animation-duration:5.7s;animation-delay:-3.4s"><text class="h">ﾘ</text><text class="a" y="-16">5</text><text class="n1" y="-32">ｷ</text><text class="n2" y="-48">ﾏ</text><text class="n3" y="-64">0</text><text class="n4" y="-80">ﾈ</text><text class="n5" y="-96">ｳ</text></g></g>
+<g transform="translate(735 0)"><g class="c" style="animation-duration:3.5s;animation-delay:-2.4s"><text class="h fk" style="animation-duration:4.6s;animation-delay:-4.0s">ﾋ</text><text class="a" y="-16">8</text><text class="n1" y="-32">ﾔ</text><text class="n2" y="-48">ｺ</text><text class="n3" y="-64">3</text><text class="n4" y="-80">ﾗ</text></g></g>
+<g transform="translate(765 0)"><g class="c" style="animation-duration:6.6s;animation-delay:-4.4s"><text class="h">ｾ</text><text class="a" y="-16">1</text><text class="n1" y="-32">ﾐ</text><text class="n2" y="-48">ﾂ</text><text class="n3" y="-64">6</text></g></g>
+<g transform="translate(795 0)"><g class="c" style="animation-duration:4.8s;animation-delay:-1.9s"><text class="h fk" style="animation-duration:2.7s;animation-delay:-0.5s">ﾅ</text><text class="a" y="-16">2</text><text class="n1" y="-32">ﾚ</text><text class="n2" y="-48">ｸ</text><text class="n3" y="-64">4</text><text class="n4" y="-80">ﾖ</text><text class="n5" y="-96">ﾑ</text></g></g>
+<g transform="translate(825 0)"><g class="c" style="animation-duration:5.3s;animation-delay:-6.3s"><text class="h">ｲ</text><text class="a" y="-16">9</text><text class="n1" y="-32">ﾃ</text><text class="n2" y="-48">ﾜ</text><text class="n3" y="-64">7</text><text class="n4" y="-80">ｻ</text></g></g>
+<g transform="translate(855 0)"><g class="c" style="animation-duration:3.2s;animation-delay:-0.5s"><text class="h">ﾌ</text><text class="a" y="-16">0</text><text class="n1" y="-32">ｹ</text><text class="n2" y="-48">ﾎ</text><text class="n3" y="-64">5</text></g></g>
+<g transform="translate(885 0)"><g class="c" style="animation-duration:6.8s;animation-delay:-2.9s"><text class="h">ﾓ</text><text class="a" y="-16">3</text><text class="n1" y="-32">ｵ</text><text class="n2" y="-48">ﾆ</text><text class="n3" y="-64">8</text><text class="n4" y="-80">ﾙ</text><text class="n5" y="-96">ﾀ</text></g></g>
+<g transform="translate(915 0)"><g class="c" style="animation-duration:4.5s;animation-delay:-5.0s"><text class="h">ｶ</text><text class="a" y="-16">6</text><text class="n1" y="-32">ﾝ</text><text class="n2" y="-48">ﾒ</text><text class="n3" y="-64">1</text><text class="n4" y="-80">ﾉ</text></g></g>
+<g transform="translate(945 0)"><g class="c" style="animation-duration:5.8s;animation-delay:-1.4s"><text class="h fk" style="animation-duration:3.9s;animation-delay:-2.1s">ﾛ</text><text class="a" y="-16">4</text><text class="n1" y="-32">ﾁ</text><text class="n2" y="-48">ｽ</text><text class="n3" y="-64">2</text></g></g>
+<g transform="translate(975 0)"><g class="c" style="animation-duration:3.1s;animation-delay:-3.7s"><text class="h">ﾔ</text><text class="a" y="-16">7</text><text class="n1" y="-32">ﾆ</text><text class="n2" y="-48">ｱ</text><text class="n3" y="-64">9</text><text class="n4" y="-80">ﾄ</text><text class="n5" y="-96">ﾐ</text></g></g>
+<g transform="translate(1005 0)"><g class="c" style="animation-duration:6.3s;animation-delay:-0.2s"><text class="h">ｼ</text><text class="a" y="-16">5</text><text class="n1" y="-32">ﾗ</text><text class="n2" y="-48">ﾇ</text><text class="n3" y="-64">0</text><text class="n4" y="-80">ﾕ</text></g></g>
+<g transform="translate(1035 0)"><g class="c" style="animation-duration:4.0s;animation-delay:-4.3s"><text class="h fk" style="animation-duration:3.3s;animation-delay:-1.1s">ﾈ</text><text class="a" y="-16">8</text><text class="n1" y="-32">ｺ</text><text class="n2" y="-48">ﾏ</text><text class="n3" y="-64">3</text></g></g>
+<g transform="translate(1065 0)"><g class="c" style="animation-duration:5.5s;animation-delay:-2.7s"><text class="h">ﾂ</text><text class="a" y="-16">1</text><text class="n1" y="-32">ﾖ</text><text class="n2" y="-48">ｷ</text><text class="n3" y="-64">6</text><text class="n4" y="-80">ﾚ</text><text class="n5" y="-96">ﾊ</text></g></g>
+<g transform="translate(1095 0)"><g class="c" style="animation-duration:3.65s;animation-delay:-5.6s"><text class="h fk" style="animation-duration:2.45s;animation-delay:-1.9s">ｳ</text><text class="a" y="-16">2</text><text class="n1" y="-32">ﾙ</text><text class="n2" y="-48">ﾆ</text><text class="n3" y="-64">4</text><text class="n4" y="-80">ﾋ</text></g></g>
+<g transform="translate(1125 0)"><g class="c" style="animation-duration:6.05s;animation-delay:-1.05s"><text class="h">ﾒ</text><text class="a" y="-16">9</text><text class="n1" y="-32">ｻ</text><text class="n2" y="-48">ﾜ</text><text class="n3" y="-64">7</text></g></g>
+<g transform="translate(1155 0)"><g class="c" style="animation-duration:4.35s;animation-delay:-3.15s"><text class="h">ﾏ</text><text class="a" y="-16">0</text><text class="n1" y="-32">ﾇ</text><text class="n2" y="-48">ｹ</text><text class="n3" y="-64">5</text><text class="n4" y="-80">ﾔ</text><text class="n5" y="-96">ｲ</text></g></g>
+<g transform="translate(1185 0)"><g class="c" style="animation-duration:5.15s;animation-delay:-2.35s"><text class="h">ﾄ</text><text class="a" y="-16">6</text><text class="n1" y="-32">ﾋ</text><text class="n2" y="-48">ｿ</text><text class="n3" y="-64">8</text><text class="n4" y="-80">ﾑ</text></g></g>
+</g>
+</g>
+<rect x="0" y="0" width="1200" height="150" fill="url(#scan)"/>
+<rect x="0" y="0" width="180" height="142" fill="url(#vignL)"/>
+<rect x="1020" y="0" width="180" height="142" fill="url(#vignR)"/>
+<line x1="0" y1="0.5" x2="1200" y2="0.5" stroke="#0d2a1c" stroke-width="1"/>
+<g stroke="#0d2a1c" stroke-width="1" opacity="0.75">
+<line x1="100" y1="1" x2="100" y2="5"/>
+<line x1="200" y1="1" x2="200" y2="6"/>
+<line x1="300" y1="1" x2="300" y2="5"/>
+<line x1="400" y1="1" x2="400" y2="6"/>
+<line x1="500" y1="1" x2="500" y2="5"/>
+<line x1="600" y1="1" x2="600" y2="8"/>
+<line x1="700" y1="1" x2="700" y2="5"/>
+<line x1="800" y1="1" x2="800" y2="6"/>
+<line x1="900" y1="1" x2="900" y2="5"/>
+<line x1="1000" y1="1" x2="1000" y2="6"/>
+<line x1="1100" y1="1" x2="1100" y2="5"/>
+</g>
+<rect x="0" y="0" width="300" height="2" fill="url(#pulseGrad)" filter="url(#pglow)">
+<animateTransform attributeName="transform" type="translate" from="-320 0" to="1200 0" dur="5.3s" repeatCount="indefinite"/>
+</rect>
+<rect x="0" y="0" width="210" height="1" fill="url(#pulseGrad2)">
+<animateTransform attributeName="transform" type="translate" from="-230 0" to="1200 0" dur="8.3s" begin="2.6s" repeatCount="indefinite"/>
+</rect>
+<g text-anchor="middle" font-size="30" letter-spacing="10">
+<text class="gm" x="600" y="151" fill="#ff2e88" xml:space="preserve">T H A N K S   F O R   S C R O L L I N G</text>
+<text class="gc" x="600" y="151" fill="#22d3ee" xml:space="preserve">T H A N K S   F O R   S C R O L L I N G</text>
+<text class="tb" x="600" y="151" fill="#4dffa6" filter="url(#tglow)" xml:space="preserve">T H A N K S   F O R   S C R O L L I N G</text>
+<text x="600" y="151" fill="url(#shim)" filter="url(#sglow)" xml:space="preserve">T H A N K S   F O R   S C R O L L I N G</text>
+</g>
+<text x="600" y="188" text-anchor="middle" font-size="13" letter-spacing="1.3" fill="#0b7a3f" xml:space="preserve">&gt; connection terminated by remote host <tspan class="cur" fill="#16d67a">█</tspan></text>
+</svg>

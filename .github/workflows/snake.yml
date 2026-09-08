@@ -1,0 +1,45 @@
+# Generates the "snake eating the contribution graph" animation.
+# The SVGs are pushed to the orphan branch "output", so the README can embed them via
+#   https://raw.githubusercontent.com/secoolioo/secoolioo/output/snake.svg
+# Nothing is committed to main by this workflow.
+name: generate snake
+
+on:
+  schedule:
+    # every 12 hours
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+# never let two snake runs push to the "output" branch at the same time
+concurrency:
+  group: generate-snake
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      # build the animations into ./dist (light, dark and a custom "matrix" palette)
+      - name: Generate snake animations
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+            dist/snake-matrix.svg?color_snake=%234dffa6&color_dots=%23030806,%230b7a3f,%2316d67a,%234dffa6,%23ccffe5
+
+      # publish ./dist to the "output" branch
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

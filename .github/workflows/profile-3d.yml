@@ -1,0 +1,41 @@
+# Renders the 3D contribution calendar into profile-3d-contrib/ and commits it back to main.
+# Embed in the README via ./profile-3d-contrib/profile-night-view.svg (or one of the other variants).
+name: profile 3d contrib
+
+on:
+  schedule:
+    # once a day at 18:00 UTC
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-3d-contrib
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate 3D contribution calendar
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        with:
+          # Optional: profile-3d-config.json in the repo root lets you override colors /
+          # which variants are produced. If the file does not exist, defaults are used.
+          settings_json: "profile-3d-config.json"
+
+      - name: Commit generated SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update 3d contribution calendar"
+          git push
