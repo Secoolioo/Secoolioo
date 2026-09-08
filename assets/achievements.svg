@@ -319,7 +319,7 @@
     <line class="fl" x1="32" y1="226" x2="1168" y2="226" stroke="#0d2a1c" stroke-width="1.2" stroke-dasharray="6 6">
       <animate attributeName="stroke-dashoffset" values="0;-48" dur="6.3s" repeatCount="indefinite"/>
     </line>
-    <text x="32" y="244" font-size="9.5" fill="#0b7a3f" letter-spacing="1.2" opacity="0.6">gen 2026-09-08 18:28Z  //  last push 2026-09-08</text>
+    <text x="32" y="244" font-size="9.5" fill="#0b7a3f" letter-spacing="1.2" opacity="0.6">gen 2026-09-08 23:17Z  //  last push 2026-09-08</text>
     <text x="1168" y="244" font-size="9.5" fill="#0b7a3f" letter-spacing="1.6" text-anchor="end" opacity="0.75">LIVE DATA</text>
   </g>
 </svg>
