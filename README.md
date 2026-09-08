@@ -4,7 +4,7 @@
 ║                                                                           ║
 ║  Every animation on this page is a self-hosted SVG in ./assets.           ║
 ║  No GIFs, no screenshots, no third-party renderer in the hot path.        ║
-║  Four of them are REGENERATED FROM LIVE GITHUB DATA every 3h by           ║
+║  Six of them are REGENERATED FROM LIVE GITHUB DATA every 3h by           ║
 ║  .github/workflows/live.yml  (source in ./scripts).                       ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
 -->
@@ -107,6 +107,9 @@ status: >
 
 ## `// 03` payloads
 
+<!-- real repo cards, generated from the GitHub API by scripts/gen-repo-cards.mjs -->
+<img src="https://raw.githubusercontent.com/Secoolioo/Secoolioo/main/assets/repos.svg" width="100%" alt="repositories" />
+
 | repo | what it does |
 | :-- | :-- |
 | [`Hoferium`](https://github.com/Secoolioo/Hoferium) | Windows neu aufsetzen ohne Datenchaos — sichern, debloaten, zurückholen. Vom USB-Stick. |
@@ -123,11 +126,8 @@ status: >
 <!-- live HUD: followers / repos / stars / forks, rendered by scripts/gen-live-hud.mjs -->
 <img src="https://raw.githubusercontent.com/Secoolioo/Secoolioo/main/assets/live.svg" width="100%" alt="live hud" />
 
-<div align="center">
-
-<img height="180" src="https://streak-stats.demolab.com?user=Secoolioo&hide_border=true&background=00000000&stroke=0d2a1c&ring=4dffa6&fire=ff2e88&currStreakLabel=4dffa6&sideLabels=16d67a&currStreakNum=ccffe5&sideNums=16d67a&dates=0b7a3f&excludeDaysLabel=0b7a3f" alt="streak" />
-
-</div>
+<!-- service record: stars / forks / repos / followers / languages / streaks — scripts/gen-achievements.mjs -->
+<img src="https://raw.githubusercontent.com/Secoolioo/Secoolioo/main/assets/achievements.svg" width="100%" alt="service record" />
 
 <img src="https://raw.githubusercontent.com/Secoolioo/Secoolioo/main/assets/divider.svg" width="100%" alt="" />
 
@@ -212,7 +212,7 @@ Nothing here is a screenshot and nothing is a GIF.
 | layer | how |
 | :-- | :-- |
 | hero, dividers, terminal, orbit, dossier, editor, footer | hand-written SVG, animated with CSS `@keyframes` + SMIL, self-hosted in [`./assets`](./assets) |
-| repo rain, live HUD, contribution EKG, language cores | **generated from the live GitHub API** by [`./scripts`](./scripts), re-rendered every 3h by [`live.yml`](.github/workflows/live.yml) |
+| repo rain, live HUD, contribution EKG, language cores, repo cards, service record | **generated from the live GitHub API** by [`./scripts`](./scripts), re-rendered every 3h by [`live.yml`](.github/workflows/live.yml) |
 | snake | [`snake.yml`](.github/workflows/snake.yml) → `output` branch |
 | 3D calendar | [`profile-3d.yml`](.github/workflows/profile-3d.yml) |
 

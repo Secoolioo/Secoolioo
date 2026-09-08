@@ -70,6 +70,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USER: ${{ github.repository_owner }}
 
+      - name: Generate repository cards
+        continue-on-error: true
+        run: node scripts/gen-repo-cards.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+
+      - name: Generate service record
+        continue-on-error: true
+        run: node scripts/gen-achievements.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+
       - name: Commit and push assets
         run: |
           git config user.name "github-actions[bot]"
