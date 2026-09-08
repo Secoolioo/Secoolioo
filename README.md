@@ -107,15 +107,6 @@ status: >
 
 ## `// 03` payloads
 
-<div align="center">
-
-<a href="https://github.com/Secoolioo/Hoferium"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Secoolioo&repo=Hoferium&hide_border=true&bg_color=00000000&title_color=4dffa6&text_color=16d67a&icon_color=22d3ee" alt="Hoferium" /></a>
-<a href="https://github.com/Secoolioo/KAT"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Secoolioo&repo=KAT&hide_border=true&bg_color=00000000&title_color=4dffa6&text_color=16d67a&icon_color=22d3ee" alt="KAT" /></a>
-<a href="https://github.com/Secoolioo/shelly-solar-control"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Secoolioo&repo=shelly-solar-control&hide_border=true&bg_color=00000000&title_color=4dffa6&text_color=16d67a&icon_color=22d3ee" alt="shelly-solar-control" /></a>
-<a href="https://github.com/Secoolioo/mcbank"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Secoolioo&repo=mcbank&hide_border=true&bg_color=00000000&title_color=4dffa6&text_color=16d67a&icon_color=22d3ee" alt="mcbank" /></a>
-
-</div>
-
 | repo | what it does |
 | :-- | :-- |
 | [`Hoferium`](https://github.com/Secoolioo/Hoferium) | Windows neu aufsetzen ohne Datenchaos — sichern, debloaten, zurückholen. Vom USB-Stick. |
@@ -134,10 +125,7 @@ status: >
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=Secoolioo&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github&bg_color=00000000&title_color=4dffa6&text_color=16d67a&icon_color=22d3ee" alt="stats" />
 <img height="180" src="https://streak-stats.demolab.com?user=Secoolioo&hide_border=true&background=00000000&stroke=0d2a1c&ring=4dffa6&fire=ff2e88&currStreakLabel=4dffa6&sideLabels=16d67a&currStreakNum=ccffe5&sideNums=16d67a&dates=0b7a3f&excludeDaysLabel=0b7a3f" alt="streak" />
-
-<img src="https://github-profile-trophy.vercel.app/?username=Secoolioo&theme=matrix&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" alt="trophies" />
 
 </div>
 
@@ -149,8 +137,6 @@ status: >
 <img src="https://raw.githubusercontent.com/Secoolioo/Secoolioo/main/assets/pulse.svg" width="100%" alt="contribution ekg" />
 
 <div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Secoolioo&bg_color=00000000&color=4dffa6&line=16d67a&point=ccffe5&area=true&area_color=0b7a3f&hide_border=true&custom_title=commit%20frequency" width="100%" alt="activity graph" />
 
 <!-- generated into the `output` branch by .github/workflows/snake.yml -->
 <img src="https://raw.githubusercontent.com/Secoolioo/Secoolioo/output/snake-matrix.svg" width="100%" alt="contribution snake" />
