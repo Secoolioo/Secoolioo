@@ -114,7 +114,7 @@
     <circle class="dot" cx="970.6" cy="37.5" r="3.6" fill="#4dffa6" filter="url(#glowSoft)"/>
     <text x="981.6" y="41.5" font-size="11" fill="#4dffa6" letter-spacing="1.2">LIVE</text>
   </g>
-  <text x="1168" y="42" font-size="12" fill="#0b7a3f" text-anchor="end">2026-09-11T16:18Z</text>
+  <text x="1168" y="42" font-size="12" fill="#0b7a3f" text-anchor="end">2026-09-11T20:50Z</text>
   <line x1="32" y1="54" x2="1168" y2="54" stroke="#0d2a1c" stroke-width="1"/>
   <g>
     <g>
@@ -123,19 +123,19 @@
       <text x="48" y="88" font-size="11" fill="#0b7a3f" letter-spacing="1.6">FOLLOWERS</text>
       <g filter="url(#glow)">
       <text class="cu d0" style="animation-name:cu0" x="48" y="130" font-size="40" fill="#4dffa6">0</text>
-      <text class="cu d0" style="animation-name:cu1" x="48" y="130" font-size="40" fill="#4dffa6">1</text>
-      <text class="cu d0" style="animation-name:cu2" x="48" y="130" font-size="40" fill="#4dffa6">3</text>
-      <text class="cu d0" style="animation-name:cu3" x="48" y="130" font-size="40" fill="#4dffa6">4</text>
-      <text class="cu d0" style="animation-name:cu4" x="48" y="130" font-size="40" fill="#4dffa6">5</text>
-      <text class="cu d0" style="animation-name:cu5" x="48" y="130" font-size="40" fill="#4dffa6">5</text>
-      <text class="cu d0" style="animation-name:cu6" x="48" y="130" font-size="40" fill="#4dffa6">6</text>
-      <text class="cu d0" style="animation-name:cu7" x="48" y="130" font-size="40" fill="#4dffa6">6</text>
-      <text class="cu d0" style="animation-name:cu8" x="48" y="130" font-size="40" fill="#4dffa6">7</text>
-      <text class="cu d0" style="animation-name:cu9" x="48" y="130" font-size="40" fill="#4dffa6">7</text>
-      <text class="cu d0" style="animation-name:cu10" x="48" y="130" font-size="40" fill="#4dffa6">7</text>
-      <text class="cu d0" style="animation-name:cu11" x="48" y="130" font-size="40" fill="#4dffa6">7</text>
-      <text class="cu d0" style="animation-name:cu12" x="48" y="130" font-size="40" fill="#4dffa6">7</text>
-      <text class="cu d0" style="animation-name:cu13" x="48" y="130" font-size="40" fill="#4dffa6">7</text>
+      <text class="cu d0" style="animation-name:cu1" x="48" y="130" font-size="40" fill="#4dffa6">2</text>
+      <text class="cu d0" style="animation-name:cu2" x="48" y="130" font-size="40" fill="#4dffa6">4</text>
+      <text class="cu d0" style="animation-name:cu3" x="48" y="130" font-size="40" fill="#4dffa6">5</text>
+      <text class="cu d0" style="animation-name:cu4" x="48" y="130" font-size="40" fill="#4dffa6">7</text>
+      <text class="cu d0" style="animation-name:cu5" x="48" y="130" font-size="40" fill="#4dffa6">8</text>
+      <text class="cu d0" style="animation-name:cu6" x="48" y="130" font-size="40" fill="#4dffa6">8</text>
+      <text class="cu d0" style="animation-name:cu7" x="48" y="130" font-size="40" fill="#4dffa6">9</text>
+      <text class="cu d0" style="animation-name:cu8" x="48" y="130" font-size="40" fill="#4dffa6">9</text>
+      <text class="cu d0" style="animation-name:cu9" x="48" y="130" font-size="40" fill="#4dffa6">10</text>
+      <text class="cu d0" style="animation-name:cu10" x="48" y="130" font-size="40" fill="#4dffa6">10</text>
+      <text class="cu d0" style="animation-name:cu11" x="48" y="130" font-size="40" fill="#4dffa6">10</text>
+      <text class="cu d0" style="animation-name:cu12" x="48" y="130" font-size="40" fill="#4dffa6">10</text>
+      <text class="cu d0" style="animation-name:cu13" x="48" y="130" font-size="40" fill="#4dffa6">10</text>
       </g>
     </g>
     <g>
