@@ -114,7 +114,7 @@
     <circle class="dot" cx="970.6" cy="37.5" r="3.6" fill="#4dffa6" filter="url(#glowSoft)"/>
     <text x="981.6" y="41.5" font-size="11" fill="#4dffa6" letter-spacing="1.2">LIVE</text>
   </g>
-  <text x="1168" y="42" font-size="12" fill="#0b7a3f" text-anchor="end">2026-10-06T13:13Z</text>
+  <text x="1168" y="42" font-size="12" fill="#0b7a3f" text-anchor="end">2026-10-06T20:08Z</text>
   <line x1="32" y1="54" x2="1168" y2="54" stroke="#0d2a1c" stroke-width="1"/>
   <g>
     <g>
@@ -145,18 +145,18 @@
       <g filter="url(#glow)">
       <text class="cu d1" style="animation-name:cu0" x="278.4" y="130" font-size="40" fill="#4dffa6">0</text>
       <text class="cu d1" style="animation-name:cu1" x="278.4" y="130" font-size="40" fill="#4dffa6">2</text>
-      <text class="cu d1" style="animation-name:cu2" x="278.4" y="130" font-size="40" fill="#4dffa6">3</text>
-      <text class="cu d1" style="animation-name:cu3" x="278.4" y="130" font-size="40" fill="#4dffa6">4</text>
-      <text class="cu d1" style="animation-name:cu4" x="278.4" y="130" font-size="40" fill="#4dffa6">5</text>
-      <text class="cu d1" style="animation-name:cu5" x="278.4" y="130" font-size="40" fill="#4dffa6">6</text>
-      <text class="cu d1" style="animation-name:cu6" x="278.4" y="130" font-size="40" fill="#4dffa6">7</text>
-      <text class="cu d1" style="animation-name:cu7" x="278.4" y="130" font-size="40" fill="#4dffa6">7</text>
+      <text class="cu d1" style="animation-name:cu2" x="278.4" y="130" font-size="40" fill="#4dffa6">4</text>
+      <text class="cu d1" style="animation-name:cu3" x="278.4" y="130" font-size="40" fill="#4dffa6">5</text>
+      <text class="cu d1" style="animation-name:cu4" x="278.4" y="130" font-size="40" fill="#4dffa6">6</text>
+      <text class="cu d1" style="animation-name:cu5" x="278.4" y="130" font-size="40" fill="#4dffa6">7</text>
+      <text class="cu d1" style="animation-name:cu6" x="278.4" y="130" font-size="40" fill="#4dffa6">8</text>
+      <text class="cu d1" style="animation-name:cu7" x="278.4" y="130" font-size="40" fill="#4dffa6">8</text>
       <text class="cu d1" style="animation-name:cu8" x="278.4" y="130" font-size="40" fill="#4dffa6">8</text>
-      <text class="cu d1" style="animation-name:cu9" x="278.4" y="130" font-size="40" fill="#4dffa6">8</text>
-      <text class="cu d1" style="animation-name:cu10" x="278.4" y="130" font-size="40" fill="#4dffa6">8</text>
-      <text class="cu d1" style="animation-name:cu11" x="278.4" y="130" font-size="40" fill="#4dffa6">8</text>
-      <text class="cu d1" style="animation-name:cu12" x="278.4" y="130" font-size="40" fill="#4dffa6">8</text>
-      <text class="cu d1" style="animation-name:cu13" x="278.4" y="130" font-size="40" fill="#4dffa6">8</text>
+      <text class="cu d1" style="animation-name:cu9" x="278.4" y="130" font-size="40" fill="#4dffa6">9</text>
+      <text class="cu d1" style="animation-name:cu10" x="278.4" y="130" font-size="40" fill="#4dffa6">9</text>
+      <text class="cu d1" style="animation-name:cu11" x="278.4" y="130" font-size="40" fill="#4dffa6">9</text>
+      <text class="cu d1" style="animation-name:cu12" x="278.4" y="130" font-size="40" fill="#4dffa6">9</text>
+      <text class="cu d1" style="animation-name:cu13" x="278.4" y="130" font-size="40" fill="#4dffa6">9</text>
       </g>
     </g>
     <g>
@@ -207,19 +207,19 @@
       <text x="969.6" y="88" font-size="11" fill="#0b7a3f" letter-spacing="1.6">COMMITS/YR</text>
       <g filter="url(#glow)">
       <text class="cu d4" style="animation-name:cu0" x="969.6" y="130" font-size="40" fill="#4dffa6">0</text>
-      <text class="cu d4" style="animation-name:cu1" x="969.6" y="130" font-size="40" fill="#4dffa6">24</text>
-      <text class="cu d4" style="animation-name:cu2" x="969.6" y="130" font-size="40" fill="#4dffa6">45</text>
-      <text class="cu d4" style="animation-name:cu3" x="969.6" y="130" font-size="40" fill="#4dffa6">62</text>
-      <text class="cu d4" style="animation-name:cu4" x="969.6" y="130" font-size="40" fill="#4dffa6">76</text>
-      <text class="cu d4" style="animation-name:cu5" x="969.6" y="130" font-size="40" fill="#4dffa6">87</text>
-      <text class="cu d4" style="animation-name:cu6" x="969.6" y="130" font-size="40" fill="#4dffa6">96</text>
-      <text class="cu d4" style="animation-name:cu7" x="969.6" y="130" font-size="40" fill="#4dffa6">103</text>
-      <text class="cu d4" style="animation-name:cu8" x="969.6" y="130" font-size="40" fill="#4dffa6">108</text>
-      <text class="cu d4" style="animation-name:cu9" x="969.6" y="130" font-size="40" fill="#4dffa6">111</text>
-      <text class="cu d4" style="animation-name:cu10" x="969.6" y="130" font-size="40" fill="#4dffa6">113</text>
-      <text class="cu d4" style="animation-name:cu11" x="969.6" y="130" font-size="40" fill="#4dffa6">114</text>
-      <text class="cu d4" style="animation-name:cu12" x="969.6" y="130" font-size="40" fill="#4dffa6">114</text>
-      <text class="cu d4" style="animation-name:cu13" x="969.6" y="130" font-size="40" fill="#4dffa6">114</text>
+      <text class="cu d4" style="animation-name:cu1" x="969.6" y="130" font-size="40" fill="#4dffa6">28</text>
+      <text class="cu d4" style="animation-name:cu2" x="969.6" y="130" font-size="40" fill="#4dffa6">51</text>
+      <text class="cu d4" style="animation-name:cu3" x="969.6" y="130" font-size="40" fill="#4dffa6">70</text>
+      <text class="cu d4" style="animation-name:cu4" x="969.6" y="130" font-size="40" fill="#4dffa6">86</text>
+      <text class="cu d4" style="animation-name:cu5" x="969.6" y="130" font-size="40" fill="#4dffa6">99</text>
+      <text class="cu d4" style="animation-name:cu6" x="969.6" y="130" font-size="40" fill="#4dffa6">109</text>
+      <text class="cu d4" style="animation-name:cu7" x="969.6" y="130" font-size="40" fill="#4dffa6">116</text>
+      <text class="cu d4" style="animation-name:cu8" x="969.6" y="130" font-size="40" fill="#4dffa6">122</text>
+      <text class="cu d4" style="animation-name:cu9" x="969.6" y="130" font-size="40" fill="#4dffa6">125</text>
+      <text class="cu d4" style="animation-name:cu10" x="969.6" y="130" font-size="40" fill="#4dffa6">127</text>
+      <text class="cu d4" style="animation-name:cu11" x="969.6" y="130" font-size="40" fill="#4dffa6">129</text>
+      <text class="cu d4" style="animation-name:cu12" x="969.6" y="130" font-size="40" fill="#4dffa6">129</text>
+      <text class="cu d4" style="animation-name:cu13" x="969.6" y="130" font-size="40" fill="#4dffa6">129</text>
       </g>
     </g>
   </g>
@@ -228,26 +228,34 @@
     <g>
       <text x="32" y="205" font-size="12" fill="#16d67a">Python</text>
       <rect x="160" y="196" width="340" height="10" rx="5" fill="#0d2a1c"/>
-      <rect x="160" y="196" width="242.86" height="10" rx="5" fill="url(#barGrad)">
-        <animate attributeName="width" values="0;242.86;242.86" keyTimes="0;0.11667;1" calcMode="spline" keySplines="0.16 0.9 0.3 1;0 0 1 1" dur="12s" begin="-8.2s" repeatCount="indefinite"/>
+      <rect x="160" y="196" width="212.5" height="10" rx="5" fill="url(#barGrad)">
+        <animate attributeName="width" values="0;212.5;212.5" keyTimes="0;0.11667;1" calcMode="spline" keySplines="0.16 0.9 0.3 1;0 0 1 1" dur="12s" begin="-8.2s" repeatCount="indefinite"/>
       </rect>
-      <text x="512" y="205" font-size="11" fill="#ccffe5">71.4%</text>
+      <text x="512" y="205" font-size="11" fill="#ccffe5">62.5%</text>
     </g>
     <g>
-      <text x="32" y="237" font-size="12" fill="#16d67a">Java</text>
+      <text x="32" y="237" font-size="12" fill="#16d67a">C#</text>
       <rect x="160" y="228" width="340" height="10" rx="5" fill="#0d2a1c"/>
-      <rect x="160" y="228" width="48.57" height="10" rx="5" fill="url(#barGrad)">
-        <animate attributeName="width" values="0;48.57;48.57" keyTimes="0;0.11667;1" calcMode="spline" keySplines="0.16 0.9 0.3 1;0 0 1 1" dur="12s" begin="-8.02s" repeatCount="indefinite"/>
+      <rect x="160" y="228" width="42.5" height="10" rx="5" fill="url(#barGrad)">
+        <animate attributeName="width" values="0;42.5;42.5" keyTimes="0;0.11667;1" calcMode="spline" keySplines="0.16 0.9 0.3 1;0 0 1 1" dur="12s" begin="-8.02s" repeatCount="indefinite"/>
       </rect>
-      <text x="512" y="237" font-size="11" fill="#ccffe5">14.3%</text>
+      <text x="512" y="237" font-size="11" fill="#ccffe5">12.5%</text>
     </g>
     <g>
-      <text x="32" y="269" font-size="12" fill="#16d67a">JavaScript</text>
+      <text x="32" y="269" font-size="12" fill="#16d67a">Java</text>
       <rect x="160" y="260" width="340" height="10" rx="5" fill="#0d2a1c"/>
-      <rect x="160" y="260" width="48.57" height="10" rx="5" fill="url(#barGrad)">
-        <animate attributeName="width" values="0;48.57;48.57" keyTimes="0;0.11667;1" calcMode="spline" keySplines="0.16 0.9 0.3 1;0 0 1 1" dur="12s" begin="-7.84s" repeatCount="indefinite"/>
+      <rect x="160" y="260" width="42.5" height="10" rx="5" fill="url(#barGrad)">
+        <animate attributeName="width" values="0;42.5;42.5" keyTimes="0;0.11667;1" calcMode="spline" keySplines="0.16 0.9 0.3 1;0 0 1 1" dur="12s" begin="-7.84s" repeatCount="indefinite"/>
       </rect>
-      <text x="512" y="269" font-size="11" fill="#ccffe5">14.3%</text>
+      <text x="512" y="269" font-size="11" fill="#ccffe5">12.5%</text>
+    </g>
+    <g>
+      <text x="32" y="301" font-size="12" fill="#16d67a">JavaScript</text>
+      <rect x="160" y="292" width="340" height="10" rx="5" fill="#0d2a1c"/>
+      <rect x="160" y="292" width="42.5" height="10" rx="5" fill="url(#barGrad)">
+        <animate attributeName="width" values="0;42.5;42.5" keyTimes="0;0.11667;1" calcMode="spline" keySplines="0.16 0.9 0.3 1;0 0 1 1" dur="12s" begin="-7.66s" repeatCount="indefinite"/>
+      </rect>
+      <text x="512" y="301" font-size="11" fill="#ccffe5">12.5%</text>
     </g>
   </g>
   <g>
@@ -256,23 +264,23 @@
     <rect class="flick" x="600" y="188" width="568" height="1" fill="#16d67a" opacity="0.55"/>
     <g class="sig g0">
       <text x="616" y="210" font-size="12" fill="#0b7a3f">▸</text>
-      <text x="634" y="210" font-size="12" fill="#16d67a">clipboard-manager</text>
+      <text x="634" y="210" font-size="12" fill="#16d67a">Secoolioo</text>
     </g>
     <g class="sig g1">
       <text x="616" y="231" font-size="12" fill="#0b7a3f">▸</text>
-      <text x="634" y="231" font-size="12" fill="#16d67a">Secoolioo</text>
+      <text x="634" y="231" font-size="12" fill="#16d67a">clipboard-manager</text>
     </g>
     <g class="sig g2">
       <text x="616" y="252" font-size="12" fill="#0b7a3f">▸</text>
-      <text x="634" y="252" font-size="12" fill="#16d67a">flobot</text>
+      <text x="634" y="252" font-size="12" fill="#16d67a">.github</text>
     </g>
     <g class="sig g3">
       <text x="616" y="273" font-size="12" fill="#0b7a3f">▸</text>
-      <text x="634" y="273" font-size="12" fill="#16d67a">mcbank</text>
+      <text x="634" y="273" font-size="12" fill="#16d67a">flobot</text>
     </g>
     <g class="sig g4">
       <text x="616" y="294" font-size="12" fill="#0b7a3f">▸</text>
-      <text x="634" y="294" font-size="12" fill="#16d67a">Hoferium</text>
+      <text x="634" y="294" font-size="12" fill="#16d67a">mcbank</text>
     </g>
     <rect x="600" y="322" width="568" height="44" rx="8" fill="#030806" stroke="#0d2a1c"/>
     <text x="616" y="348" font-size="11" fill="#0b7a3f">last commit:</text>
@@ -280,7 +288,7 @@
     <rect class="cur" x="1003.4" y="338" width="7" height="13" fill="#22d3ee" opacity="0.9"/>
   </g>
   <g>
-    <text x="32" y="382" font-size="10" fill="#0b7a3f" letter-spacing="0.8">PUSH_EVENTS:65 · FOLLOWING:8 · SINCE:2023-11 · TOP_REPO:<tspan fill="#16d67a">flobot</tspan><tspan fill="#ffb020"> ★1</tspan></text>
+    <text x="32" y="382" font-size="10" fill="#0b7a3f" letter-spacing="0.8">PUSH_EVENTS:66 · FOLLOWING:8 · SINCE:2023-11 · TOP_REPO:<tspan fill="#16d67a">flobot</tspan><tspan fill="#ffb020"> ★1</tspan></text>
     <text x="1168" y="382" font-size="10" fill="#0d2a1c" text-anchor="end" letter-spacing="0.8">ALL SYSTEMS NOMINAL</text>
     <line x1="32" y1="396" x2="1168" y2="396" stroke="#0d2a1c" stroke-width="1"/>
     <line x1="32" y1="396" x2="1168" y2="396" stroke="#16d67a" stroke-width="1.6" stroke-dasharray="2 6 20 6" opacity="0.75">
