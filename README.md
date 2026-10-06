@@ -112,6 +112,7 @@ status: >
 
 | repo | what it does |
 | :-- | :-- |
+| [`clipboard-manager`](https://github.com/Secoolioo/clipboard-manager) | Clipboard history for Windows: one shortcut, instant search, local only. |
 | [`Hoferium`](https://github.com/Secoolioo/Hoferium) | Windows neu aufsetzen ohne Datenchaos — sichern, debloaten, zurückholen. Vom USB-Stick. |
 | [`KAT`](https://github.com/Secoolioo/KAT) | Keep Awake Tool. `ctypes` + tray icon. Research & demonstration only. |
 | [`shelly-solar-control`](https://github.com/Secoolioo/shelly-solar-control) | Schaltet Shelly-Geräte, wenn der SolarEdge-Wechselrichter genug einspeist. |
@@ -234,5 +235,18 @@ Steal it: everything in this repo is MIT.
 <a href="https://secoolio.ddns.net/"><img src="https://img.shields.io/badge/WEBSITE-030806?style=for-the-badge&logo=firefoxbrowser&logoColor=4dffa6&labelColor=030806" alt="website" /></a>
 
 </div>
+
+<img src="https://raw.githubusercontent.com/Secoolioo/Secoolioo/main/assets/divider.svg" width="100%" alt="" />
+
+## `// 09` fuel
+
+<!-- QR generated from the address string and decoded again before commit -->
+<a href="https://github.com/Secoolioo/.github/blob/main/DONATE.md"><img src="https://raw.githubusercontent.com/Secoolioo/Secoolioo/main/assets/fuel.svg" width="100%" alt="Solana donation address with QR code" /></a>
+
+Like the tools? Send some SOL to keep the lab running:
+
+```text
+71ZN1AtBvFASLmbnh7WkfhzYYBC35h9tAm7Awvvk9FPt
+```
 
 <img src="https://raw.githubusercontent.com/Secoolioo/Secoolioo/main/assets/footer.svg" width="100%" alt="" />
