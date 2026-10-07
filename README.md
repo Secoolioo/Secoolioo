@@ -22,6 +22,14 @@
 
 </div>
 
+<!-- featured project -->
+<p align="center">
+  <a href="https://github.com/Secoolioo/clipboard-manager"><img src="https://raw.githubusercontent.com/Secoolioo/clipboard-manager/main/assets/brand/social-preview.png" width="100%" alt="Featured: Clipboard Manager for Windows – free Win+V alternative with instant search, local only" /></a>
+  <br />
+  <a href="https://github.com/Secoolioo/clipboard-manager/releases/latest/download/ClipboardManager.exe"><img src="https://img.shields.io/badge/DOWNLOAD-Clipboard%20Manager%20for%20Windows-16d67a?style=for-the-badge&labelColor=030806&logo=windows11&logoColor=4dffa6" alt="Download Clipboard Manager" /></a>
+  <a href="https://github.com/Secoolioo/clipboard-manager"><img src="https://img.shields.io/github/stars/Secoolioo/clipboard-manager?style=for-the-badge&color=16d67a&labelColor=030806&logo=github&logoColor=4dffa6&label=STAR%20IT" alt="Star Clipboard Manager on GitHub" /></a>
+</p>
+
 <!-- rain built from the real repository list, regenerated every 3h -->
 <img src="https://raw.githubusercontent.com/Secoolioo/Secoolioo/main/assets/rain-repos.svg" width="100%" alt="repository stream" />
 
