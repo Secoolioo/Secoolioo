@@ -13,7 +13,7 @@
     <filter id="soft" x="-75%" y="-75%" width="250%" height="250%">
       <feGaussianBlur stdDeviation="7"/>
     </filter>
-    <style><![CDATA[.ring{fill:none;stroke-linecap:round}.t{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace}@keyframes fill0{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:69.33}100%{stroke-dashoffset:69.33}}@keyframes fill1{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:244.93}100%{stroke-dashoffset:244.93}}@keyframes fill2{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:256.96}100%{stroke-dashoffset:256.96}}@keyframes fill3{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:267.83}100%{stroke-dashoffset:267.83}}@keyframes fill4{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:269.6}100%{stroke-dashoffset:269.6}}@keyframes fill5{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:270.93}100%{stroke-dashoffset:270.93}}.v0{animation:fill0 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-9.5s}.v1{animation:fill1 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-9.28s}.v2{animation:fill2 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-9.06s}.v3{animation:fill3 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-8.84s}.v4{animation:fill4 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-8.62s}.v5{animation:fill5 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-8.4s}@keyframes beat{0%{opacity:.35}50%{opacity:1}100%{opacity:.35}}.beat{animation:beat 3.7s ease-in-out infinite;animation-delay:-1.4s}]]></style>
+    <style><![CDATA[.ring{fill:none;stroke-linecap:round}.t{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace}@keyframes fill0{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:76.66}100%{stroke-dashoffset:76.66}}@keyframes fill1{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:246.05}100%{stroke-dashoffset:246.05}}@keyframes fill2{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:250.47}100%{stroke-dashoffset:250.47}}@keyframes fill3{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:265.6}100%{stroke-dashoffset:265.6}}@keyframes fill4{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:269.84}100%{stroke-dashoffset:269.84}}@keyframes fill5{0%{stroke-dashoffset:276.46}15%{stroke-dashoffset:270.93}100%{stroke-dashoffset:270.93}}.v0{animation:fill0 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-9.5s}.v1{animation:fill1 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-9.28s}.v2{animation:fill2 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-9.06s}.v3{animation:fill3 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-8.84s}.v4{animation:fill4 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-8.62s}.v5{animation:fill5 10s cubic-bezier(.22,.9,.25,1) infinite;animation-delay:-8.4s}@keyframes beat{0%{opacity:.35}50%{opacity:1}100%{opacity:.35}}.beat{animation:beat 3.7s ease-in-out infinite;animation-delay:-1.4s}]]></style>
   </defs>
   <rect x="0" y="0" width="900" height="340" fill="#030806"/>
   <rect x="0" y="0" width="900" height="340" fill="url(#dots)" opacity="0.55"/>
@@ -33,7 +33,7 @@
     <circle cx="170" cy="104" r="36" fill="#06110c" opacity="0.9"/>
     <circle class="ring" cx="170" cy="104" r="44" stroke="#0d2a1c" stroke-width="9"/>
     <circle class="ring v0" cx="170" cy="104" r="44" stroke="url(#core)" stroke-width="9" stroke-dasharray="276.46" stroke-dashoffset="276.46" transform="rotate(-90 170 104)"/>
-    <text class="t" x="170" y="111" text-anchor="middle" font-size="20" fill="#ccffe5">75%</text>
+    <text class="t" x="170" y="111" text-anchor="middle" font-size="20" fill="#ccffe5">72%</text>
     <text class="t" x="170" y="172" text-anchor="middle" font-size="12" letter-spacing="1.5" fill="#16d67a">PYTHON</text>
     <text class="t" x="170" y="187" text-anchor="middle" font-size="10" fill="#0b7a3f">3.9 MB</text>
   </g>
@@ -63,9 +63,9 @@
     <circle cx="730" cy="104" r="36" fill="#06110c" opacity="0.9"/>
     <circle class="ring" cx="730" cy="104" r="44" stroke="#0d2a1c" stroke-width="9"/>
     <circle class="ring v2" cx="730" cy="104" r="44" stroke="url(#core)" stroke-width="9" stroke-dasharray="276.46" stroke-dashoffset="276.46" transform="rotate(-90 730 104)"/>
-    <text class="t" x="730" y="111" text-anchor="middle" font-size="20" fill="#ccffe5">7%</text>
+    <text class="t" x="730" y="111" text-anchor="middle" font-size="20" fill="#ccffe5">9%</text>
     <text class="t" x="730" y="172" text-anchor="middle" font-size="12" letter-spacing="1.5" fill="#16d67a">C#</text>
-    <text class="t" x="730" y="187" text-anchor="middle" font-size="10" fill="#0b7a3f">380.7 KB</text>
+    <text class="t" x="730" y="187" text-anchor="middle" font-size="10" fill="#0b7a3f">526.1 KB</text>
   </g>
   <g>
     <circle cx="170" cy="250" r="46" fill="#4dffa6" opacity="0.09" filter="url(#soft)">
@@ -78,9 +78,9 @@
     <circle cx="170" cy="250" r="36" fill="#06110c" opacity="0.9"/>
     <circle class="ring" cx="170" cy="250" r="44" stroke="#0d2a1c" stroke-width="9"/>
     <circle class="ring v3" cx="170" cy="250" r="44" stroke="url(#core)" stroke-width="9" stroke-dasharray="276.46" stroke-dashoffset="276.46" transform="rotate(-90 170 250)"/>
-    <text class="t" x="170" y="257" text-anchor="middle" font-size="20" fill="#ccffe5">3%</text>
+    <text class="t" x="170" y="257" text-anchor="middle" font-size="20" fill="#ccffe5">4%</text>
     <text class="t" x="170" y="318" text-anchor="middle" font-size="12" letter-spacing="1.5" fill="#16d67a">HTML</text>
-    <text class="t" x="170" y="333" text-anchor="middle" font-size="10" fill="#0b7a3f">168.4 KB</text>
+    <text class="t" x="170" y="333" text-anchor="middle" font-size="10" fill="#0b7a3f">219.7 KB</text>
   </g>
   <g>
     <circle cx="450" cy="250" r="46" fill="#4dffa6" opacity="0.09" filter="url(#soft)">
