@@ -114,7 +114,7 @@
     <circle class="dot" cx="970.6" cy="37.5" r="3.6" fill="#4dffa6" filter="url(#glowSoft)"/>
     <text x="981.6" y="41.5" font-size="11" fill="#4dffa6" letter-spacing="1.2">LIVE</text>
   </g>
-  <text x="1168" y="42" font-size="12" fill="#0b7a3f" text-anchor="end">2026-10-27T15:10Z</text>
+  <text x="1168" y="42" font-size="12" fill="#0b7a3f" text-anchor="end">2026-10-27T21:53Z</text>
   <line x1="32" y1="54" x2="1168" y2="54" stroke="#0d2a1c" stroke-width="1"/>
   <g>
     <g>
@@ -208,18 +208,18 @@
       <g filter="url(#glow)">
       <text class="cu d4" style="animation-name:cu0" x="969.6" y="130" font-size="40" fill="#4dffa6">0</text>
       <text class="cu d4" style="animation-name:cu1" x="969.6" y="130" font-size="40" fill="#4dffa6">34</text>
-      <text class="cu d4" style="animation-name:cu2" x="969.6" y="130" font-size="40" fill="#4dffa6">62</text>
-      <text class="cu d4" style="animation-name:cu3" x="969.6" y="130" font-size="40" fill="#4dffa6">86</text>
-      <text class="cu d4" style="animation-name:cu4" x="969.6" y="130" font-size="40" fill="#4dffa6">106</text>
-      <text class="cu d4" style="animation-name:cu5" x="969.6" y="130" font-size="40" fill="#4dffa6">121</text>
-      <text class="cu d4" style="animation-name:cu6" x="969.6" y="130" font-size="40" fill="#4dffa6">133</text>
-      <text class="cu d4" style="animation-name:cu7" x="969.6" y="130" font-size="40" fill="#4dffa6">142</text>
-      <text class="cu d4" style="animation-name:cu8" x="969.6" y="130" font-size="40" fill="#4dffa6">149</text>
-      <text class="cu d4" style="animation-name:cu9" x="969.6" y="130" font-size="40" fill="#4dffa6">153</text>
-      <text class="cu d4" style="animation-name:cu10" x="969.6" y="130" font-size="40" fill="#4dffa6">156</text>
-      <text class="cu d4" style="animation-name:cu11" x="969.6" y="130" font-size="40" fill="#4dffa6">157</text>
-      <text class="cu d4" style="animation-name:cu12" x="969.6" y="130" font-size="40" fill="#4dffa6">158</text>
-      <text class="cu d4" style="animation-name:cu13" x="969.6" y="130" font-size="40" fill="#4dffa6">158</text>
+      <text class="cu d4" style="animation-name:cu2" x="969.6" y="130" font-size="40" fill="#4dffa6">63</text>
+      <text class="cu d4" style="animation-name:cu3" x="969.6" y="130" font-size="40" fill="#4dffa6">88</text>
+      <text class="cu d4" style="animation-name:cu4" x="969.6" y="130" font-size="40" fill="#4dffa6">108</text>
+      <text class="cu d4" style="animation-name:cu5" x="969.6" y="130" font-size="40" fill="#4dffa6">123</text>
+      <text class="cu d4" style="animation-name:cu6" x="969.6" y="130" font-size="40" fill="#4dffa6">136</text>
+      <text class="cu d4" style="animation-name:cu7" x="969.6" y="130" font-size="40" fill="#4dffa6">145</text>
+      <text class="cu d4" style="animation-name:cu8" x="969.6" y="130" font-size="40" fill="#4dffa6">152</text>
+      <text class="cu d4" style="animation-name:cu9" x="969.6" y="130" font-size="40" fill="#4dffa6">156</text>
+      <text class="cu d4" style="animation-name:cu10" x="969.6" y="130" font-size="40" fill="#4dffa6">159</text>
+      <text class="cu d4" style="animation-name:cu11" x="969.6" y="130" font-size="40" fill="#4dffa6">160</text>
+      <text class="cu d4" style="animation-name:cu12" x="969.6" y="130" font-size="40" fill="#4dffa6">161</text>
+      <text class="cu d4" style="animation-name:cu13" x="969.6" y="130" font-size="40" fill="#4dffa6">161</text>
       </g>
     </g>
   </g>
@@ -276,15 +276,15 @@
     </g>
     <g class="sig g1">
       <text x="616" y="231" font-size="12" fill="#0b7a3f">▸</text>
-      <text x="634" y="231" font-size="12" fill="#16d67a">clipboard-manager</text>
+      <text x="634" y="231" font-size="12" fill="#16d67a">astela</text>
     </g>
     <g class="sig g2">
       <text x="616" y="252" font-size="12" fill="#0b7a3f">▸</text>
-      <text x="634" y="252" font-size="12" fill="#16d67a">flobot</text>
+      <text x="634" y="252" font-size="12" fill="#16d67a">clipboard-manager</text>
     </g>
     <g class="sig g3">
       <text x="616" y="273" font-size="12" fill="#0b7a3f">▸</text>
-      <text x="634" y="273" font-size="12" fill="#16d67a">BROWSER-NAME</text>
+      <text x="634" y="273" font-size="12" fill="#16d67a">flobot</text>
     </g>
     <g class="sig g4">
       <text x="616" y="294" font-size="12" fill="#0b7a3f">▸</text>
